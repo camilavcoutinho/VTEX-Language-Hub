@@ -59,9 +59,9 @@ header {
     align-self: stretch;
 }
 
-.center {
-    display: flex;
-    align-items: flex-start;
+.center p {
+    display: inline-block;
+    padding-left: 1em;
 }
 
 .right {
@@ -70,10 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-}
-
-.docs {
-    padding-right: 2rem;
+    margin: 0.5em;
 }
 
 /*Media Queries*/
@@ -83,16 +80,4 @@ header {
     body {
         height: 100vh;
     }
-
-    /* .categoria {
-        margin-right: 0;
-    }
-
-    audio {
-        padding-bottom: 0;
-    }
-
-    .frase-navega {
-        flex-direction: row-reverse;
-        align-content: flex-end;
-} */
+}
