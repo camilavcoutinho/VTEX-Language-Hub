@@ -1,4 +1,6 @@
-/* Fonts: https://brand.vtex.com/brand-guidelines/##Typography */
+/* Mobile-first design
+   Fonts: https://brand.vtex.com/brand-guidelines/##Typography
+   Colors: https://admin-ui.vercel.app/foundations/colors */
 
 @font-face {
     font-family: "VTEXTrust Bold";
@@ -29,13 +31,17 @@ html {
     color-scheme: light dark;
 }
 
-/* Colors: https://admin-ui.vercel.app/foundations/colors */
 :root {
     --bg-1: #FFF;
+    --bg-2: #DDE5F7;
     --ff-regular: "VTEXTrust Regular";
     --ff-italic: "VTEXTrust Italic";
     --ff-bold: "VTEXTrust Bold";
-    --fc-regular: #000;
+    --col-regular: #000;
+    --fs-100: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    --fs-200: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --fs-400: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
 }
 
 /*
@@ -54,110 +60,208 @@ html {
 body {
     background: var(--bg-1);
     font-family: var(--ff-regular);
+    font-size: var(--fs-200);
     line-height: 1.7;
-    color: var(--fc-regular);
+    color: var(--col-regular);
 }
 
 /* Responsive margins */
 .wrapper {
-    width: min(100% - 3rem);
+    width: min(100% - 1rem, 55ch);
     margin-inline: auto;
-}
-
-/* Horizontal spacing between elements */
-.flow > * + * {
-    margin-top: 2em;
 }
 
 button {
     padding: 0.5rem 2em;
-    margin: 1rem 0 1rem;
+    margin: 1rem 0;
+    background-color: #20408C;
+    border-radius: 5px;
+    border-style: none;
 }
 
 /*Header*/
 
 header {
     height: 4.75rem;
-}
-
-.center p {
-    display: inline-block;
     padding-left: 1em;
+    display: flex;
+    align-items: center;
 }
 
 /* Main */
 
 main {
-    padding: 0 2em 0;
+    padding: 0 2em 3em;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
     width: 80%;
+    height: 100vh;
 }
 
 .left {
-    padding: 2em;
-    width: 25%;
+    font-size: var(--fs-100);
+    width: 100%;
 }
 
-.right {
-    padding: 2em;
-    width: 70%;
+.left button {
+    width: 100%;
+}
+
+.right img {
+    width: 100%;
+    transform: scale(1.3);
+    overflow: hidden;
+    padding: 0;
+    z-index: -1;
+    position: relative;
 }
 
 /* Cards */
 
 .cards {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: fit-content;
-    padding: 2rem;
-    border: 1px solid #000;
-    border-radius: 5px;
 }
 
 .element {
     padding: 1rem;
-    padd
 }
 
 .element h3 {
-    text-align: center;
     padding-bottom: 1em;
+    text-align: center;
+}
+
+.element button {
+    text-align: center;
 }
 
 /* Portal */
 
 .portals {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .portal {
-    padding: 2rem 3rem 1.3rem;
-    border: 1px solid #000;
+    background-color: var(--bg-2);
+    padding: 0.3 1.3rem 1.3rem;
+    margin: 1rem 0;
     border-radius: 5px;
     text-align: right;
+    margin-left: 1em;
 }
 
 .portal h3 {
-    padding-bottom: 1em;
-    text-align: left;
+    text-align: center;
+    padding-bottom: .5em;
 }
 
 .portal button {
     margin-top: 1em;
 }
 
+.internal-1 {
+    padding: 0.5em 0 1em;
+    text-align: center;
+    font-size: var(--fs-400);
+}
+
+.internal-2 {
+    text-align: center;
+    width: 25ch;
+    padding: 0 1em 0.5em;
+}
+
 /*Media Queries*/
 
 @media only screen and (min-width: 600px) {
+    
+    header {
+        height: 4.75rem;
+    }
+    
+    .wrapper {
+        width: min(100% - 3rem);
+        margin-inline: auto;
+    }
+    
+    main {
+        padding: 0 2em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .left {
+        padding: 0 0 2em 6em;
+        font-size: var(--fs-300);
+        width: 30%;
+    }
+    
+    .left > * + * {
+        margin: 1em 0;
+    }
+    
+    .right {
+        padding: 0 2em;
+        width: 70%;
+    }
+    
+    .right img {
+        width: 100%;
+        transform: scale(1);
+        padding: 0;
+    }
 
-    body {
-        height: 100vh;
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: fit-content;
+        padding: 2rem;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    
+    .element {
+        padding: 1rem 2.5rem 2rem;
+    }
+    
+    .element h3 {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    .portals {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3rem 0;
+    }
+    
+    .portal {
+        display: flex;
+        padding: 2rem 4rem 1.3rem;
+    }
+    
+    .portal button {
+        font-size: var(--fs-200);
+    }
+    
+    .internal-2 {
+        text-align: right;
+        width: 25ch;
+        padding-left: 3rem;
     }
 }
