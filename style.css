@@ -1,4 +1,4 @@
-/* Fontes baixadas de https://brand.vtex.com/brand-guidelines/##Typography */
+/* Fonts: https://brand.vtex.com/brand-guidelines/##Typography */
 
 @font-face {
     font-family: "VTEXTrust Bold";
@@ -15,48 +15,72 @@
    src: url(./fonts/VTEXTrust-Regular.otf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-:root {
-    --background-1: #FFF;
-    --font-regular: "VTEXTrust Regular";
-    --font-italic: "VTEXTrust Italic";
-    --font-bold: "VTEXTrust Bold";
+* {
+    margin: 0;
 }
 
+html {
+    color-scheme: light dark;
+}
+
+/* Colors: https://admin-ui.vercel.app/foundations/colors */
+:root {
+    --bg-1: #FFF;
+    --ff-regular: "VTEXTrust Regular";
+    --ff-italic: "VTEXTrust Italic";
+    --ff-bold: "VTEXTrust Bold";
+    --fc-regular: #000;
+}
 
 /*
 ========
- Seções 
+ Sections 
 ========
 - Home
 - Header
+- Main
+- Cards
+- Portal
 - Media Queries*/
 
 /*Home*/
 
 body {
-    display: inline-flex;
-    padding: 0rem 21.8125rem 65.62525rem 21.1875rem;
-    flex-direction: column;
-    align-items: center;
-    background: var(--background-1);
-    font-family: var(--font-regular);
+    background: var(--bg-1);
+    font-family: var(--ff-regular);
+    line-height: 1.7;
+    color: var(--fc-regular);
 }
 
+.wrapper {
+    width: min(100% - 3rem);
+    margin-inline: auto;
+}
+
+/* Horizontal spacing between elements */
+.flow > * + * {
+    margin-top: 2em;
+}
+
+/* h1, h3 {
+    line-height: 1.4;
+} */
+
+button {
+    padding: 0.5rem 2em;
+    margin: 1rem 0 1rem;
+}
 
 /*Header*/
 
 header {
-    display: flex;
     height: 4.75rem;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
 }
 
 .center p {
@@ -64,7 +88,73 @@ header {
     padding-left: 1em;
 }
 
+/* Main */
 
+main {
+    padding: 0 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+}
+
+.left {
+    padding: 2em;
+    width: 25%;
+}
+
+.right {
+    padding: 2em;
+    width: 70%;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.element {
+    padding: 1rem;
+    padd
+}
+
+.element h3 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* Portal */
+
+.portals {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.portal {
+    padding: 2rem 3rem 1.3rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.portal h3 {
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+.portal button {
+    margin-top: 1em;
+}
 
 /*Media Queries*/
 
