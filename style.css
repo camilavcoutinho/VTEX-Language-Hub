@@ -58,6 +58,7 @@ body {
     color: var(--fc-regular);
 }
 
+/* Responsive margins */
 .wrapper {
     width: min(100% - 3rem);
     margin-inline: auto;
@@ -67,10 +68,6 @@ body {
 .flow > * + * {
     margin-top: 2em;
 }
-
-/* h1, h3 {
-    line-height: 1.4;
-} */
 
 button {
     padding: 0.5rem 2em;
