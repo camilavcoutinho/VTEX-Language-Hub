@@ -63,6 +63,7 @@ body {
     font-size: var(--fs-200);
     line-height: 1.7;
     color: var(--col-regular);
+    scroll-behavior: smooth;
 }
 
 /* Responsive margins */
