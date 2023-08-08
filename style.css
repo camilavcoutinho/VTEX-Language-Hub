@@ -34,6 +34,8 @@ html {
 :root {
     --bg-1: #FFF;
     --bg-2: #DDE5F7;
+    --bg-3: #20408C;
+    --bg-4: #BBCBF0;
     --ff-regular: "VTEXTrust Regular";
     --ff-italic: "VTEXTrust Italic";
     --ff-bold: "VTEXTrust Bold";
@@ -79,7 +81,7 @@ body {
 button {
     padding: 0.5rem 2em;
     margin: 1rem 0;
-    background-color: #20408C;
+    background-color: var(--bg-3);
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
@@ -161,6 +163,27 @@ main {
 
 .element {
     padding: 1rem;
+    font-size: var(--fs-200);
+}
+
+.element li {
+    list-style: none;
+    counter-increment: my-awesome-counter;
+    margin: 0.5rem;
+    font-size: var(--fs-100);
+}
+
+.element li::before {
+  content: counter(my-awesome-counter);
+  background: var(--bg-4);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1.5rem;
+  color: var(--bg-1);
+  text-align: center;
+  margin-right: 0.5rem;
 }
 
 .element h3 {
@@ -170,6 +193,10 @@ main {
 
 .element button {
     text-align: center;
+}
+
+.card {
+    width: 25ch;
 }
 
 /* Portal */
