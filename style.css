@@ -21,21 +21,19 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
+    padding: 0;
 }
 
-html {
+/* html {
     color-scheme: light dark;
-}
+} */
 
 :root {
-    --bg-1: #FFF;
-    --bg-2: #DDE5F7;
-    --bg-3: #20408C;
-    --bg-4: #BBCBF0;
+    --bg-1: #F8F7FC;
+    --bg-2: #FFE0EF;
+    --bg-3: #F71963;
+    --bg-4: #FFC4DD;
     --ff-regular: "VTEXTrust Regular";
     --ff-italic: "VTEXTrust Italic";
     --ff-bold: "VTEXTrust Bold";
@@ -46,282 +44,44 @@ html {
     --fs-400: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
 }
 
-/*
-========
- Sections 
-========
-- Home
-- Header
-- Main
-- Cards
-- Portal
-- Media Queries*/
-
-/*Home*/
-
 html {
     scroll-behavior: smooth;
   }
-  
 
 body {
-    background: var(--bg-1);
     font-family: var(--ff-regular);
-    font-size: var(--fs-200);
-    line-height: 1.7;
-    color: var(--col-regular);
+    height: 100%;
+    background: linear-gradient(to bottom, #FFF, #F8F7FC, #FFE0EF, #FFC4DD, #F71963);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-/* Responsive margins */
-.wrapper {
-    width: min(100% - 1rem, 55ch);
-    margin-inline: auto;
+.logo {
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
 }
 
-button {
-    padding: 0.5rem 2em;
-    margin: 1rem 0;
-    background-color: var(--bg-3);
-    border-radius: 5px;
-    border-style: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
-    font-size: var(--fs-300);
-    text-decoration: none;
+h4, h5 {
+    padding: 1rem;
 }
-
-a {
-    text-decoration: none;
-}
-
-/*Header*/
-
-header {
-    height: 4.75rem;
-    padding-left: 1em;
-    display: flex;
-    align-items: center;
-}
-
-/* Main */
-
-main {
-    padding: 0 2em 3em;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 100vh;
-}
-
-.left {
-    font-size: var(--fs-100);
-    width: 100%;
-}
-
-.left button {
-    width: 100%;
-}
-
-.right img {
-    width: 100%;
-    transform: scale(1.3);
-    overflow: hidden;
-    padding: 0;
-    z-index: -1;
-    position: relative;
-}
-
-.more-content {
-    position: absolute;
-    top: 95vh;
-    left: 50%;
-    animation: moveUpDown 1.5s ease-in-out infinite;
-}
-
-@keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Valor de movimento para cima */
-    }
-  }
-
-/* Cards */
 
 .cards {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
-}
-
-.element {
-    padding: 1rem;
-    font-size: var(--fs-200);
-}
-
-.element li {
-    list-style: none;
-    counter-increment: my-awesome-counter;
-    margin: 0.5rem;
-    font-size: var(--fs-100);
-}
-
-.element li::before {
-  content: counter(my-awesome-counter);
-  background: var(--bg-4);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 1.5rem;
-  color: var(--bg-1);
-  text-align: center;
-  margin-right: 0.5rem;
-}
-
-.element h3 {
-    padding-bottom: 1em;
-    text-align: center;
-}
-
-.element button {
-    text-align: center;
+    width: 100%;
 }
 
 .card {
-    width: 25ch;
-}
-
-/* Portal */
-
-.portals {
-    display: flex;
-    flex-direction: column;
+    background-color: green; /* Temporary color just for testing */
+    width: 90%;
     align-items: center;
-    margin: 2rem 0;
-}
-
-.portal {
-    background-color: var(--bg-2);
-    padding: 0.3 1.3rem 1.3rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    text-align: right;
-    margin-left: 1em;
-}
-
-.portal h3 {
     text-align: center;
-    padding-bottom: .5em;
 }
 
-.portal button {
-    margin-top: 1em;
-    width: 110%;
-}
-
-.internal-1 {
-    padding: 0.5em 0 1em;
-    text-align: center;
-    font-size: var(--fs-400);
-}
-
-.internal-2 {
-    text-align: center;
-    width: 25ch;
-    padding: 0 1em 0.5em;
-}
-
-/*Media Queries*/
-
-@media only screen and (min-width: 600px) {
-    
-    header {
-        height: 4.75rem;
-    }
-    
-    .wrapper {
-        width: min(100% - 3rem);
-        margin-inline: auto;
-    }
-    
-    main {
-        padding: 0 2em 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .left {
-        padding: 0 0 2em 6em;
-        font-size: var(--fs-300);
-        width: 30%;
-    }
-    
-    .left > * + * {
-        margin: 1em 0;
-    }
-    
-    .right {
-        padding: 0 2em;
-        width: 70%;
-    }
-    
-    .right img {
-        width: 100%;
-        transform: scale(1);
-        padding: 0;
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        max-width: fit-content;
-        padding: 2rem;
-        border: 1px solid #000;
-        border-radius: 5px;
-    }
-    
-    .element {
-        padding: 1rem 2.5rem 2rem;
-    }
-    
-    .element h3 {
-        text-align: center;
-        padding-bottom: 1em;
-    }
-    
-    .portals {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 3rem 0;
-    }
-    
-    .portal {
-        display: flex;
-        padding: 2rem 4rem 1.3rem;
-    }
-    
-    .portal button {
-        font-size: var(--fs-200);
-    }
-    
-    .internal-2 {
-        text-align: right;
-        width: 25ch;
-        padding-left: 3rem;
-    }
+.upper {
+    height: 50%;
+    background-color: orange; /* Temporary color just for testing */
 }
