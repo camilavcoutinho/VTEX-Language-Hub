@@ -57,12 +57,24 @@ body {
 }
 
 .logo {
-    padding-top: 1.5rem;
-    padding-left: 0.5rem;
+    padding-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--col-regular);
 }
 
 h4, h5 {
     padding: 1rem;
+}
+
+h4 {
+    font-size: var(--fs-400);
+}
+
+h5 {
+    font-size: var(--fs-300);
+    text-align: center;
 }
 
 .cards {
@@ -75,13 +87,19 @@ h4, h5 {
 }
 
 .card {
-    background-color: green; /* Temporary color just for testing */
+    background-color: #FFF; /* Temporary color just for testing */
     width: 90%;
+    height: 180px;
     align-items: center;
     text-align: center;
+    border-radius: 25px 0;
 }
 
 .upper {
-    height: 50%;
-    background-color: orange; /* Temporary color just for testing */
+    height: 40%;
+    background-color: #E7E9EE;
+    border-radius: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
