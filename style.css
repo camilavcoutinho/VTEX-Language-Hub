@@ -65,7 +65,7 @@ a, a:visited {
 
 .logo {
     padding-top: 2rem;
-    padding-left: 0.1rem;
+    padding-left: 0;
     padding-bottom: 2rem;
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .lower > h6 {
     padding: 1rem;
-    color: #FFC4DD;
+    color: #e31c58;
     font-size: var(--fs-300);  
 }
 
@@ -167,7 +167,7 @@ footer {
 }
 
 .line {
-    opacity: 0.2    ;
+    opacity: 0.1;
 }
 
 .credits {
