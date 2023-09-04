@@ -61,22 +61,22 @@ a, a:visited {
     cursor: pointer;
 }
 
-header, header > a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .logo {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 0.1rem;
+    padding-bottom: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     color: var(--col-regular);
 }
 
-h5 {
+.lower > h6 {
     padding: 1rem;
+    color: #FFC4DD;
+    font-size: var(--fs-300);  
 }
 
 h4 {
@@ -87,6 +87,7 @@ h4 {
 h5 {
     font-size: var(--fs-300);
     text-align: center;
+    padding: 1rem;
 }
 
 h6 {
@@ -163,6 +164,10 @@ footer {
 
 .backTop > a{
     color: #000;
+}
+
+.line {
+    opacity: 0.2    ;
 }
 
 .credits {
