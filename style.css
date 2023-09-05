@@ -1,6 +1,5 @@
 /* Mobile-first design
-   Fonts: https://brand.vtex.com/brand-guidelines/##Typography
-   Colors: https://admin-ui.vercel.app/foundations/colors */
+   Fonts: https://brand.vtex.com/brand-guidelines/##Typography*/
 
 @font-face {
     font-family: "VTEXTrust Bold";
@@ -69,6 +68,13 @@ a, a:visited {
     padding-bottom: 2rem;
 }
 
+.hero-img {
+    background-color: red;
+    height: 120px;
+    width: 375px;
+    margin: auto;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     color: var(--col-regular);
 }
@@ -114,7 +120,7 @@ p {
     height: 180px;
     align-items: center;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: 1px solid #E7E9EE;
 }
 
@@ -125,7 +131,7 @@ p {
 .upper {
     height: 35%;
     background-color: #E7E9EE;
-    border-radius: 25px 25px 0 0;
+    border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,9 +149,12 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: -1rem;
+    text-align: center;
 }
 
-.others > a:hover, .backTop > a:hover {
+.others > .left > a:hover, .backTop > a:hover,
+.others > .middle > a:hover, .backTop > a:hover,
+.others > .right > a:hover, .backTop > a:hover {
     text-decoration: underline;
 }
 
@@ -172,4 +181,23 @@ footer {
 
 .credits {
     font-size: 0.8rem;
+}
+
+/* Tablet and medium size screens */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+    body {
+        color: red; /* test */
+    }
+}
+
+/* HD monitors and above */
+@media only screen and (min-width: 1366px) {
+    body {
+        height: 100vh;
+    }
+
+    .others {
+        padding-top: 1.4rem;
+        display: flex !important; /* test */
+    }
 }
