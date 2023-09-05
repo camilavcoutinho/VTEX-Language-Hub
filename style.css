@@ -152,9 +152,9 @@ p {
     text-align: center;
 }
 
-.others > .left > a:hover, .backTop > a:hover,
-.others > .middle > a:hover, .backTop > a:hover,
-.others > .right > a:hover, .backTop > a:hover {
+.others > .flex > .left > a:hover, .backTop > a:hover,
+.others > .flex > .middle > a:hover, .backTop > a:hover,
+.others > .flex > .right > a:hover, .backTop > a:hover {
     text-decoration: underline;
 }
 
@@ -184,20 +184,43 @@ footer {
 }
 
 /* Tablet and medium size screens */
-@media only screen and (min-width: 768px) and (max-width: 1365px) {
-    body {
-        color: red; /* test */
+@media only screen and (min-width: 615px) and (max-width: 1365px) {
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 7.5rem;
     }
 }
 
 /* HD monitors and above */
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
     body {
         height: 100vh;
     }
 
-    .others {
-        padding-top: 1.4rem;
-        display: flex !important; /* test */
+    .cards {
+        width: 35%;
+        margin: auto;
     }
+
+    .card {
+        flex-basis: calc(50% - 10px);
+        justify-content: center;
+    }
+
+    .others {
+        padding-top: 1.2rem;
+    }
+
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 15rem;
+    }
+
+    .backTop {
+        display: none;
+    }
+
 }
