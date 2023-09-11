@@ -50,7 +50,7 @@ html {
 body {
     font-family: var(--ff-regular);
     height: 100%;
-    background: linear-gradient(to bottom, #FFF, #F8F7FC, #FFE0EF);
+    background: #FFF;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -73,6 +73,13 @@ a, a:visited {
     height: 120px;
     width: 375px;
     margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center center;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -80,7 +87,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .lower > h6 {
-    padding: 1rem;
+    padding: 0.7rem;
     color: #e31c58;
     font-size: var(--fs-300);  
 }
@@ -130,7 +137,7 @@ p {
 
 .upper {
     height: 35%;
-    background-color: #E7E9EE;
+    background: #F8F7FC;
     border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
@@ -138,13 +145,13 @@ p {
 }
 
 .upper:hover {
-    background-color: #a7a9ad;
+    background-color: #E7E9EE;
 }
 
 .others {
-    background-color: #E7E9EE;
+    background-color: #F8F7FC;
     margin-top: 1rem;
-    border-radius: 25px 25px 0 0;
+    border-radius: 10px 10px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,6 +228,10 @@ footer {
 
     .backTop {
         display: none;
+    }
+
+    .lower h6 {
+        padding: 0.3rem;
     }
 
 }
