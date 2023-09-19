@@ -75,19 +75,6 @@ a, a:visited {
     padding-bottom: 2rem;
 }
 
-/* .hero-img {
-    height: 120px;
-    width: 375px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-} */
-
-/* .image {
-    object-fit: cover;
-    object-position: center center;
-} */
-
 h1, h2, h3, h4, h5, h6, p {
     color: var(--col-regular);
 }
@@ -125,6 +112,8 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #FFF3F6;
+    padding-bottom: 3rem;
 }
 
 .card {
@@ -218,32 +207,15 @@ footer {
         margin-left: 3.5rem;
     }
 
-    .see-more {
-        margin-top: 13rem;
-        margin-left: 50%;
-        outline: 1px solid black;
-        border-radius: 50%;
-        align-self: center;
-        /* color: black;
-        font-weight: bold; */
-        animation: moveUpDown 1.5s ease-in-out infinite;
-    }
-    @keyframes moveUpDown {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px); /* Valor de movimento para cima */
-        }
-      }
-
     .cards {
-        width: 35%;
+        width: 100%;
         margin: auto;
+        margin-top: -5rem;
+        gap: 3rem;
     }
 
     .card {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(17.5% - 10px);
         justify-content: center;
     }
 
