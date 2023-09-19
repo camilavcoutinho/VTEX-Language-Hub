@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "VTEXTrust Bold";
+    src: url(./fonts/VTEXTrust-Bold.otf);
+ }
+
+ @font-face {
+    font-family: "VTEXTrust Italic";
+    src: url(./fonts/VTEXTrust-Italic.otf);
+ }
+
+@font-face {
+   font-family: "VTEXTrust Regular";
+   src: url(./fonts/VTEXTrust-Regular.otf);
+}
+
+:root {
+    --bg-1: #F8F7FC;
+    --bg-2: #142032; /*#FFE0EF; */
+    --bg-3: #E7E9EE; /*#F71963;*/
+    --bg-4: #5E6E84; /*#FFC4DD;*/
+	--bg-5: #F71963;
+    --ff-regular: "VTEXTrust Regular";
+    --ff-italic: "VTEXTrust Italic";
+    --ff-bold: "VTEXTrust Bold";
+    --col-regular: #000;
+    --fs-100: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    --fs-200: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --fs-400: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+}
+
+* {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--ff-regular), sans-serif;
+}
+
+body {
+	background: var(--bg-1);
+}
+
+.wrapper .sidebar {
+	background: var(--bg-3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100%;
+	padding: 1rem 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .logo img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.wrapper .sidebar ul li a {
+	display: block;
+	padding: 1rem 2.5rem;
+	color: var(--bg-4);
+	font-size: 1rem;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+	color: var(--bg-5);
+	font-family: var(--ff-bold);
+}
+
+.wrapper .section {
+	width: calc(100% - 14rem);
+	margin-left: 14rem;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+	background: var(--bg-3);
+	height: 3.75rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1.875rem;
+}
+
+.wrapper .section .top_navbar .hamburger a {
+	font-size: 1.8rem;
+	color: var(--bg-4);
+}
+
+.wrapper .section .top_navbar .hamburger a:hover {
+	color: var(--bg-5);
+}
+
+body.active .wrapper .sidebar {
+	left: -14rem;
+}
+
+body.active .wrapper .section {
+	margin-left: 0;
+	width: 100%;
+}
+
+.main-doc {
+	margin-left: 15%;
+}
+
+iframe {
+	width: 100%;
+	height: 100vh;
+	border: none;
+}
