@@ -105,8 +105,14 @@ body.active .wrapper .section {
 	width: 100%;
 }
 
+body.active .wrapper .main-doc {
+	margin-left: 0;
+	transition: all 0.5s ease;
+}
+
 .main-doc {
 	margin-left: 15%;
+	transition: all 0.5s ease;
 }
 
 iframe {
