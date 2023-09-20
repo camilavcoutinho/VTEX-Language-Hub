@@ -15,33 +15,107 @@ let menuItem = document.querySelector(".item");
 
 function expandItem(id) {
 	if (id == "styleGuides") {
-		let item = document.getElementById("styleGuides");
-		let list = item.querySelector("ul");
-		if (list) {
-			item.removeChild(list);
-		  } else {
-			list = document.createElement("ul");
-			let listItem1 = document.createElement("li");
-			listItem1.innerText = "Item 1";
-			let listItem2 = document.createElement("li");
-			listItem2.innerText = "Item 2";
-			let listItem3 = document.createElement("li");
-			listItem3.innerText = "Item 3";
-			list.appendChild(listItem1);
-			list.appendChild(listItem2);
-			list.appendChild(listItem3);
-			item.appendChild(list);
-		  } //Funcionou. Pensar em como abstrair uma subfunção para fazer isso para cada um dos itens do menu, ao invés de repetir o trabalho dentro desta mesma função.
-	}
+		expandStyleGuides();
+		  }
 	else if (id == "reviewLogs") {
-		console.log("Review Logs");
+		expandReviewLogs();
 	}
 	else if (id == "glossaries") {
-		console.log("Glossaries");
+		expandGlossaries();
 	}
 	else if (id == "translationMemories") {
-		console.log("Translation memories");
+		expandTranslationMemories()
 	}
-	else console.log("Outro");
 }
-//Funcionou. Pensar em como abstrair uma subfunção para fazer isso para cada um dos itens do menu.
+
+function expandStyleGuides() {
+	let item = document.getElementById("styleGuides");
+	let list = item.querySelector("ul");
+	if (list) {
+		item.removeChild(list);
+		}
+	else {
+		list = document.createElement("ul");
+		let listItem1 = document.createElement("li");
+		listItem1.innerText = "Item 1";
+		let listItem2 = document.createElement("li");
+		listItem2.innerText = "Item 2";
+		let listItem3 = document.createElement("li");
+		listItem3.innerText = "Item 3";
+		let listItem4 = document.createElement("li");
+		listItem4.innerText = "Item 4";
+		let listItem5 = document.createElement("li");
+		listItem5.innerText = "Item 5";
+		let listItem6 = document.createElement("li");
+		listItem6.innerText = "Item 6";
+
+		let items = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6]
+		
+		items.forEach(item => {
+			list.appendChild(item);
+		})
+		
+		item.appendChild(list);
+	}
+}
+
+function expandReviewLogs() {
+	let item = document.getElementById("reviewLogs");
+	let list = item.querySelector("ul");
+	if (list) {
+		item.removeChild(list);
+		}
+	else {
+		list = document.createElement("ul");
+		let listItem1 = document.createElement("li");
+		listItem1.innerText = "Item 1";
+		let listItem2 = document.createElement("li");
+		listItem2.innerText = "Item 2";
+		let listItem3 = document.createElement("li");
+		listItem3.innerText = "Item 3";
+		list.appendChild(listItem1);
+		list.appendChild(listItem2);
+		list.appendChild(listItem3);
+		item.appendChild(list);
+	}
+}
+function expandGlossaries() {
+	let item = document.getElementById("glossaries");
+	let list = item.querySelector("ul");
+	if (list) {
+		item.removeChild(list);
+		}
+	else {
+		list = document.createElement("ul");
+		let listItem1 = document.createElement("li");
+		listItem1.innerText = "Item 1";
+		let listItem2 = document.createElement("li");
+		listItem2.innerText = "Item 2";
+		let listItem3 = document.createElement("li");
+		listItem3.innerText = "Item 3";
+		list.appendChild(listItem1);
+		list.appendChild(listItem2);
+		list.appendChild(listItem3);
+		item.appendChild(list);
+	}
+}
+function expandTranslationMemories() {
+	let item = document.getElementById("translationMemories");
+	let list = item.querySelector("ul");
+	if (list) {
+		item.removeChild(list);
+		}
+	else {
+		list = document.createElement("ul");
+		let listItem1 = document.createElement("li");
+		listItem1.innerText = "Item 1";
+		let listItem2 = document.createElement("li");
+		listItem2.innerText = "Item 2";
+		let listItem3 = document.createElement("li");
+		listItem3.innerText = "Item 3";
+		list.appendChild(listItem1);
+		list.appendChild(listItem2);
+		list.appendChild(listItem3);
+		item.appendChild(list);
+	}
+}
