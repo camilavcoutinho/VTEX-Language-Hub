@@ -67,12 +67,13 @@ a, a:visited {
     background-size: cover; 
     background-repeat: no-repeat; 
     /* background-position: center top; */
-    margin-top: -4rem;
+    margin-top: -1rem;
 }
 
 .logo {
     padding: 2rem 0;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
     height: 100px;
 }
 
@@ -89,6 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
 h4 {
     font-size: var(--fs-400);
     text-align: center;
+    margin-top: 4rem;
 }
 
 h5 {
@@ -146,8 +148,6 @@ p {
 
 .others {
     background-color: #F8F7FC;
-    margin-top: 1rem;
-    border-radius: 10px 10px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,6 +188,19 @@ footer {
 
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) { /*Confirmar max value */
+    
+    h4 {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 0;
+        padding-bottom: 6rem;
+    }
+
+    .cards {
+        padding-top: 1rem;
+    }
+    
     .flex {
         display: flex;
         justify-content: space-around;
@@ -195,8 +208,8 @@ footer {
     }
 }
 
-/* HD monitors and above */
-@media only screen and (min-width: 1280px) { /*Limitar essa query para HD e fazer outra para full HD e acima */
+/* HD monitors*/
+@media only screen and (min-width: 1280px) and (max-width: 1919px) { /*Limitar essa query para HD e fazer outra para full HD e acima */
     body {
         height: 100vh;
     }
@@ -238,5 +251,48 @@ footer {
     .lower h6 {
         padding: 0.3rem;
     }
-/* Force update on this file */
+}
+@media only screen and (min-width: 1280px) {
+
+    body {
+        height: 100vh;
+    }
+
+    h4 {
+        font-size: 5rem;
+        text-align: left;
+        margin-top: 10rem;
+        margin-left: 5rem;
+    }
+
+    .cards {
+        width: 100%;
+        margin: auto;
+        margin-top: -6rem;
+        gap: 2rem;
+    }
+
+    .card {
+        flex-basis: calc(18% - 10px);
+        justify-content: center;
+    }
+
+    .others {
+        padding-top: 1.2rem;
+    }
+
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 15rem;
+    }
+
+    .backTop {
+        display: none;
+    }
+
+    .lower h6 {
+        padding: 0.3rem;
+    }
 }
