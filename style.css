@@ -164,6 +164,9 @@ p {
     text-align: center;
 }
 
+.other-titles {
+    font-weight: bold;
+}
 
 .other-cards {
     background-color: #F8F7FC;
@@ -180,12 +183,6 @@ p {
 .lower > h6 {
     color: black;
 }
-
-/* .others > .flex > .left > a:hover, .backTop > a:hover,
-.others > .flex > .middle > a:hover, .backTop > a:hover,
-.others > .flex > .right > a:hover, .backTop > a:hover {
-    text-decoration: underline black;
-} */
 
 .othersIcon {
     text-align: center;
@@ -227,15 +224,15 @@ footer {
         padding-top: 1rem;
     }
     
-    .flex {
+    /* .flex {
         display: flex;
         justify-content: space-around;
         gap: 7.5rem;
-    }
+    } */
 }
 
 /* HD monitors*/
-@media only screen and (min-width: 1280px) and (max-width: 1919px) { /*Limitar essa query para HD e fazer outra para full HD e acima */
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
     body {
         height: 100vh;
     }
@@ -277,10 +274,14 @@ footer {
     .lower h6 {
         padding: 0.3rem;
     }
+
+    .other-cards {
+        padding-top: 9rem;
+    }
 }
 
 /* Full HD monitors and above */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1920px) {
 
     body {
         height: 100vh;
@@ -322,5 +323,9 @@ footer {
 
     .lower h6 {
         padding: 0.3rem;
+    }
+
+    .other-cards {
+        padding-top: 6rem;
     }
 }
