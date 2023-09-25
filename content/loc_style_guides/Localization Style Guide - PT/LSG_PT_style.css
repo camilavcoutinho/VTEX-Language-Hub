@@ -1,21 +1,101 @@
-@import url(https://themes.googleusercontent.com/fonts/css?kit=xTOoZr6X-i3kNg7pYrzMsnzecO_Kg5LJyaAnyzxrfnaJzPRz49YpSt_qf6sNOZxK_kmCvy597kDopqFAXvpeaA);
-ol{
-    margin:0;
-    padding:0
+@font-face {
+    font-family: "VTEXTrust Regular";
+    src: url(./fonts/VTEXTrust-Regular.otf);
 }
-table td,table th{
-    padding:0
+
+:root {
+    --bg-1: #F8F7FC;
+    --bg-2: #1155CC;
+    --bg-3: #F71963;
+    --bg-4: #5E6E84;
+    --ff-regular: "VTEXTrust Regular";
 }
-.c6{
-    background-color:#ffffff;
-    color:#142032;
-    font-weight:400;
-    text-decoration:none;
-    vertical-align:baseline;
-    font-size:12pt;
-    font-family:"Lato";
-    font-style:normal
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-regular), sans-serif;
 }
+
+body {
+    background: var(--bg-1);
+    text-align: justify;
+}
+
+h1 {
+    color: var(--bg-3);
+    font-size: 2.4rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    page-break-after: avoid;
+}
+
+h2, h3, h4 {
+    color: var(--bg-3);
+    page-break-after: avoid;
+    margin: 0.5rem 0rem;
+}
+
+p {
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+.doc-content {
+    padding: 6rem;
+    line-height: 1.5;
+}
+
+.update-info{
+    color: var(--bg-4);
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.text-link {
+    color: var(--bg-2);
+    text-decoration: underline;
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+li {
+    margin-left:3rem;    
+    font-size: 0.9rem;
+}
+
+.bullet {
+    line-height: 1.6;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-right: auto;
+}
+
+.table-intro {
+    padding-bottom: 1rem;
+}
+
+.table-internal {
+    padding: 0.25rem 0.4rem;
+    border: 1px solid var(--bg-4);
+    font-size: 0.85rem;
+}
+
 .c14{
     padding-top:0pt;
     padding-bottom:0pt;
@@ -88,15 +168,7 @@ table td,table th{
     font-family:"Lato";
     font-style:normal
 }
-.c9{
-    color:#000000;
-    font-weight:700;
-    text-decoration:none;
-    vertical-align:baseline;
-    font-size:11pt;
-    font-family:"Arial";
-    font-style:normal
-}
+
 .c5{
     color:#142032;
     font-weight:400;
@@ -147,14 +219,7 @@ table td,table th{
     widows:2;
     text-align:justify
 }
-.c26{
-    padding-top:0pt;
-    padding-bottom:0pt;
-    line-height:1.0;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
+
 .c15{
     padding-top:0pt;
     padding-bottom:0pt;
@@ -163,14 +228,7 @@ table td,table th{
     widows:2;
     text-align:justify
 }
-.c36{
-    padding-top:0pt;
-    padding-bottom:10pt;
-    line-height:1.15;
-    orphans:2;
-    widows:2;
-    text-align:left
-}
+
 .c28{
     padding-top:0pt;
     padding-bottom:0pt;
@@ -179,14 +237,7 @@ table td,table th{
     widows:2;
     text-align:right
 }
-.c0{
-    padding-top:0pt;
-    padding-bottom:10pt;
-    line-height:1.15;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
+
 .c48{
     padding-top:0pt;
     padding-bottom:0pt;
@@ -220,18 +271,7 @@ table td,table th{
     color:#000000;
     text-decoration:none
 }
-.c23{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    color:#1155cc;
-    text-decoration:underline
-}
-.c21{
-    color:#f71963;
-    text-decoration:none;
-    vertical-align:baseline;
-    font-style:normal
-}
+
 .c44{
     text-decoration-skip-ink:none;
     -webkit-text-decoration-skip:none;
@@ -261,24 +301,10 @@ table td,table th{
     font-size:31pt;
     font-family:"Montserrat"
 }
-.c20{
-    font-size:20pt;
-    font-family:"Montserrat"
-}
-.c10{
-    color:inherit;
-    text-decoration:inherit
-}
-.c35{
-    padding:72pt 72pt 72pt 72pt
-}
+
 .c41{
     font-size:16pt;
     font-family:"Montserrat"
-}
-.c33{
-    padding:0;
-    margin:0
 }
 .c40{
     font-size:31pt;
@@ -310,136 +336,11 @@ table td,table th{
 .c29{
     padding-left:0pt
 }
-.c12{
-    background-color:#ffffff
-}
-.c11{
-    font-weight:700
-}
+
 .c49{
     margin-left:72pt
-}
-.c16{
-    page-break-after:avoid
 }
 .c50{
     background-color:#f8f8f8
 }
-.c51{
-    color:#f71963
-}
-.title{
-    padding-top:0pt;
-    color:#f71963;
-    font-weight:700;
-    font-size:20pt;
-    padding-bottom:0pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-.subtitle{
-    padding-top:0pt;
-    color:#142032;
-    font-weight:700;
-    font-size:14pt;
-    padding-bottom:0pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-li{
-    color:#142032;
-    font-size:12pt;
-    font-family:"Lato"
-}
-p{
-    margin:0;
-    color:#142032;
-    font-size:12pt;
-    font-family:"Lato"
-}
-h1{
-    padding-top:0pt;
-    color:#f71963;
-    font-weight:700;
-    font-size:20pt;
-    padding-bottom:0pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-h2{
-    padding-top:0pt;
-    color:#f51963;
-    font-size:16pt;
-    padding-bottom:10pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-h3{
-    padding-top:0pt;
-    color:#142032;
-    font-size:14pt;
-    padding-bottom:10pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-h4{
-    padding-top:0pt;
-    color:#666666;
-    font-size:12pt;
-    padding-bottom:0pt;
-    font-family:"Montserrat";
-    line-height:1.15;
-    page-break-after:avoid;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-h5{
-    padding-top:0pt;
-    color:#666666;
-    font-size:12pt;
-    padding-bottom:0pt;
-    font-family:"Lato";
-    line-height:1.15;
-    page-break-after:avoid;
-    font-style:italic;
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
-h6{
-    padding-top:0pt;
-    -webkit-text-decoration-skip:none;
-    color:#666666;
-    text-decoration:underline;
-    font-size:12pt;
-    padding-bottom:0pt;
-    line-height:1.15;
-    page-break-after:avoid;
-    font-style:italic;
-    text-decoration-skip-ink:none;
-    font-family:"Lato";
-    orphans:2;
-    widows:2;
-    text-align:justify
-}
+/* excluir </span></p>*/
