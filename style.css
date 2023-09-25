@@ -24,10 +24,6 @@
     padding: 0;
 }
 
-/* html {
-    color-scheme: light dark;
-} */
-
 :root {
     --bg-1: #F8F7FC;
     --bg-2: #FFE0EF;
@@ -65,8 +61,7 @@ a, a:visited {
     height: 100%;
     width: 100%;
     background-size: cover; 
-    background-repeat: no-repeat; 
-    /* background-position: center top; */
+    background-repeat: no-repeat;
     margin-top: -1rem;
 }
 
@@ -129,10 +124,6 @@ p {
     outline: 1px solid #E7E9EE;
 }
 
-/* .material-symbols-outlined {
-    color: #000;
-} */
-
 .upper {
     margin: 0.5rem;
     height: 27.5%;
@@ -177,11 +168,11 @@ p {
     background-color: #E7E9EE;
 }
 
-.others-upper > span {
-    color: black;
-}
-.lower > h6 {
-    color: black;
+.others-upper > span,
+.lower > h6,
+.backTop > a
+ {
+    color: #000;
 }
 
 .othersIcon {
@@ -195,10 +186,6 @@ p {
 
 footer {
     text-align: center;
-}
-
-.backTop > a{
-    color: #000;
 }
 
 .line {
@@ -223,12 +210,6 @@ footer {
     .cards {
         padding-top: 1rem;
     }
-    
-    /* .flex {
-        display: flex;
-        justify-content: space-around;
-        gap: 7.5rem;
-    } */
 }
 
 /* HD monitors*/
@@ -258,13 +239,6 @@ footer {
 
     .others {
         padding-top: 1.2rem;
-    }
-
-
-    .flex {
-        display: flex;
-        justify-content: space-around;
-        gap: 15rem;
     }
 
     .backTop {
@@ -308,13 +282,6 @@ footer {
 
     .others {
         padding-top: 1.2rem;
-    }
-
-
-    .flex {
-        display: flex;
-        justify-content: space-around;
-        gap: 15rem;
     }
 
     .backTop {
