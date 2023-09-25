@@ -196,6 +196,10 @@ footer {
     font-size: 0.8rem;
 }
 
+.lower > h6 {
+    margin-top: -1rem;
+}
+
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) { /*Confirmar max value */
     
@@ -235,6 +239,7 @@ footer {
     .card {
         flex-basis: calc(18% - 10px);
         justify-content: center;
+        height: 190px;
     }
 
     .others {
@@ -243,10 +248,6 @@ footer {
 
     .backTop {
         display: none;
-    }
-
-    .lower h6 {
-        padding: 0.3rem;
     }
 
     .other-cards {
@@ -286,10 +287,6 @@ footer {
 
     .backTop {
         display: none;
-    }
-
-    .lower h6 {
-        padding: 0.3rem;
     }
 
     .other-cards {
