@@ -3,15 +3,27 @@ let hamburger = document.querySelector(".hamburger");
 		document.querySelector("body").classList.toggle("active");
 	})
 
-function styleGuide() {
-    document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - PT/VTEXPortugueseStyleGuidePT.html";
+function handleInternal() {
+	var currentUrl = window.location.href;
+	// let id = getParameterByName('id', document.referrer);
+    if (currentUrl.includes("styleGuides")) {
+        document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - PT/VTEXPortugueseStyleGuidePT.html";
+		expandItem("styleGuides");
+    }
+    else if (currentUrl.includes("glossaries")) {
+        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
+		expandItem("glossaries");
+    }
+    else if (currentUrl.includes("reviewLogs")) {
+        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
+		expandItem("reviewLogs");
+    }
+    else if (currentUrl.includes("translationMemories")) {
+        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
+		expandItem("translationMemories");
+    }
 }
-
-function adminReviewLog() {
-    document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
-}
-
-let menuItem = document.querySelector(".item");
+handleInternal(); //Calling function as soon as the internal page is loaded so it is populated with the correspondent card content.
 
 function expandItem(id) {
 	if (id == "styleGuides") {
