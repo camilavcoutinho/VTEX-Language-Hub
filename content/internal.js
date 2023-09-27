@@ -31,10 +31,13 @@ function expandItem(id) {
 function expandStyleGuides() {
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseStyleGuides");
 	if (list) {
 		item.removeChild(list);
+		button.textContent = "expand_more";
 		}
 	else {
+		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
 		listItem1.innerText = "Item 1";
@@ -62,10 +65,13 @@ function expandStyleGuides() {
 function expandReviewLogs() {
 	let item = document.getElementById("reviewLogs");
 	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseReviewLogs");
 	if (list) {
 		item.removeChild(list);
+		button.textContent = "expand_more"
 		}
 	else {
+		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
 		listItem1.innerText = "Item 1";
@@ -82,10 +88,13 @@ function expandReviewLogs() {
 function expandGlossaries() {
 	let item = document.getElementById("glossaries");
 	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseGlossaries");
 	if (list) {
 		item.removeChild(list);
+		button.textContent = "expand_more";
 		}
 	else {
+		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
 		listItem1.innerText = "Item 1";
@@ -102,10 +111,13 @@ function expandGlossaries() {
 function expandTranslationMemories() {
 	let item = document.getElementById("translationMemories");
 	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseTranslationMemories");
 	if (list) {
 		item.removeChild(list);
+		button.textContent = "expand_more";
 		}
 	else {
+		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
 		listItem1.innerText = "Item 1";
