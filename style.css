@@ -228,6 +228,18 @@ footer {
     .cards {
         padding-top: 1rem;
     }
+
+    .other-cards {
+        width: 100%;
+    }
+
+    .other-cards > .card {
+        width: 30%;
+    }
+
+    .longer-text {
+        margin-top: -1rem;
+    }
 }
 
 /* HD monitors*/
