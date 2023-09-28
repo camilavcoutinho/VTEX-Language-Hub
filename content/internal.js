@@ -5,9 +5,8 @@ let hamburger = document.querySelector(".hamburger");
 
 function handleInternal() {
 	var currentUrl = window.location.href;
-	// let id = getParameterByName('id', document.referrer);
     if (currentUrl.includes("styleGuides")) {
-        document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - PT/VTEXPortugueseStyleGuidePT.html";
+        document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
     }
     else if (currentUrl.includes("glossaries")) {

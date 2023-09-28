@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
 h4 {
     font-size: var(--fs-400);
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
 }
 
 h5 {
@@ -106,7 +106,7 @@ p {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.7rem;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -115,9 +115,9 @@ p {
 }
 
 .card {
-    background-color: #FFF; /* Temporary color just for testing */
+    background-color: #FFF;
     width: 300px;
-    height: 215px;
+    height: 300px;
     align-items: center;
     text-align: center;
     border-radius: 10px;
@@ -125,8 +125,8 @@ p {
 }
 
 .upper {
-    margin: 0.5rem;
-    height: 27.5%;
+    margin: 1.5rem;
+    height: 20%;
     width: 17.5%;
     background-color: #e31c58;
     color: white;
@@ -148,11 +148,29 @@ p {
     color: white;
 }
 
+.lower > h6 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+}
+
+.lower > p {
+    padding: 1rem;
+    margin-left: 0.7rem;
+    text-wrap: balance;
+    color: #5B6E84;
+    text-align: left;
+}
+
 .others {
     background-color: #F8F7FC;
     align-items: center;
     margin-bottom: -1rem;
     text-align: center;
+}
+
+.others > p {
+    margin-bottom: 1rem;
 }
 
 .other-titles {
@@ -196,10 +214,6 @@ footer {
     font-size: 0.8rem;
 }
 
-.lower > h6 {
-    margin-top: -1rem;
-}
-
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) { /*Confirmar max value */
     
@@ -239,7 +253,11 @@ footer {
     .card {
         flex-basis: calc(18% - 10px);
         justify-content: center;
-        height: 250px;
+        height: 330px;
+    }
+
+    .upper {
+        height: 13.5%;
     }
 
     .others {
@@ -279,6 +297,14 @@ footer {
     .card {
         flex-basis: calc(18% - 10px);
         justify-content: center;
+    }
+
+    .card:hover > a > .upper {
+        width: 100%;
+        height: 23.5%;
+        margin: 0;
+        margin-bottom: 1rem;
+        border-radius: 10px 10px 0 0;
     }
 
     .others {
