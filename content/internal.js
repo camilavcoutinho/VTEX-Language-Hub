@@ -1,33 +1,33 @@
 let hamburger = document.querySelector(".hamburger");
-	hamburger.addEventListener("click", function(){
-		document.querySelector("body").classList.toggle("active");
-	})
+hamburger.addEventListener("click", function () {
+	document.querySelector("body").classList.toggle("active");
+})
 
 function handleInternal() {
 	var currentUrl = window.location.href;
-    if (currentUrl.includes("styleGuides")) {
-        document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
+	if (currentUrl.includes("styleGuides")) {
+		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
-    }
-    else if (currentUrl.includes("glossaries")) {
-        document.getElementById("main-frame").src = ""; //temporary link
+	}
+	else if (currentUrl.includes("glossaries")) {
+		document.getElementById("main-frame").src = ""; //temporary link
 		// expandItem("glossaries");
-    }
-    else if (currentUrl.includes("reviewLogs")) {
-        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
+	}
+	else if (currentUrl.includes("reviewLogs")) {
+		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
 		expandItem("reviewLogs");
-    }
-    else if (currentUrl.includes("translationMemories")) {
-        document.getElementById("main-frame").src = ""; //temporary link
+	}
+	else if (currentUrl.includes("translationMemories")) {
+		document.getElementById("main-frame").src = ""; //temporary link
 		expandItem("translationMemories");
-    }
+	}
 }
 handleInternal(); //Calling function as soon as the internal page is loaded so it is populated with the correspondent card content.
 
 function expandItem(id) {
 	if (id == "styleGuides") {
 		expandStyleGuides();
-		  }
+	}
 	else if (id == "reviewLogs") {
 		expandReviewLogs();
 	}
@@ -46,7 +46,7 @@ function expandStyleGuides() {
 	if (list) {
 		item.removeChild(list);
 		button.textContent = "expand_more";
-		}
+	}
 	else {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
@@ -64,12 +64,12 @@ function expandStyleGuides() {
 		listItem6.innerText = "PT Marketing";
 
 		let items = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6]
-		
+
 		items.forEach(item => {
 			item.style.fontWeight = "regular";
 			list.appendChild(item);
 		})
-		
+
 		item.appendChild(list);
 	}
 }
@@ -81,7 +81,7 @@ function expandReviewLogs() {
 	if (list) {
 		item.removeChild(list);
 		button.textContent = "expand_more"
-		}
+	}
 	else {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
@@ -104,7 +104,7 @@ function expandGlossaries() {
 	if (list) {
 		item.removeChild(list);
 		button.textContent = "expand_more";
-		}
+	}
 	else {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
@@ -127,7 +127,7 @@ function expandTranslationMemories() {
 	if (list) {
 		item.removeChild(list);
 		button.textContent = "expand_more";
-		}
+	}
 	else {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");

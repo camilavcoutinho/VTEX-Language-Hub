@@ -4,16 +4,16 @@
 @font-face {
     font-family: "VTEXTrust Bold";
     src: url(./fonts/VTEXTrust-Bold.otf);
- }
-
- @font-face {
-    font-family: "VTEXTrust Italic";
-    src: url(./fonts/VTEXTrust-Italic.otf);
- }
+}
 
 @font-face {
-   font-family: "VTEXTrust Regular";
-   src: url(./fonts/VTEXTrust-Regular.otf);
+    font-family: "VTEXTrust Italic";
+    src: url(./fonts/VTEXTrust-Italic.otf);
+}
+
+@font-face {
+    font-family: "VTEXTrust Regular";
+    src: url(./fonts/VTEXTrust-Regular.otf);
 }
 
 *,
@@ -41,7 +41,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: var(--ff-regular);
@@ -51,7 +51,8 @@ body {
     background-repeat: no-repeat;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
     cursor: pointer;
 }
@@ -60,7 +61,7 @@ a, a:visited {
     background-image: url(assets/herobg.svg);
     height: 100%;
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: -1rem;
 }
@@ -72,14 +73,20 @@ a, a:visited {
     height: 100px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: var(--col-regular);
 }
 
-.lower > h6 {
+.lower>h6 {
     padding: 0.7rem;
     color: #e31c58;
-    font-size: var(--fs-300);  
+    font-size: var(--fs-300);
 }
 
 h4 {
@@ -136,7 +143,7 @@ p {
     transition: all 0.3s ease;
 }
 
-.card:hover > a > .upper {
+.card:hover>a>.upper {
     width: 100%;
     height: 32%;
     margin: 0;
@@ -148,13 +155,13 @@ p {
     color: white;
 }
 
-.lower > h6 {
+.lower>h6 {
     text-align: left;
     margin-left: 1rem;
     margin-top: -0.5rem;
 }
 
-.lower > p {
+.lower>p {
     padding: 1rem;
     margin-left: 0.7rem;
     text-wrap: balance;
@@ -169,7 +176,7 @@ p {
     text-align: center;
 }
 
-.others > p {
+.others>p {
     margin-bottom: 1rem;
 }
 
@@ -186,10 +193,9 @@ p {
     background-color: #E7E9EE;
 }
 
-.others-upper > span,
-.lower > h6,
-.backTop > a
- {
+.others-upper>span,
+.lower>h6,
+.backTop>a {
     color: #000;
 }
 
@@ -215,8 +221,9 @@ footer {
 }
 
 /* Tablet and medium size screens */
-@media only screen and (min-width: 615px) and (max-width: 1279px) { /*Confirmar max value */
-    
+@media only screen and (min-width: 615px) and (max-width: 1279px) {
+    /*Confirmar max value */
+
     h4 {
         font-size: 2.5rem;
         text-align: left;
@@ -233,7 +240,7 @@ footer {
         width: 100%;
     }
 
-    .other-cards > .card {
+    .other-cards>.card {
         width: 30%;
     }
 
@@ -311,7 +318,7 @@ footer {
         justify-content: center;
     }
 
-    .card:hover > a > .upper {
+    .card:hover>a>.upper {
         width: 100%;
         height: 23.5%;
         margin: 0;
