@@ -71,11 +71,11 @@ body {
 	position: relative;
 }
 
-.wrapper .sidebar ul li a:hover,
+/* .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active {
 	color: var(--bg-5);
 	font-family: var(--ff-bold);
-}
+} */
 
 .wrapper .section {
 	width: calc(100% - 14rem);
@@ -124,3 +124,30 @@ iframe {
 	height: 100vh;
 	border: none;
 }
+
+p {
+	font-weight: bold;
+}
+
+#styleGuides > ul > li,
+#reviewLogs > ul > li,
+#glossaries > ul > li,
+#translationMemories > ul > li {
+	margin-left: 1.5rem;
+	padding: 0.3rem;
+}
+
+#styleGuides > ul > li:hover,
+#reviewLogs > ul > li:hover,
+#glossaries > ul > li:hover,
+#translationMemories > ul > li:hover {
+	color: var(--bg-5);
+}
+
+/* Tentando fazer com que somente as linhas principais do menu tenham hover, sem afetar seus submenus:
+#styleGuides:not(:has(*)):hover,
+#reviewLogs:not(:has(*)):hover,
+#glossaries:not(:has(*)):hover,
+#translationMemories:not(:has(*)):hover {
+  color: var(--bg-5);
+} */

@@ -10,15 +10,15 @@ function handleInternal() {
 		expandItem("styleGuides");
     }
     else if (currentUrl.includes("glossaries")) {
-        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
-		expandItem("glossaries");
+        document.getElementById("main-frame").src = ""; //temporary link
+		// expandItem("glossaries");
     }
     else if (currentUrl.includes("reviewLogs")) {
-        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
+        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
 		expandItem("reviewLogs");
     }
     else if (currentUrl.includes("translationMemories")) {
-        document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html"; //temporary link
+        document.getElementById("main-frame").src = ""; //temporary link
 		expandItem("translationMemories");
     }
 }
@@ -51,21 +51,22 @@ function expandStyleGuides() {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
-		listItem1.innerText = "Item 1";
+		listItem1.innerText = "EN Localization";
 		let listItem2 = document.createElement("li");
-		listItem2.innerText = "Item 2";
+		listItem2.innerText = "ES Localization";
 		let listItem3 = document.createElement("li");
-		listItem3.innerText = "Item 3";
+		listItem3.innerText = "PT Localization";
 		let listItem4 = document.createElement("li");
-		listItem4.innerText = "Item 4";
+		listItem4.innerText = "EN Marketing";
 		let listItem5 = document.createElement("li");
-		listItem5.innerText = "Item 5";
+		listItem5.innerText = "ES Marketing";
 		let listItem6 = document.createElement("li");
-		listItem6.innerText = "Item 6";
+		listItem6.innerText = "PT Marketing";
 
 		let items = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6]
 		
 		items.forEach(item => {
+			item.style.fontWeight = "regular";
 			list.appendChild(item);
 		})
 		
@@ -85,11 +86,11 @@ function expandReviewLogs() {
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 		let listItem1 = document.createElement("li");
-		listItem1.innerText = "Item 1";
+		listItem1.innerText = "EN Admin Standardization";
 		let listItem2 = document.createElement("li");
-		listItem2.innerText = "Item 2";
+		listItem2.innerText = "ES Admin Standardization";
 		let listItem3 = document.createElement("li");
-		listItem3.innerText = "Item 3";
+		listItem3.innerText = "PT Admin Standardization";
 		list.appendChild(listItem1);
 		list.appendChild(listItem2);
 		list.appendChild(listItem3);
