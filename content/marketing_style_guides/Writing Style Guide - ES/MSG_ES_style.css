@@ -39,7 +39,6 @@ h2, h3, h4, h5 {
 }
 
 p {
-    /* text-indent: 3rem; */
     text-align: justify;
 }
 
@@ -75,10 +74,6 @@ p {
     vertical-align: super;
 }
 
-.text-right {
-    text-align: right;
-}
-
 .text-center {
     text-align: center;
 }
@@ -103,66 +98,3 @@ table {
     border: 1px solid var(--bg-4);
     font-size: 0.85rem;
 }
-
-.c10{
-    font-weight:700;
-}
-.c13{
-    vertical-align:super;
-    font-style:italic
-}
-.c6{
-    color:#f71963;
-    font-weight:700;
-}
-.c8{
-    font-style:italic
-}
-.c61{
-    text-align:center
-}
-.c77{
-    text-align:right
-}
-.c11{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    color:#1155cc;
-    text-decoration:underline
-}
-.c33{
-    text-align:center
-}
-.c15{
-    border-spacing:0;
-    border-collapse:collapse;
-    margin-right:auto
-}
-.c23{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    color:#1155cc;
-    text-decoration:underline
-}
-.c71{
-    margin-left:auto;
-    border-spacing:0;
-    border-collapse:collapse;
-    margin-right:auto
-}
-.c63{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    text-decoration:underline
-}
-.c65{
-    vertical-align:super
-}
-.c18{
-    font-weight:700
-}
-.c43{
-    color:#ff0000
-}
-
-/* c0, c1, c2, c3, c4, c5, c7, c9, c12, c14, c16, c17, c19, c20, c21, c22, c24, c25, c26, c27, c28, c29, c30, c31, c32, c34, c35, c36, c37, c38, c39, c40, c41, c42, c44, c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c55, c56, c57, c58, c59, c60, c62, c64, c66, c67, c68, c69, c70, c72, c73, c74, c75, c76, c78 <span> */
