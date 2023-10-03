@@ -74,10 +74,6 @@ p {
     vertical-align: super;
 }
 
-.text-right {
-    text-align: right;
-}
-
 .text-center {
     text-align: center;
 }
@@ -102,50 +98,3 @@ table {
     border: 1px solid var(--bg-4);
     font-size: 0.85rem;
 }
-
-.c60{
-    text-decoration:underline;
-}
-.c67{
-    text-align:right
-}
-.c71{
-    text-align:right
-}
-.c27{
-    text-align:center
-}
-.c74{
-    border-spacing:0;
-    border-collapse:collapse;
-    margin-right:auto
-}
-.c23{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    color:#0000ee;
-    text-decoration:underline
-}
-.c47{
-    margin-left:auto;
-    border-spacing:0;
-    border-collapse:collapse;
-    margin-right:auto
-}
-.c75{
-    margin-left:42.8pt;
-    border-spacing:0;
-    border-collapse:collapse;
-    margin-right:auto
-}
-.c52{
-    text-align:center
-}
-.c30{
-    text-decoration-skip-ink:none;
-    -webkit-text-decoration-skip:none;
-    color:#1155cc;
-    text-decoration:underline
-}
-
-/* c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c24, c25, c26, c28, c29, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, c42, c43, c44, c45, c46, c48, c49, c50, c51, c53, c54, c55, c56, c57, c58, c59, c61, c62, c63, c64, c65, c66, c68, c69, c70, c72, c73 */
