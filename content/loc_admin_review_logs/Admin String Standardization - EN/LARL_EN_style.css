@@ -7,7 +7,8 @@
     --bg-1: #F8F7FC;
     --bg-2: #1155CC;
     --bg-3: #F71963;
-    --bg-4: #5E6E84; 
+    --bg-4: #5E6E84;
+    --bg-5: #A1AAB7;
     --ff-regular: "VTEXTrust Regular";
 }
 
@@ -21,6 +22,8 @@
 
 body {
 	background: var(--bg-1);
+    padding: 2rem;
+    line-height: 1.6;
 }
 
 h1 {
@@ -38,26 +41,30 @@ h3 {
 }
 
 .text-link {
-    text-decoration-skip-ink: none;
-    -webkit-text-decoration-skip: none;
     color: var(--bg-2);
     text-decoration: underline;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0.2rem;
+}
+
 .doc-content {
-    padding: 6rem;
-    line-height: 1.5;
+    padding: 0 1rem;
+    grid-area: 1 / 1 / span 5 / span 1;
 }
 
 .intro-content {
     padding: 1rem 0rem;
 }
 
-.italic-font{
+.italic-font {
     font-style: italic;
 }
 
-.bold-font {
+.bold-text {
     font-weight: bolder;
 }
 
@@ -77,23 +84,43 @@ table {
     font-size: 0.85rem;
 }
 
-.column-one {
-    width: 10.5rem;
-}
-
-.column-two {
-    width: 4.3rem;
-}
-
-.column-three {
-    width: 23rem;
-}
-
 li {
     font-size: 0.9rem;
 }
 
 .bullet {
     margin-left: 3rem;
-    line-height: 1.6;
+}
+
+aside {
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+.aside-content {
+    grid-area: 1 / 2 / span 1 / span 1;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--bg-5);
+    line-height: 1.7;
+}
+
+.content {
+    font-size: 0.9rem;
+    font-weight: bold;   
+}
+
+.aside-list {
+    padding-left: 1rem;
+    border-left: 1px solid var(--bg-5);
+    list-style: none;
+}
+
+.aside-item {
+    color: var(--bg-5);
+}
+
+.aside-list a:hover {
+	color: var(--bg-3);
 }

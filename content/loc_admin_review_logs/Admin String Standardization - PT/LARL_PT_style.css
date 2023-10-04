@@ -7,6 +7,7 @@
     --bg-1: #F8F7FC;
     --bg-2: #1155CC;
     --bg-3: #F71963;
+    --bg-4: #A1AAB7;
     --ff-regular: "VTEXTrust Regular";
 }
 
@@ -20,6 +21,8 @@
 
 body {
     background: var(--bg-1);
+    padding: 2rem;
+    line-height: 1.6;
     text-align: justify;
 }
 
@@ -39,7 +42,6 @@ h3 {
 
 p {
     text-indent: 3rem;
-    text-align: justify;
 }
 
 .text-link {
@@ -47,13 +49,19 @@ p {
     text-decoration: underline;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0.2rem;
+}
+
 .doc-content {
-    padding: 6rem;
-    line-height: 1.5;
+    padding: 0 1rem;
+    grid-area: 1 / 1 / span 5 / span 1;
 }
 
 .intro-content {
-    padding: 1rem 0rem 0.5rem;
+    padding: 1rem 0rem;
 }
 
 .bold-text {
@@ -65,11 +73,48 @@ p {
 }
 
 li {
-    margin-left:3rem;    
+    margin-left:3rem;
     font-size: 0.9rem;
     
 }
 
-.bullet {
-    line-height: 1.6;
+aside {
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+.aside-content {
+    grid-area: 1 / 2 / span 1 / span 1;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--bg-4);
+    line-height: 1.7;
+}
+
+.content {
+    font-size: 0.9rem;
+    font-weight: bold;   
+}
+
+.aside-list {
+    padding-left: 1rem;
+    border-left: 1px solid var(--bg-4);
+    list-style: none;
+}
+
+.aside-list > li {
+    margin-left: 0;
+}
+
+nav > p {
+    text-indent: 0;
+}
+
+.aside-item {
+    color: var(--bg-4);    
+}
+
+.aside-list a:hover {
+	color: var(--bg-3);
 }
