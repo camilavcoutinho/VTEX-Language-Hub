@@ -55,7 +55,8 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 15%;
+	/* width: 15%; */
+	width: 20ch;
 	height: 100%;
 	padding: 1rem 0;
 	transition: all 0.5s ease;
@@ -82,8 +83,10 @@ body {
 } */
 
 .wrapper .section {
-	width: calc(100% - 14rem);
-	margin-left: 14rem;
+	/* width: calc(100% - 14rem); */
+	width: calc(100% - 20ch);
+	/* margin-left: 14rem; */
+	margin-left: 20ch;
 	transition: all 0.5s ease;
 }
 
@@ -119,7 +122,8 @@ body.active .wrapper .main-doc {
 }
 
 .main-doc {
-	margin-left: 15%;
+	/* margin-left: 15%; */
+	margin-left: 20ch;
 	transition: all 0.5s ease;
 }
 
