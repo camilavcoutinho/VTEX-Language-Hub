@@ -1,16 +1,36 @@
 header {
-    height: 40vh;
-    background-color: #fff;
+    height: 33vh;
+    background-color: #E7E9EE;
 }
 
 .cards {
-    background-color: #FFF;
+    background-color: #F8F7FC;
+    margin-top: 5rem;
 }
 
 .sidebar > ul > li > a > p > .material-symbols-outlined {
     color: black;
 }
 
-h1, h6 {
-    padding: 1rem;
+h1 {
+    font-size: 4rem;
+    padding-top: 4.5rem;
+    padding-left: 3rem;
+    position: relative;
 }
+
+h6 {
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 1;
+    left: 3;
+    width: 22.5%;
+    height: 5px;
+    background-color: #e31c58;
+  }
