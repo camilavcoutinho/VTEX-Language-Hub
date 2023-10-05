@@ -39,7 +39,7 @@ body {
     grid-area: 1 / 1 / span 5 / span 1;
 }
 
-.update-info{
+.update-info {
     color: var(--bg-4);
     text-align: right;
     font-size: 0.8rem;
