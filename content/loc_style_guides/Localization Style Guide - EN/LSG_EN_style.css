@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--ff-regular), sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -89,6 +90,10 @@ li {
     font-size: 0.9rem;
 }
 
+.no-bullet {
+    list-style: none;
+}
+
 table {
     border-spacing: 0;
     border-collapse: collapse;
@@ -121,7 +126,8 @@ aside {
 
 .content {
     font-size: 0.9rem;
-    font-weight: bold;   
+    font-weight: bold;
+    padding: 0 0 0.5rem 1rem;
 }
 
 .aside-list {
@@ -140,8 +146,10 @@ nav > p {
     text-indent: 0;
 }
 
-.aside-item {
-    color: var(--bg-5);    
+.aside-item-1, 
+.aside-item-2, 
+.aside-item-3 {
+    color: var(--bg-5);
 }
 
 .aside-subitem {
