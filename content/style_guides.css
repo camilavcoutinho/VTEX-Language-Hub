@@ -1,0 +1,16 @@
+header {
+    height: 40vh;
+    background-color: #fff;
+}
+
+.cards {
+    background-color: #FFF;
+}
+
+.sidebar > ul > li > a > p > .material-symbols-outlined {
+    color: black;
+}
+
+h1, h6 {
+    padding: 1rem;
+}
