@@ -6,317 +6,517 @@
   <link rel="stylesheet" href="LSG_PT_style.css">
   <title>VTEX Localization Style Guide PORTUGUESE</title>
 </head>
-<body class="doc-content">
-  <div>
-    <p><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 151.50px; height: 116.41px;"><img alt="image2" src="images/image2.png" style="width: 151.50px; height: 116.41px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 136.76px; height: 69.50px;"><img alt="image1" src="images/image1.png" style="width: 136.76px; height: 69.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+
+<body id="introduction">
+  <div class="wrapper">
+    <div class="doc-content">
+      <h1>VTEX Localization Style Guide<br>PORTUGUESE</h1>
+      <p class="update-info italic-text">Created by: Yuli Monarin</p>
+      <p class="update-info italic-text">Updated by: Yuli Monarin</p>
+      <p class="update-info italic-text">Last updated: July 7, 2023</p>
+
+      <h2 id="localization-areas">Localization areas</h2>
+      <p class="bold-text">Product Localization</p>
+      <ul>
+        <li>Admin UI, apps</li>
+      </ul>
+      <p class="bold-text">Product Marketing</p>
+      <ul>
+        <li>Communication about launches and pop-ups inside the Admin</li>
+      </ul>
+      <p class="bold-text">Education</p>
+      <ul>
+        <li>Articles for the Help Center</li>
+      </ul>
+      <p class="bold-text">Legal</p>
+      <ul>
+        <li>Contracts, addendums</li>
+      </ul>
+      
+      <h2 id="voice">Voice</h2>
+      <p><span class="bold-text">Serious, not playful</span> — avoid jokes and puns, ambiguity, be straightforward.</p>
+      <p><span class="bold-text">Exclusive, not arrogant</span>&nbsp;— a plus of sophistication, but the choice of words should be simple and clear.</p>
+      <p><span class="bold-text">Authority</span>, not arbitrary.</p>
+      <p><span class="bold-text">Young</span>, not naive — fresh and pleasant content.</p>
+      <p><span class="bold-text">Rebel</span>, not inconsequential.</p>
+      
+      <h2 id="tone">Tone</h2>
+      <p>The tone of voice will be guided by the source content:</p>
+      <p><span class="bold-text">Interviews</span>:&nbsp;The tone is set by the person that is being interviewed, adaptation will be only done to clarify where the source is missing clarity.</p>
+      <p><span class="bold-text">Corporate (Finance, PR)</span>:&nbsp;Serious and precise, little room for target adaption except when it makes it easier to understand the content (shorter sentences or topic changes that do not affect the source meaning).</p>
+      <p><span class="bold-text">Marketing (Blog posts)</span>:&nbsp;Concise and crisp, clear and on point, fresh and less formal than the Corporate or Interview texts.</p>
+      
+      <h2 id="translation-goals">Translation goals</h2>
+      <p><span class="bold-text">Clarity:</span> Content free from any ambiguities. Straightforwardness helps readers have a better understanding of the message.</p>
+      <p><span class="bold-text">Suitability:</span> The text must match the audience, the channel and has to be focused on what is appropriate for each instance.</p>
+      <p><span class="bold-text">Precision:</span> Do not alter the source meaning, even when less formal texts might leave room for adaptation.</p>
+      
+      <h2 id="general-guidelines">General guidelines</h2>
+      <p>The general style should be <span class="bold-text">clear, friendly, concise</span>.</p>
+      <p>Keep the following guidelines in mind:</p>
+      <ul>
+        <li><span class="bold-text">Avoid passive voice:</span>&nbsp;It’s difficult to read and understand quickly. It applies especially to Education texts. For Marketing and Legal texts, you can follow the source.</li>
+        <li><span class="bold-text">Feel free to choose words that aren’t standard translations</span>&nbsp;if you think that’s the best way to stay true to the intent of the source text.</li>
+        <li><span class="bold-text">Consider the intent of the text</span>&nbsp;to convey the message, even if you take the liberty to slightly modify the structure of the sentence. If needed, rewrite as if you were writing the content yourself.</li>
+        <li><span class="bold-text">Write short, easy-to-read sentences:</span>&nbsp;Use simple words used in everyday conversations, but still appropriate for ecommerce users. Difficult words and elaborate constructions hinder communication and make the text sound pedantic.</li>
+      </ul>
+      <ul>
+        <li>Shorter words are less formal, and they save space.</li>
+      </ul>
+      <ul>
+        <li class="bold-text">Feel free to break up long sentences into shorter ones.</li>
+      </ul>
+      <ul>
+        <li>Shorter sentences/phrases are easier to read and more concise.</li>
+      </ul>
+      <ul>
+        <li><span class="bold-text">Avoid redundancy:</span> Repeating the same information unnecessarily can affect the understanding of the text instead of making it easier.</li>
+      </ul>
+      <p class="bold-text">Language specifics</p>
+      
+      <h3 id="capitalization">Capitalization</h3>
+      <p>When translating texts to Portuguese, Portuguese capitalization standards must be followed. So use sentence case: <span class="bold-text">keep the first letter of the first word of the sentence capitalized and then the rest of the words should be in lower case</span>&nbsp;— unless there is a proper noun or a name/section that should start in upper case in the middle of the sentence.</p>
+
+      <h4 id="ui-and-titles">UI and Titles</h4>
+      <p>The section above applies to the VTEX Admin labels (UI) and titles as well.</p>
+      <p>incorrect: Detalhes do Produto</p>
+      <p>Correct: Detalhes do produto</p>
+      
+      <h4 id="days-of-the-week-and-months">Days of the week and Months</h4>
+      <p>Use lower case for months and days of the week, for example: segunda-feira, domingo, janeiro, outubro.</p>
+      
+      <h4 id="job-titles-and-professions">Job titles and Professions</h4>
+      <p>You should use uppercase for job titles and lower case for career fields and professions, for example: engenheiro, engenharia, Diretor de Engenharia.</p>
+      
+      <h4 id="regions-demonyms-and-nationalities">Regions, Demonyms and Nationalities</h4>
+      <p>Geographic regions should always be in upper case, whereas demonyms and nationalities are in lower case. Examples:&nbsp;Nordeste, América Latina, sudestino, brasileiro.</p>
+      
+      <h4 id="holidays">Holidays</h4>
+      <p>Holidays are usually capitalized, for example: Ano Novo, Natal, Dia do Trabalho, Sete de Setembro.</p>
+      
+      <h4 id="education">Education</h4>
+      <p>When mentioning a path to a specific UI in the Admin, use the capitalization as it is on the platform. The text must reflect what users see.</p>
+      <p>If you see common words capitalized in the middle of sentences when they do not need to or are not referring to a “path” the user must access on the platform, please consider using sentence case, as it can be an inconsistency in the source text. For example, this may happen with the term “Seller White Label”, which you can use as “seller white label”.</p>
+      
+      <h4 id="legal">Legal</h4>
+      <p>In legal documents, we follow the capitalization as it appears in the source text.</p>
+      
+      <h3 id="ui-localization">UI Localization</h3>
+      <p>Please be clear and objective. While English usually includes “please”, the best practice for Portuguese text in the UI is to just be right to the point.</p>
+      <p>Examples:</p>
+      <p>English: Please try again. | Portuguese: Tente novamente.</p>
+      <p>English: Would you like to continue? | Portuguese: Deseja continuar?</p>
+      <p>In Q3 2022, the Localization team revised the Admin user interface, specifically focusing on the localization of text strings. Throughout this process, we applied the guidelines outlined in this style guide to ensure consistency and coherence in the Admin text. In the process, we’ve standardized the UI text and compiled all relevant information into a document. Please refer to the <a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1HJisz6wcIrLJbS5i2noJPPlS0oUUq7Apk4syCpQ_AvI/edit%23&amp;sa=D&amp;source=editors&amp;ust=1692972267149434&amp;usg=AOvVaw2TOVqx7BTIBtRBuDTIF_5v">VTEX Admin string standardization in Portuguese</a>for more information.</p>
+      
+      <h3 id="english-words">English words</h3>
+      <p>In the technology and marketing industries, it’s common to use terms in English amongst a text in Portuguese, unless there’s a widely used alternative in Portuguese. So remember this and question words that you cannot easily find on Google results.</p>
+      <p>We usually do not italicize these words, unlikely in Spanish.</p>
+      <p>Examples: start-up, direct-to-consumer, composable, chatbot, on demand.</p>
+
+      <h3 id="numbers">Numbers</h3>
+      <p>In general, numbers from one to ten must be spelled out, unless there are numbers bigger than ten in the same sentence (to keep the format consistent). Exceptions: For titles and currencies, always use digits.</p>
+      <p>Avoid starting sentences with numbers. If that is the case, however, write the number in full. Exception: Titles can begin with numerals.</p>
+      <p>Thousand units must be written with a dot, while commas are used in decimals. Note that in English it is the opposite. &nbsp;Examples: in Portuguese, use 4.000 (not 4000 nor 4,000) and 1,2, not 1.2.</p>
+      <p>Always add a space between the number and its unit.</p>
+      <p>Note: While it is common to use “Nº”, “nº”, or “no.” as an abbreviation for <span class="bold-text">"number"</span>&nbsp;in Portuguese, <span class="bold-text">the correct and preferred abbreviation is "N.º"</span>&nbsp;(or “n.º” if it’s in the middle of the sentence), with the dot. Other possibilities of abbreviations accepted are “núm.” ou “n.”. When abbreviating "number" in Portuguese, it is essential to include the dot after the letter "N" to maintain accuracy and consistency. This follows the established typographical conventions in Portuguese writing.</p>
+      
+      <h3 id="percentage">Percentage</h3>
+      <p>The percent sign should always follow the number without any spaces between them. For example: 10%.</p>
+      
+      <h3 id="pronouns">Pronouns</h3>
+      <p>In English, it’s common to use personal pronouns repeatedly. Avoid doing this in Portuguese and replace them with articles or remove them.</p>
+      
+      <h3 id="punctuation">Punctuation</h3>
+      <p>Do not follow the source punctuation blindly. Keep what makes sense for a fluent text in Portuguese and adapt accordingly. Do not use punctuation in titles and&nbsp;subheadings.</p>
+      
+      <h4 id="exclamation-marks">Exclamation marks</h4>
+      <p>Avoid using exclamations marks in the text.</p>
+      
+      <h4 id="commas">Commas</h4>
+      <p>Do not use the oxford comma in Portuguese.</p>
+
+      <h4 id="colons">Colons</h4>
+      <p>Use lower case after colons.</p>
+      
+      <h4 id="slashes">Slashes</h4>
+      <p>In Portuguese, it is the standard practice to remove spaces before and after the forward slash (/). This rule applies when using the forward slash as a separator or in cases such as abbreviations. Example: Price/month, enviar p/alguém.</p>
+      <p>Incorrect: "Eu comprei um livro / revista na livraria."</p>
+      <p>Correct: "Eu comprei um livro/revista na livraria."</p>
+      
+      <h4 id="em-dashes">Em-dashes</h4>
+      <p>In English, it’s common to use em-dashes where we would simply use commas in Portuguese. So they do not always need to be kept in the target text.</p>
+      <p>If you opt to use it to emphasize a sentence or word, make sure you are using the correct “travessão”: — (Alt+0151) and add a space before and after it.</p>
+      
+      <h4 id="en-dashes">En-dashes</h4>
+      <p>It must be used to join the extreme values of a series, such as numbers, letters, or others. You can also use it to unite words that have a logical connection. The shortcut to use it is Alt+0150.</p>
+      <p>Examples: Rio–Niterói bridge, 1995–2004, A–Z.</p>
+      
+      <h4 id="hyphens">Hyphens</h4>
+      <p>Hyphens must only be used in compound words. If it is incorrectly used in the source text, please use it correctly in your translation. To use it, you can simply press the symbol on your keyboard.</p>
+      <p>Examples: pré-requisito, bem-sucedido, Covid-19.</p>
+      
+      <h4 id="quotation-marks">Quotation marks</h4>
+      <p>Both straight/curly quotation marks are acceptable. Choose one to use throughout the text and stick to it.</p>
+
+      <h4 id="quotation-marks-and-periods">Quotation marks and periods</h4>
+      <p>The period must be <span class="bold-text">placed before the quotation mark</span>&nbsp;when the quote starts and ends the sentence.</p>
+      <p>The period must be <span class="bold-text">placed after the quotation mark</span>&nbsp;when the quotation does not begin but ends the sentence.</p>
+      
+      <h4 id="lists">Lists</h4>
+      <p>Sometimes punctuation on lists differs according to the language. In Portuguese, there are three options for marking punctuation in lists: with periods, semicolons, or no punctuation mark.</p>
+      <p>For bulleted list items composed of full sentences, you should use a period at the end of the sentence. For bulleted list items not composed by full sentence, no punctuation is required.</p>
+      
+      <h3 id="consistency-in-lists">Consistency in lists</h3>
+      <p>Source texts may not always have consistent lists. It’s your job to guarantee the lists are consistent in translations.</p>
+      <p>If the list items start with verbs, the same verb format must be used for all items. The same applies to nouns. The important point is: their items’ form must be consistent.</p>
+      <p>Example: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Incorrect vs. Correct</p>
+      <p class="center-text"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 270.50px; height: 424.35px;"><img alt="image4" src="images/image4.png" style="width: 511.09px; height: 424.35px; margin-left: -240.59px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 242.84px; height: 422.50px;"><img alt="image3" src="images/image3.png" style="width: 459.12px; height: 427.25px; margin-left: -216.28px; margin-top: -4.75px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      
+      <h3 id="verb-form-in-titles">Verb form in titles</h3>
+      <p>Avoid using gerunds. Prefer the infinitive form, or change the verb to a noun.</p>
+      <p>For Education texts, it’s common to see the gerund in English and a “How to” in Portuguese.</p>
+      <p>Example:</p>
+      <p>English (source): “Implementing the strategy”</p>
+      <p>Portuguese: “Implementar a estratégia”, “Implementação da estratégia”, or “Como implementar a estratégia” (preferred for Education)</p>
+      
+      <h3 id="syntactic-parallelism">Syntactic parallelism</h3>
+      <p>The indirect object must always be linked to the verb by a preposition. This also applies to cases in which there is more than one direct object. Make sure your sentences are synthetically parallel.</p>
+      <p>Examples:</p>
+      <p>Incorrect:&nbsp;Esse cenário apresenta vantagens para o usuário, já que ele permite <span class="bold-text">explorar o catálogo, inventário e preços</span>&nbsp;com liberdade, conforme seu perfil de acesso.</p>
+      <p>Correct: Esse cenário apresenta vantagens para o usuário, já que ele permite <span class="bold-text">explorar o catálogo, o inventário e os preços</span>&nbsp;com liberdade, conforme seu perfil de acesso.</p>
+      <p>Incorrect: [...] problemas de negócio específicos <span class="bold-text">relacionados à usabilidade da loja, vendas e pós-vendas</span>.</p>
+      <p>Correct: (option 1) [...] problemas de negócio <span class="bold-text">relacionados a usabilidade da loja, vendas e pós-vendas</span>. (option 2) [...] problemas de negócio <span class="bold-text">relacionados à usabilidade da loja, às vendas e ao pós-vendas</span>.</p>
+      
+      <h3 id="hours">Hours</h3>
+      <p>For the 12-hour format, use the abbreviation in lowercase with dots. Add a space between the hour and the abbreviation. For the 24-hour format, use the hour unit (h) between the hour and the minutes, without spaces. Zeroed minutes are not required.</p>
+      <p>For indicating time zones, use the format (GMT) in front of the hour.</p>
+      <p>Examples: 6 p.m. (GMT-3), 10:30 a.m., 14h30, 16h</p>
+      
+      <h3 id="date-format">Date format</h3>
+      <p>Dates should be written as follows:</p>
+      <p>22 de outubro de 2021, or 22/10/21 (day, month, year)</p>
+      
+      <h3 id="currencies">Currencies</h3>
+      <p><span class="bold-text">For illustrative examples, as in Help Center:</span>&nbsp;You can localize the examples that are given in another currency other than reais. Check if the context allows it.</p>
+      <p><span class="bold-text">For precise data in general:</span> You can either use US$ for dollars (preferred) or only the number followed by “dólares”.</p>
+      <p>The abbreviation for real is R$. There must always be a space between the abbreviation and the number.</p>
+      <p><span class="bold-text">In Storefront or apps</span>&nbsp;used by other people (such as end customers, and pickers and couriers in Pick and Pack and Last Mile) than the Admin, use the standard R$.</p>
+      <p><span class="bold-text">In Admin labels (technical context)</span>, prefer the 3-letter ISO format: USD, BRL.</p>
+      
+      <h3 id="acronyms">Acronyms</h3>
+      <p>If you have an acronym and want to spell it out in the text, please write the spelled-out form followed by the acronym in parentheses.</p>
+      <p>Examples:</p>
+      <ol start="1">
+        <li>Regulamento Geral de Proteção de Dados (GDPR) na Europa e a Lei Geral de Proteção de Dados (LGPD) no Brasil</li>
+        <li>Direct-to-consumer (DTC)</li>
+      </ol>
+      <p>In the case of acronyms with more than 3 letters that can be read as a word, only the first letter is capitalized. For example, you should write <span class="bold-text">Covid-19, Unesco, Aids</span>. When it's an acronym that requires reading letter by letter, capitalize all the letters, as in <span class="bold-text">FGTS</span>.</p>
+      
+      <h3 id="job-titles">Job titles</h3>
+      <p>Job&nbsp;titles, especially internal, are kept in English if they are an acronym or noun and adjective. If they include the preposition “of” or “at,” the preposition is translated.</p>
+      <p>If the job title is widely used in Portuguese, you may consider translating it but keeping the team name/area (if any) in English.</p>
+      <p>Examples: Head de Sales, Customer Success Manager, Diretor de Marketing</p>
+      
+      <h3 id="team-names-and-departments">Team names and departments</h3>
+      <p>Internal team names and departments are not translated.</p>
+      <p>Examples: Customer Success, Growth, Product</p>
+      
+      <h3 id="sayings-and-expressions">Sayings and expressions</h3>
+      <p>In marketing texts, you may have to translate sayings, proverbs, or other typical expressions centered in the source language and that do not make sense if literally translated to Portuguese. In those cases, you should search for an equivalent that keeps the sentence’s intended meaning.</p>
+      <p>Examples:</p>
+      <p>English: “Early shoppers get the worms”</p>
+      <p>Portuguese: “Deus ajuda os compradores que cedo madrugam”</p>
+      <p>English: “Born omnichannel”</p>
+      <p>Portuguese: “Omnichannel de berço”</p>
+      <p>If you cannot find an equivalent, just translate and adapt the sentence, keeping the intended meaning in Portuguese.</p>
+      
+      <h3 id="gender">Gender</h3>
+      <p>When translating from English, the gender of the word may not always be clear. If you are unsure which gender to choose when using articles, for example, you can search out TMs on Crowdin or ask a team member. Sometimes, people tend to use inconsistent articles/genders for the same word, so please avoid that.</p>
+      <p>Examples:</p>
+      <ul>
+        <li>Using “o dashboard” in some communications and then “a dashboard” in others. In this case, we should stick to one, which is “o dashboard” based on what the translated version would be (“painel”), even though we kept the noun in English.</li>
+        <li>The gender of the terms "URL" and "ID" is not a consensus within the language. However, at VTEX, we have made the decision to treat "URL" as feminine and refer to it as "a URL," and to treat "ID" as masculine and refer to it as "o ID."</li>
+      </ul>
+      
+      <h3 id="inclusive-writing">Inclusive writing</h3>
+      <p>As Portuguese is a gender-marked language, unlike English, avoid assuming the gender in situations in which you can be more gender-neutral.</p>
+      <p>Examples:</p>
+      <p>English: “The secretaries…”</p>
+      <p>Portuguese: Use “As pessoas que trabalham na secretaria…” instead of “As secretárias...”</p>
+      <p>English: “Welcome to…”</p>
+      <p>Portuguese: “Boas-vindas a…” or “Bem-vindo(a) a…” instead of “Bem-vindo a…”</p>
+      <p>Whenever referring to people with disabilities, you should always use: "pessoa com deficiência".</p>
+      <p>For IBGE, black people correspond to the sum of "pretos" and "pardos". And the nomenclature that you should use is "pessoas negras", which encompass both forms.</p>
+      <p>See more information on inclusion <a class="text-link" href="https://www.google.com/url?q=https://www.notion.so/vtexhandbook/Term-of-the-week-085e731d4c364e3f91abeaab7141dc24&amp;sa=D&amp;source=editors&amp;ust=1692972267168827&amp;usg=AOvVaw2zOFroqNhpvd_XLa8HAk-3">here</a>.</p>
+      
+      <h3 id="non-localized-ui-in-education-texts">Non-localized UI in Education texts</h3>
+      <p>If by any chance, the UI mentioned in the article you are translating is not localized in the Admin, you should check with our Localization Engineers if they are localizable.&nbsp;If yes, open a task on JIRA requesting it. If not, write the UI in bilingual format in your translation. The bilingual format must be indicated with the word that appears currently in the Admin followed by the translation in parentheses. For example: Clique no botão “Add” (adicionar).</p>
+      
+      <h3 id="cep-vs-postal-code">CEP vs. Postal Code</h3>
+      <p>When localizing content for a broader audience, it is important to consider the regional differences in terminology. In Brazil, the term "CEP" (Código de Endereçamento Postal) is widely used to refer to the postal code system established by Correios, the national postal service. On the other hand, in Portugal and other Portuguese-speaking countries, the term "postal code" is more commonly used.</p>
+      <p>To provide a more localized experience and cater to the preferences of our primary customer base in Brazil, we usually opt to use "CEP" when translating and localizing content. This ensures that our platform aligns with the familiar terminology used by Brazilian users. However, when addressing a broader Portuguese-speaking audience, such as Portugal, and especially through our Checkout, we prioritize the use of "postal code" for better localization.</p>
+      <p>To address both scenarios for our clients' end customers, for Checkout, we have created separate folders in our localization management system, Crowdin, one for PT-BR and another one for PT-PT. In the "PT-BR" folder we used "CEP", while in the "PT-PT" folder we used "postal code".</p>
+      
+      <h3 id="product-names">Product Names</h3>
+      <p>In the past, product names were defined in collaboration with the Product Marketing team. However, they are no longer directly involved in naming decisions. The responsibility for product name localization now lies with the Localization team in collaboration with Product Managers, as well as Designers and Education. The Localization team ensures that product names are accurately translated and localized to resonate with the target audience.</p>
+      <p>If you're asking yourself if we should translate product names, the answer is not definitive: it depends. We consider several factors to make an informed decision, including brand consistency, linguistic and cultural adaptation, market familiarity, legal and trademark considerations, user experience and ease of understanding, marketing and advertising strategies, etc.</p>
+      <p>When localizing Admin module names, our general practice is to adapt them to the target language unless they contain highly technical terms that are better known in English, even among speakers of other languages. In such cases, we may retain the English module names to ensure clarity and ease of understanding for users. For app names, we tend to keep them in English.</p>
+      <p>If translated, the capitalization of product names will follow the standard conventions of each language. For example, in Portuguese (PT), product names will be written in sentence case, while in English (EN), they will be written in Title Case. If kept in English, the capitalization of product names will follow the English capitalization rules.</p>
+      <p>Examples:</p>
+      <p>English: Dashboards &gt; Sales Performance</p>
+      <p>Portuguese: Dashboards &gt; Performance de vendas</p>
+      <p>English: Promotion Simulator</p>
+      <p>Portuguese: Simulador de promoções</p>
+      <p>English: Extensions Hub</p>
+      <p>Portuguese: Hub de extensões</p>
+      <p>English: VTEX Pick and Pack</p>
+      <p>Portuguese: VTEX Pick and Pack</p>
+      <p>English: Intelligent Search &gt; Analytics</p>
+      <p>Portuguese: Intelligent Search &gt; Analytics</p>
+      
+      <h2 id="resources">Resources</h2>
+      
+      <h3 id="vtex-context">VTEX context</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://help.vtex.com/pt/&amp;sa=D&amp;source=editors&amp;ust=1692972267175214&amp;usg=AOvVaw1OsqyLwVOMmSaBJzbjsuFF">Help Center</a></p>
+      <p><span class="bold-text">Admin/Stores</span>: Different Admin versions are available. Please always confirm with the writer which store they used as a reference. Here are two main ones: <a class="text-link" href="https://www.google.com/url?q=https://cosmetics2.myvtex.com/admin&amp;sa=D&amp;source=editors&amp;ust=1692972267175870&amp;usg=AOvVaw0XzmQomvDB9gFmKuGsMOGj">cosmetics2</a>&nbsp;(Admin V3), <a class="text-link" href="https://www.google.com/url?q=https://storecomponents.myvtex.com/admin&amp;sa=D&amp;source=editors&amp;ust=1692972267176177&amp;usg=AOvVaw35DbH_ycU5MaLnPI9mBlyH">storecomponents</a>&nbsp;(Admin V4).</p>
+      
+      <h3 id="resources-ui-localization">UI Localization</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1HJisz6wcIrLJbS5i2noJPPlS0oUUq7Apk4syCpQ_AvI/edit%23&amp;sa=D&amp;source=editors&amp;ust=1692972267176857&amp;usg=AOvVaw2Jsy6fvu-AU5u0aJnLcA2t">VTEX Admin string standardization in Portuguese</a></p>
+      
+      <h3 id="vtex-portuguese-writing-style-guide">VTEX Portuguese Writing Style Guide</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1LQShcaU4DPgK_l7CxhoBvtgQ2baFHklJdiSmb5V2GDs/edit%23heading%3Dh.gjdgxs&amp;sa=D&amp;source=editors&amp;ust=1692972267177502&amp;usg=AOvVaw1XbusXnu1E8ReKJvVofJGR">Manual de estilo e redação</a>&nbsp;(maintained by Thalita Uba, in Content Enablement/Growth)</p>
+      
+      <h3 id="ux-writing-guidelines">UX Writing Guidelines</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://uxwriting.vtex.com/&amp;sa=D&amp;source=editors&amp;ust=1692972267178121&amp;usg=AOvVaw0fa2etRfSmCCSB6TbLED0b">https://uxwriting.vtex.com/</a>&nbsp;(applies mainly for EN UI, but some sections can be used for PT too).</p>
+      
+      <h3 id="terminology">Terminology</h3>
+      <p class="bold-text">Internal</p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1vSSg5CrimqSxvWjBoXLE5P7ATJCdRnPT/edit%23gid%3D1978438735&amp;sa=D&amp;source=editors&amp;ust=1692972267178852&amp;usg=AOvVaw0WQYrvbJcnYhoYrn8zJPZk">VTEX Glossary</a>&nbsp;(maintained by Localization)</p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://www.notion.so/vtexhandbook/Terminology-Base-and-Translation-Memories-e4dbc4024c4a4b749128adf7cf9d5872&amp;sa=D&amp;source=editors&amp;ust=1692972267179242&amp;usg=AOvVaw3Ny6m3HpAlNi5M4nAqE0rd">Crowdin Termbase</a></p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1WXX6VhEtxg95F4QIjK1U9QZty27iDFIo/edit%23gid%3D1441514859&amp;sa=D&amp;source=editors&amp;ust=1692972267179628&amp;usg=AOvVaw03tejV0S75mTtQ6lX-BjKl">Marketing glossary</a>&nbsp;(discontinued, the relevant terms were added to VTEX Glossary)</p>
+      <p class="bold-text">External</p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://msit.powerbi.com/view?r%3DeyJrIjoiODJmYjU4Y2YtM2M0ZC00YzYxLWE1YTktNzFjYmYxNTAxNjQ0IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&amp;sa=D&amp;source=editors&amp;ust=1692972267180160&amp;usg=AOvVaw06CxzktgTLLy5l3j14kTtu">Microsoft Terminology Search</a></p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://msit.powerbi.com/view?r%3DeyJrIjoiMmE2NjJhMDMtNTY3MC00MmI2LWFmOWUtYWM5YTVjODI5MjQwIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&amp;sa=D&amp;source=editors&amp;ust=1692972267180555&amp;usg=AOvVaw2u0Vhg54ppvCHvfgitrQCA">Microsoft UI String Search</a></p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://iate.europa.eu/search/result/1674574090984/1&amp;sa=D&amp;source=editors&amp;ust=1692972267180881&amp;usg=AOvVaw3urOH0tPziKjezoSN9jQHW">IATE - European Union terminology</a></p>
+      
+      <h3 id="content-marketing-localization">Content Marketing Localization</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1DBM2vP6Df3FweIvTix9Mj75NoMU0ZqMv7WV9MTotI2g/edit?usp%3Dsharing&amp;sa=D&amp;source=editors&amp;ust=1692972267181524&amp;usg=AOvVaw09mZY16uTYG0WR7uHDlmjB">Marketing Localization Guidelines</a></p>
+      
+      <h3 id="dictionaries">Dictionaries</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://aulete.com.br/&amp;sa=D&amp;source=editors&amp;ust=1692972267182011&amp;usg=AOvVaw2CQK-lHvrkZ7Q0Jfw7agq9">Aulete Digital</a></p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://michaelis.uol.com.br/&amp;sa=D&amp;source=editors&amp;ust=1692972267182336&amp;usg=AOvVaw0xUtuiw4bb90zKJHexagSu">Michaelis</a></p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://www.academia.org.br/nossa-lingua/busca-no-vocabulario&amp;sa=D&amp;source=editors&amp;ust=1692972267182652&amp;usg=AOvVaw3FDqOci7VYK6wIpCS5ZXoq">VOLP</a>&nbsp;(Vocabulário Ortográfico da Língua Portuguesa pela Academia Brasileira de Letras)</p>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://dicionario.priberam.org/&amp;sa=D&amp;source=editors&amp;ust=1692972267183251&amp;usg=AOvVaw3Ztwa4pHM1yYbrICByvrLg">Priberam</a>&nbsp;(focus on European Portuguese, but also has a part for Brazilian Portuguese)</p>
+      
+      <h3 id="grammar">Grammar</h3>
+      
+      <h4 id="books">Books</h4>
+      <p>CUNHA, Celso e CINTRA, Lindley. Nova Gramática do Português Contemporâneo. Rio de Janeiro: Editora Nova Fronteira.</p>
+      <p>Cartilha <a class="text-link" href="https://www.google.com/url?q=https://manoelneves.com/2016/02/04/cartilha-tem-hifen-da-editora-ftd/&amp;sa=D&amp;source=editors&amp;ust=1692972267184083&amp;usg=AOvVaw2xOJ32c47l3rNmj3IwIYMf">Tem hífen?</a></p>
+      
+      <h4 id="chrome-extension">Chrome extension</h4>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://languagetool.org/pt-BR&amp;sa=D&amp;source=editors&amp;ust=1692972267184594&amp;usg=AOvVaw2jTi0JbE-x-emAOTvYeJvh">LanguageTool</a>&nbsp;(Grammar and spell checker)</p>
+      
+      <h3 id="external-style-guides">External style guides</h3>
+      <p><a class="text-link" href="https://www.google.com/url?q=https://www.microsoft.com/en-us/language/styleguides&amp;sa=D&amp;source=editors&amp;ust=1692972267185328&amp;usg=AOvVaw0ZayIs8SGTxkdM2ZrlpCux">Microsoft</a></p>
+    </div>
+    <aside>
+      <nav class="aside-content">
+        <p class="content">CONTENT</p>
+        <ul class="aside-list">
+          <li class="selected">
+            <a class="aside-item-1" href="#introduction">Introduction</a>
+          </li>
+          <li class="selected">
+            <a class="aside-item-1" href="#localization-areas">Localization areas</a>
+          </li>
+          <li class="selected">
+            <a class="aside-item-1" href="#voice">Voice</a>
+          </li>
+          <li class="selected">
+            <a class="aside-item-1" href="#tone">Tone</a>
+          </li>
+          <li class="selected">
+            <a class="aside-item-1" href="#translation-goals">Translation goals</a>
+          </li>
+          <li class="selected">
+            <a class="aside-item-1" href="#general-guidelines">General guidelines</a>
+          </li>
+          <li class="false">
+            <ul class="aside-list aside-subitem">
+              <li class="false">
+                <a class="aside-item-2" href="#capitalization">Capitalization</a>
+              </li>
+              <li class="false">
+                <ul class="aside-list aside-subitem">
+                  <li class="false">
+                    <a class="aside-item-3" href="#ui-and-titles">UI and Titles</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#days-of-the-week-and-months">Days of the week and Months</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#job-titles-and-professions">Job titles and Professions</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#regions-demonyms-and-nationalities">Regions, Demonyms and Nationalities</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#holidays">Holidays</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#education">Education</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#legal">Legal</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#ui-localization">UI Localization</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#english-words">English words</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#numbers">Numbers</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#percentage">Percentage</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#pronouns">Pronouns</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#punctuation">Punctuation</a>
+              </li>
+              <li class="false">
+                <ul class="aside-list aside-subitem">
+                  <li class="false">
+                    <a class="aside-item-3" href="#exclamation-marks">Exclamation marks</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#commas">Commas</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#colons">Colons</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#slashes">Slashes</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#em-dashes">Em-dashes</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#en-dashes">En-dashes</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#hyphens">Hyphens</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#quotation-marks">Quotation marks</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#quotation-marks-and-periods">Quotation marks and periods</a>
+                  </li>
+                  <li class="false">
+                    <a class="aside-item-3" href="#lists">Lists</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#consistency-in-lists">Consistency in lists</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#verb-form-in-titles">Verb form in titles</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#syntactic-parallelism">Syntactic parallelism</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#hours">Hours</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#date-format">Date format</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#currencies">Currencies</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#acronyms">Acronyms</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#job-titles">Job titles</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#team-names-and-departments">Team names and departments</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#sayings-and-expressions">Sayings and expressions</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#gender">Gender</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#inclusive-writing">Inclusive writing</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#non-localized-ui-in-education-texts">Non-localized UI in Education texts</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#cep-vs-postal-code">CEP vs. Postal Code</a>
+              </li>
+              <li class="false">
+                <a class="aside-item-2" href="#product-names">Product Names</a>
+              </li>
+            </ul>
+            <li class="false">
+              <a class="aside-item-1" href="#resources">Resources</a>
+            </li>
+            <li class="false">
+              <ul class="aside-list aside-subitem">
+                <li class="false">
+                  <a class="aside-item-2" href="#vtex-context">VTEX context</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#resources-ui-Localization">UI Localization</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#vtex-portuguese-writing-style-guide">VTEX Portuguese Writing Style Guide</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#ux-writing-guidelines">UX Writing Guidelines</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#terminology">Terminology</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#content-marketing-localization">Content Marketing Localization</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#dictionaries">Dictionaries</a>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#grammar">Grammar</a>
+                </li>
+                <li class="false">
+                  <ul class="aside-list aside-subitem">
+                    <li class="false">
+                      <a class="aside-item-3" href="#books">Books</a>
+                    </li>
+                    <li class="false">
+                      <a class="aside-item-3" href="#chrome-extension">Chrome extension</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="false">
+                  <a class="aside-item-2" href="#external-style-guides">External style guides</a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+    </aside>
   </div>
-  <h1>VTEX Localization Style Guide<br>PORTUGUESE</h1>
-  <p class="update-info italic-text">Created by: Yuli Monarin</p>
-  <p class="update-info italic-text">Updated by: Yuli Monarin</p>
-  <p class="update-info italic-text">Last updated: July 7, 2023</p>
-
-  <h2>Localization areas</h2>
-  <p class="bold-text">Product Localization</p>
-  <ul>
-    <li>Admin UI, apps</li>
-  </ul>
-  <p class="bold-text">Product Marketing</p>
-  <ul>
-    <li>Communication about launches and pop-ups inside the Admin</li>
-  </ul>
-  <p class="bold-text">Education</p>
-  <ul>
-    <li>Articles for the Help Center</li>
-  </ul>
-  <p class="bold-text">Legal</p>
-  <ul>
-    <li>Contracts, addendums</li>
-  </ul>
-  
-  <h2>Voice</h2>
-  <p><span class="bold-text">Serious, not playful</span> — avoid jokes and puns, ambiguity, be straightforward.</p>
-  <p><span class="bold-text">Exclusive, not arrogant</span>&nbsp;— a plus of sophistication, but the choice of words should be simple and clear.</p>
-  <p><span class="bold-text">Authority</span>, not arbitrary.</p>
-  <p><span class="bold-text">Young</span>, not naive — fresh and pleasant content.</p>
-  <p><span class="bold-text">Rebel</span>, not inconsequential.</p>
-  
-  <h2>Tone</h2>
-  <p>The tone of voice will be guided by the source content:</p>
-  <p><span class="bold-text">Interviews</span>:&nbsp;The tone is set by the person that is being interviewed, adaptation will be only done to clarify where the source is missing clarity.</p>
-  <p><span class="bold-text">Corporate (Finance, PR)</span>:&nbsp;Serious and precise, little room for target adaption except when it makes it easier to understand the content (shorter sentences or topic changes that do not affect the source meaning).</p>
-  <p><span class="bold-text">Marketing (Blog posts)</span>:&nbsp;Concise and crisp, clear and on point, fresh and less formal than the Corporate or Interview texts.</p>
-  
-  <h2>Translation goals</h2>
-  <p><span class="bold-text">Clarity:</span> Content free from any ambiguities. Straightforwardness helps readers have a better understanding of the message.</p>
-  <p><span class="bold-text">Suitability:</span> The text must match the audience, the channel and has to be focused on what is appropriate for each instance.</p>
-  <p><span class="bold-text">Precision:</span> Do not alter the source meaning, even when less formal texts might leave room for adaptation.</p>
-  
-  <h2>General guidelines</h2>
-  <p>The general style should be <span class="bold-text">clear, friendly, concise</span>.</p>
-  <p>Keep the following guidelines in mind:</p>
-  <ul>
-    <li><span class="bold-text">Avoid passive voice:</span>&nbsp;It’s difficult to read and understand quickly. It applies especially to Education texts. For Marketing and Legal texts, you can follow the source.</li>
-    <li><span class="bold-text">Feel free to choose words that aren’t standard translations</span>&nbsp;if you think that’s the best way to stay true to the intent of the source text.</li>
-    <li><span class="bold-text">Consider the intent of the text</span>&nbsp;to convey the message, even if you take the liberty to slightly modify the structure of the sentence. If needed, rewrite as if you were writing the content yourself.</li>
-    <li><span class="bold-text">Write short, easy-to-read sentences:</span>&nbsp;Use simple words used in everyday conversations, but still appropriate for ecommerce users. Difficult words and elaborate constructions hinder communication and make the text sound pedantic.</li>
-  </ul>
-  <ul>
-    <li>Shorter words are less formal, and they save space.</li>
-  </ul>
-  <ul>
-    <li class="bold-text">Feel free to break up long sentences into shorter ones.</li>
-  </ul>
-  <ul>
-    <li>Shorter sentences/phrases are easier to read and more concise.</li>
-  </ul>
-  <ul>
-    <li><span class="bold-text">Avoid redundancy:</span> Repeating the same information unnecessarily can affect the understanding of the text instead of making it easier.</li>
-  </ul>
-  <p class="bold-text">Language specifics</p>
-  
-  <h3>Capitalization</h3>
-  <p>When translating texts to Portuguese, Portuguese capitalization standards must be followed. So use sentence case: <span class="bold-text">keep the first letter of the first word of the sentence capitalized and then the rest of the words should be in lower case</span>&nbsp;— unless there is a proper noun or a name/section that should start in upper case in the middle of the sentence.</p>
-
-  <h4>UI and Titles</h4>
-  <p>The section above applies to the VTEX Admin labels (UI) and titles as well.</p>
-  <p>incorrect: Detalhes do Produto</p>
-  <p>Correct: Detalhes do produto</p>
-  
-  <h4>Days of the week and Months</h4>
-  <p>Use lower case for months and days of the week, for example: segunda-feira, domingo, janeiro, outubro.</p>
-  
-  <h4>Job titles and Professions</h4>
-  <p>You should use uppercase for job titles and lower case for career fields and professions, for example: engenheiro, engenharia, Diretor de Engenharia.</p>
-  
-  <h4>Regions, Demonyms and Nationalities</h4>
-  <p>Geographic regions should always be in upper case, whereas demonyms and nationalities are in lower case. Examples:&nbsp;Nordeste, América Latina, sudestino, brasileiro.</p>
-  
-  <h4>Holidays</h4>
-  <p>Holidays are usually capitalized, for example: Ano Novo, Natal, Dia do Trabalho, Sete de Setembro.</p>
-  
-  <h4>Education</h4>
-  <p>When mentioning a path to a specific UI in the Admin, use the capitalization as it is on the platform. The text must reflect what users see.</p>
-  <p>If you see common words capitalized in the middle of sentences when they do not need to or are not referring to a “path” the user must access on the platform, please consider using sentence case, as it can be an inconsistency in the source text. For example, this may happen with the term “Seller White Label”, which you can use as “seller white label”.</p>
-  
-  <h4>Legal</h4>
-  <p>In legal documents, we follow the capitalization as it appears in the source text.</p>
-  
-  <h3>UI Localization</h3>
-  <p>Please be clear and objective. While English usually includes “please”, the best practice for Portuguese text in the UI is to just be right to the point.</p>
-  <p>Examples:</p>
-  <p>English: Please try again. | Portuguese: Tente novamente.</p>
-  <p>English: Would you like to continue? | Portuguese: Deseja continuar?</p>
-  <p>In Q3 2022, the Localization team revised the Admin user interface, specifically focusing on the localization of text strings. Throughout this process, we applied the guidelines outlined in this style guide to ensure consistency and coherence in the Admin text. In the process, we’ve standardized the UI text and compiled all relevant information into a document. Please refer to the <a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1HJisz6wcIrLJbS5i2noJPPlS0oUUq7Apk4syCpQ_AvI/edit%23&amp;sa=D&amp;source=editors&amp;ust=1692972267149434&amp;usg=AOvVaw2TOVqx7BTIBtRBuDTIF_5v">VTEX Admin string standardization in Portuguese</a>for more information.</p>
-  
-  <h3>English words</h3>
-  <p>In the technology and marketing industries, it’s common to use terms in English amongst a text in Portuguese, unless there’s a widely used alternative in Portuguese. So remember this and question words that you cannot easily find on Google results.</p>
-  <p>We usually do not italicize these words, unlikely in Spanish.</p>
-  <p>Examples: start-up, direct-to-consumer, composable, chatbot, on demand.</p>
-
-  <h3>Numbers</h3>
-  <p>In general, numbers from one to ten must be spelled out, unless there are numbers bigger than ten in the same sentence (to keep the format consistent). Exceptions: For titles and currencies, always use digits.</p>
-  <p>Avoid starting sentences with numbers. If that is the case, however, write the number in full. Exception: Titles can begin with numerals.</p>
-  <p>Thousand units must be written with a dot, while commas are used in decimals. Note that in English it is the opposite. &nbsp;Examples: in Portuguese, use 4.000 (not 4000 nor 4,000) and 1,2, not 1.2.</p>
-  <p>Always add a space between the number and its unit.</p>
-  <p>Note: While it is common to use “Nº”, “nº”, or “no.” as an abbreviation for <span class="bold-text">"number"</span>&nbsp;in Portuguese, <span class="bold-text">the correct and preferred abbreviation is "N.º"</span>&nbsp;(or “n.º” if it’s in the middle of the sentence), with the dot. Other possibilities of abbreviations accepted are “núm.” ou “n.”. When abbreviating "number" in Portuguese, it is essential to include the dot after the letter "N" to maintain accuracy and consistency. This follows the established typographical conventions in Portuguese writing.</p>
-  
-  <h3>Percentage</h3>
-  <p>The percent sign should always follow the number without any spaces between them. For example: 10%.</p>
-  
-  <h3>Pronouns</h3>
-  <p>In English, it’s common to use personal pronouns repeatedly. Avoid doing this in Portuguese and replace them with articles or remove them.</p>
-  
-  <h3>Punctuation</h3>
-  <p>Do not follow the source punctuation blindly. Keep what makes sense for a fluent text in Portuguese and adapt accordingly. Do not use punctuation in titles and&nbsp;subheadings.</p>
-  
-  <h4>Exclamation marks</h4>
-  <p>Avoid using exclamations marks in the text.</p>
-  
-  <h4>Commas</h4>
-  <p>Do not use the oxford comma in Portuguese.</p>
-
-  <h4>Colons</h4>
-  <p>Use lower case after colons.</p>
-  <p>Slashes</p>
-  <p>In Portuguese, it is the standard practice to remove spaces before and after the forward slash (/). This rule applies when using the forward slash as a separator or in cases such as abbreviations. Example: Price/month, enviar p/alguém.</p>
-  <p>Incorrect: "Eu comprei um livro / revista na livraria."</p>
-  <p>Correct: "Eu comprei um livro/revista na livraria."</p>
-  
-  <h4>Em-dashes</h4>
-  <p>In English, it’s common to use em-dashes where we would simply use commas in Portuguese. So they do not always need to be kept in the target text.</p>
-  <p>If you opt to use it to emphasize a sentence or word, make sure you are using the correct “travessão”: — (Alt+0151) and add a space before and after it.</p>
-  
-  <h4>En-dashes</h4>
-  <p>It must be used to join the extreme values of a series, such as numbers, letters, or others. You can also use it to unite words that have a logical connection. The shortcut to use it is Alt+0150.</p>
-  <p>Examples: Rio–Niterói bridge, 1995–2004, A–Z.</p>
-  
-  <h4>Hyphens</h4>
-  <p>Hyphens must only be used in compound words. If it is incorrectly used in the source text, please use it correctly in your translation. To use it, you can simply press the symbol on your keyboard.</p>
-  <p>Examples: pré-requisito, bem-sucedido, Covid-19.</p>
-  
-  <h4>Quotation marks</h4>
-  <p>Both straight/curly quotation marks are acceptable. Choose one to use throughout the text and stick to it.</p>
-
-  <h4>Quotation marks and periods</h4>
-  <p>The period must be <span class="bold-text">placed before the quotation mark</span>&nbsp;when the quote starts and ends the sentence.</p>
-  <p>The period must be <span class="bold-text">placed after the quotation mark</span>&nbsp;when the quotation does not begin but ends the sentence.</p>
-  
-  <h4>Lists</h4>
-  <p>Sometimes punctuation on lists differs according to the language. In Portuguese, there are three options for marking punctuation in lists: with periods, semicolons, or no punctuation mark.</p>
-  <p>For bulleted list items composed of full sentences, you should use a period at the end of the sentence. For bulleted list items not composed by full sentence, no punctuation is required.</p>
-  
-  <h3>Consistency in lists</h3>
-  <p>Source texts may not always have consistent lists. It’s your job to guarantee the lists are consistent in translations.</p>
-  <p>If the list items start with verbs, the same verb format must be used for all items. The same applies to nouns. The important point is: their items’ form must be consistent.</p>
-  <p>Example: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Incorrect vs. Correct</p>
-  <p class="center-text"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 270.50px; height: 424.35px;"><img alt="image4" src="images/image4.png" style="width: 511.09px; height: 424.35px; margin-left: -240.59px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 242.84px; height: 422.50px;"><img alt="image3" src="images/image3.png" style="width: 459.12px; height: 427.25px; margin-left: -216.28px; margin-top: -4.75px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-  
-  <h3>Verb form in titles</h3>
-  <p>Avoid using gerunds. Prefer the infinitive form, or change the verb to a noun.</p>
-  <p>For Education texts, it’s common to see the gerund in English and a “How to” in Portuguese.</p>
-  <p>Example:</p>
-  <p>English (source): “Implementing the strategy”</p>
-  <p>Portuguese: “Implementar a estratégia”, “Implementação da estratégia”, or “Como implementar a estratégia” (preferred for Education)</p>
-  
-  <h3>Syntactic parallelism</h3>
-  <p>The indirect object must always be linked to the verb by a preposition. This also applies to cases in which there is more than one direct object. Make sure your sentences are synthetically parallel.</p>
-  <p>Examples:</p>
-  <p>Incorrect:&nbsp;Esse cenário apresenta vantagens para o usuário, já que ele permite <span class="bold-text">explorar o catálogo, inventário e preços</span>&nbsp;com liberdade, conforme seu perfil de acesso.</p>
-  <p>Correct: Esse cenário apresenta vantagens para o usuário, já que ele permite <span class="bold-text">explorar o catálogo, o inventário e os preços</span>&nbsp;com liberdade, conforme seu perfil de acesso.</p>
-  <p>Incorrect: [...] problemas de negócio específicos <span class="bold-text">relacionados à usabilidade da loja, vendas e pós-vendas</span>.</p>
-  <p>Correct: (option 1) [...] problemas de negócio <span class="bold-text">relacionados a usabilidade da loja, vendas e pós-vendas</span>. (option 2) [...] problemas de negócio <span class="bold-text">relacionados à usabilidade da loja, às vendas e ao pós-vendas</span>.</p>
-  
-  <h3>Hours</h3>
-  <p>For the 12-hour format, use the abbreviation in lowercase with dots. Add a space between the hour and the abbreviation. For the 24-hour format, use the hour unit (h) between the hour and the minutes, without spaces. Zeroed minutes are not required.</p>
-  <p>For indicating time zones, use the format (GMT) in front of the hour.</p>
-  <p>Examples: 6 p.m. (GMT-3), 10:30 a.m., 14h30, 16h</p>
-  
-  <h3>Date format</h3>
-  <p>Dates should be written as follows:</p>
-  <p>22 de outubro de 2021, or 22/10/21 (day, month, year)</p>
-  
-  <h3>Currencies</h3>
-  <p><span class="bold-text">For illustrative examples, as in Help Center:</span>&nbsp;You can localize the examples that are given in another currency other than reais. Check if the context allows it.</p>
-  <p><span class="bold-text">For precise data in general:</span> You can either use US$ for dollars (preferred) or only the number followed by “dólares”.</p>
-  <p>The abbreviation for real is R$. There must always be a space between the abbreviation and the number.</p>
-  <p><span class="bold-text">In Storefront or apps</span>&nbsp;used by other people (such as end customers, and pickers and couriers in Pick and Pack and Last Mile) than the Admin, use the standard R$.</p>
-  <p><span class="bold-text">In Admin labels (technical context)</span>, prefer the 3-letter ISO format: USD, BRL.</p>
-  
-  <h3>Acronyms</h3>
-  <p>If you have an acronym and want to spell it out in the text, please write the spelled-out form followed by the acronym in parentheses.</p>
-  <p>Examples:</p>
-  <ol start="1">
-    <li>Regulamento Geral de Proteção de Dados (GDPR) na Europa e a Lei Geral de Proteção de Dados (LGPD) no Brasil</li>
-    <li>Direct-to-consumer (DTC)</li>
-  </ol>
-  <p>In the case of acronyms with more than 3 letters that can be read as a word, only the first letter is capitalized. For example, you should write <span class="bold-text">Covid-19, Unesco, Aids</span>. When it's an acronym that requires reading letter by letter, capitalize all the letters, as in <span class="bold-text">FGTS</span>.</p>
-  
-  <h3>Job titles</h3>
-  <p>Job&nbsp;titles, especially internal, are kept in English if they are an acronym or noun and adjective. If they include the preposition “of” or “at,” the preposition is translated.</p>
-  <p>If the job title is widely used in Portuguese, you may consider translating it but keeping the team name/area (if any) in English.</p>
-  <p>Examples: Head de Sales, Customer Success Manager, Diretor de Marketing</p>
-  
-  <h3>Team names and departments</h3>
-  <p>Internal team names and departments are not translated.</p>
-  <p>Examples: Customer Success, Growth, Product</p>
-  
-  <h3>Sayings and expressions</h3>
-  <p>In marketing texts, you may have to translate sayings, proverbs, or other typical expressions centered in the source language and that do not make sense if literally translated to Portuguese. In those cases, you should search for an equivalent that keeps the sentence’s intended meaning.</p>
-  <p>Examples:</p>
-  <p>English: “Early shoppers get the worms”</p>
-  <p>Portuguese: “Deus ajuda os compradores que cedo madrugam”</p>
-  <p>English: “Born omnichannel”</p>
-  <p>Portuguese: “Omnichannel de berço”</p>
-  <p>If you cannot find an equivalent, just translate and adapt the sentence, keeping the intended meaning in Portuguese.</p>
-  
-  <h3>Gender</h3>
-  <p>When translating from English, the gender of the word may not always be clear. If you are unsure which gender to choose when using articles, for example, you can search out TMs on Crowdin or ask a team member. Sometimes, people tend to use inconsistent articles/genders for the same word, so please avoid that.</p>
-  <p>Examples:</p>
-  <ul>
-    <li>Using “o dashboard” in some communications and then “a dashboard” in others. In this case, we should stick to one, which is “o dashboard” based on what the translated version would be (“painel”), even though we kept the noun in English.</li>
-    <li>The gender of the terms "URL" and "ID" is not a consensus within the language. However, at VTEX, we have made the decision to treat "URL" as feminine and refer to it as "a URL," and to treat "ID" as masculine and refer to it as "o ID."</li>
-  </ul>
-  
-  <h3>Inclusive writing</h3>
-  <p>As Portuguese is a gender-marked language, unlike English, avoid assuming the gender in situations in which you can be more gender-neutral.</p>
-  <p>Examples:</p>
-  <p>English: “The secretaries…”</p>
-  <p>Portuguese: Use “As pessoas que trabalham na secretaria…” instead of “As secretárias...”</p>
-  <p>English: “Welcome to…”</p>
-  <p>Portuguese: “Boas-vindas a…” or “Bem-vindo(a) a…” instead of “Bem-vindo a…”</p>
-  <p>Whenever referring to people with disabilities, you should always use: "pessoa com deficiência".</p>
-  <p>For IBGE, black people correspond to the sum of "pretos" and "pardos". And the nomenclature that you should use is "pessoas negras", which encompass both forms.</p>
-  <p>See more information on inclusion <a class="text-link" href="https://www.google.com/url?q=https://www.notion.so/vtexhandbook/Term-of-the-week-085e731d4c364e3f91abeaab7141dc24&amp;sa=D&amp;source=editors&amp;ust=1692972267168827&amp;usg=AOvVaw2zOFroqNhpvd_XLa8HAk-3">here</a>.</p>
-  
-  <h3>Non-localized UI in Education texts</h3>
-  <p>If by any chance, the UI mentioned in the article you are translating is not localized in the Admin, you should check with our Localization Engineers if they are localizable.&nbsp;If yes, open a task on JIRA requesting it. If not, write the UI in bilingual format in your translation. The bilingual format must be indicated with the word that appears currently in the Admin followed by the translation in parentheses. For example: Clique no botão “Add” (adicionar).</p>
-  
-  <h3>CEP vs. Postal Code</h3>
-  <p>When localizing content for a broader audience, it is important to consider the regional differences in terminology. In Brazil, the term "CEP" (Código de Endereçamento Postal) is widely used to refer to the postal code system established by Correios, the national postal service. On the other hand, in Portugal and other Portuguese-speaking countries, the term "postal code" is more commonly used.</p>
-  <p>To provide a more localized experience and cater to the preferences of our primary customer base in Brazil, we usually opt to use "CEP" when translating and localizing content. This ensures that our platform aligns with the familiar terminology used by Brazilian users. However, when addressing a broader Portuguese-speaking audience, such as Portugal, and especially through our Checkout, we prioritize the use of "postal code" for better localization.</p>
-  <p>To address both scenarios for our clients' end customers, for Checkout, we have created separate folders in our localization management system, Crowdin, one for PT-BR and another one for PT-PT. In the "PT-BR" folder we used "CEP", while in the "PT-PT" folder we used "postal code".</p>
-  
-  <h3>Product Names</h3>
-  <p>In the past, product names were defined in collaboration with the Product Marketing team. However, they are no longer directly involved in naming decisions. The responsibility for product name localization now lies with the Localization team in collaboration with Product Managers, as well as Designers and Education. The Localization team ensures that product names are accurately translated and localized to resonate with the target audience.</p>
-  <p>If you're asking yourself if we should translate product names, the answer is not definitive: it depends. We consider several factors to make an informed decision, including brand consistency, linguistic and cultural adaptation, market familiarity, legal and trademark considerations, user experience and ease of understanding, marketing and advertising strategies, etc.</p>
-  <p>When localizing Admin module names, our general practice is to adapt them to the target language unless they contain highly technical terms that are better known in English, even among speakers of other languages. In such cases, we may retain the English module names to ensure clarity and ease of understanding for users. For app names, we tend to keep them in English.</p>
-  <p>If translated, the capitalization of product names will follow the standard conventions of each language. For example, in Portuguese (PT), product names will be written in sentence case, while in English (EN), they will be written in Title Case. If kept in English, the capitalization of product names will follow the English capitalization rules.</p>
-  <p>Examples:</p>
-  <p>English: Dashboards &gt; Sales Performance</p>
-  <p>Portuguese: Dashboards &gt; Performance de vendas</p>
-  <p>English: Promotion Simulator</p>
-  <p>Portuguese: Simulador de promoções</p>
-  <p>English: Extensions Hub</p>
-  <p>Portuguese: Hub de extensões</p>
-  <p>English: VTEX Pick and Pack</p>
-  <p>Portuguese: VTEX Pick and Pack</p>
-  <p>English: Intelligent Search &gt; Analytics</p>
-  <p>Portuguese: Intelligent Search &gt; Analytics</p>
-  
-  <h2>Resources</h2>
-  
-  <h3>VTEX context</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://help.vtex.com/pt/&amp;sa=D&amp;source=editors&amp;ust=1692972267175214&amp;usg=AOvVaw1OsqyLwVOMmSaBJzbjsuFF">Help Center</a></p>
-  <p><span class="bold-text">Admin/Stores</span>: Different Admin versions are available. Please always confirm with the writer which store they used as a reference. Here are two main ones: <a class="text-link" href="https://www.google.com/url?q=https://cosmetics2.myvtex.com/admin&amp;sa=D&amp;source=editors&amp;ust=1692972267175870&amp;usg=AOvVaw0XzmQomvDB9gFmKuGsMOGj">cosmetics2</a>&nbsp;(Admin V3), <a class="text-link" href="https://www.google.com/url?q=https://storecomponents.myvtex.com/admin&amp;sa=D&amp;source=editors&amp;ust=1692972267176177&amp;usg=AOvVaw35DbH_ycU5MaLnPI9mBlyH">storecomponents</a>&nbsp;(Admin V4).</p>
-  
-  <h3>UI Localization</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1HJisz6wcIrLJbS5i2noJPPlS0oUUq7Apk4syCpQ_AvI/edit%23&amp;sa=D&amp;source=editors&amp;ust=1692972267176857&amp;usg=AOvVaw2Jsy6fvu-AU5u0aJnLcA2t">VTEX Admin string standardization in Portuguese</a></p>
-  
-  <h3>VTEX Portuguese Writing Style Guide</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1LQShcaU4DPgK_l7CxhoBvtgQ2baFHklJdiSmb5V2GDs/edit%23heading%3Dh.gjdgxs&amp;sa=D&amp;source=editors&amp;ust=1692972267177502&amp;usg=AOvVaw1XbusXnu1E8ReKJvVofJGR">Manual de estilo e redação</a>&nbsp;(maintained by Thalita Uba, in Content Enablement/Growth)</p>
-  
-  <h3>UX Writing Guidelines</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://uxwriting.vtex.com/&amp;sa=D&amp;source=editors&amp;ust=1692972267178121&amp;usg=AOvVaw0fa2etRfSmCCSB6TbLED0b">https://uxwriting.vtex.com/</a>&nbsp;(applies mainly for EN UI, but some sections can be used for PT too).</p>
-  
-  <h3>Terminology</h3>
-  <p>Internal</p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1vSSg5CrimqSxvWjBoXLE5P7ATJCdRnPT/edit%23gid%3D1978438735&amp;sa=D&amp;source=editors&amp;ust=1692972267178852&amp;usg=AOvVaw0WQYrvbJcnYhoYrn8zJPZk">VTEX Glossary</a>&nbsp;(maintained by Localization)</p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://www.notion.so/vtexhandbook/Terminology-Base-and-Translation-Memories-e4dbc4024c4a4b749128adf7cf9d5872&amp;sa=D&amp;source=editors&amp;ust=1692972267179242&amp;usg=AOvVaw3Ny6m3HpAlNi5M4nAqE0rd">Crowdin Termbase</a></p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1WXX6VhEtxg95F4QIjK1U9QZty27iDFIo/edit%23gid%3D1441514859&amp;sa=D&amp;source=editors&amp;ust=1692972267179628&amp;usg=AOvVaw03tejV0S75mTtQ6lX-BjKl">Marketing glossary</a>&nbsp;(discontinued, the relevant terms were added to VTEX Glossary)</p>
-  <p>External</p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://msit.powerbi.com/view?r%3DeyJrIjoiODJmYjU4Y2YtM2M0ZC00YzYxLWE1YTktNzFjYmYxNTAxNjQ0IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&amp;sa=D&amp;source=editors&amp;ust=1692972267180160&amp;usg=AOvVaw06CxzktgTLLy5l3j14kTtu">Microsoft Terminology Search</a></p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://msit.powerbi.com/view?r%3DeyJrIjoiMmE2NjJhMDMtNTY3MC00MmI2LWFmOWUtYWM5YTVjODI5MjQwIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&amp;sa=D&amp;source=editors&amp;ust=1692972267180555&amp;usg=AOvVaw2u0Vhg54ppvCHvfgitrQCA">Microsoft UI String Search</a></p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://iate.europa.eu/search/result/1674574090984/1&amp;sa=D&amp;source=editors&amp;ust=1692972267180881&amp;usg=AOvVaw3urOH0tPziKjezoSN9jQHW">IATE - European Union terminology</a></p>
-  
-  <h3>Content Marketing Localization</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://docs.google.com/document/d/1DBM2vP6Df3FweIvTix9Mj75NoMU0ZqMv7WV9MTotI2g/edit?usp%3Dsharing&amp;sa=D&amp;source=editors&amp;ust=1692972267181524&amp;usg=AOvVaw09mZY16uTYG0WR7uHDlmjB">Marketing Localization Guidelines</a></p>
-  
-  <h3>Dictionaries</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://aulete.com.br/&amp;sa=D&amp;source=editors&amp;ust=1692972267182011&amp;usg=AOvVaw2CQK-lHvrkZ7Q0Jfw7agq9">Aulete Digital</a></p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://michaelis.uol.com.br/&amp;sa=D&amp;source=editors&amp;ust=1692972267182336&amp;usg=AOvVaw0xUtuiw4bb90zKJHexagSu">Michaelis</a></p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://www.academia.org.br/nossa-lingua/busca-no-vocabulario&amp;sa=D&amp;source=editors&amp;ust=1692972267182652&amp;usg=AOvVaw3FDqOci7VYK6wIpCS5ZXoq">VOLP</a>&nbsp;(Vocabulário Ortográfico da Língua Portuguesa pela Academia Brasileira de Letras)</p>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://dicionario.priberam.org/&amp;sa=D&amp;source=editors&amp;ust=1692972267183251&amp;usg=AOvVaw3Ztwa4pHM1yYbrICByvrLg">Priberam</a>&nbsp;(focus on European Portuguese, but also has a part for Brazilian Portuguese)</p>
-  
-  <h3>Grammar</h3>
-  
-  <h4>Books</h4>
-  <p>CUNHA, Celso e CINTRA, Lindley. Nova Gramática do Português Contemporâneo. Rio de Janeiro: Editora Nova Fronteira.</p>
-  <p>Cartilha <a class="text-link" href="https://www.google.com/url?q=https://manoelneves.com/2016/02/04/cartilha-tem-hifen-da-editora-ftd/&amp;sa=D&amp;source=editors&amp;ust=1692972267184083&amp;usg=AOvVaw2xOJ32c47l3rNmj3IwIYMf">Tem hífen?</a></p>
-  
-  <h4>Chrome extension</h4>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://languagetool.org/pt-BR&amp;sa=D&amp;source=editors&amp;ust=1692972267184594&amp;usg=AOvVaw2jTi0JbE-x-emAOTvYeJvh">LanguageTool</a>&nbsp;(Grammar and spell checker)</p>
-  
-  <h3>External style guides</h3>
-  <p><a class="text-link" href="https://www.google.com/url?q=https://www.microsoft.com/en-us/language/styleguides&amp;sa=D&amp;source=editors&amp;ust=1692972267185328&amp;usg=AOvVaw0ZayIs8SGTxkdM2ZrlpCux">Microsoft</a></p>
 </body>
 </html>

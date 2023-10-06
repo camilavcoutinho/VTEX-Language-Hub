@@ -8,6 +8,7 @@
     --bg-2: #1155CC;
     --bg-3: #F71963;
     --bg-4: #5E6E84;
+    --bg-5: #A1AAB7;
     --ff-regular: "VTEXTrust Regular";
 }
 
@@ -17,11 +18,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--ff-regular), sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background: var(--bg-1);
+    padding: 2rem;
     text-align: justify;
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0.2rem;
+}
+
+.doc-content {
+    padding: 0 1rem;
+    grid-area: 1 / 1 / span 5 / span 1;
+}
+
+.update-info {
+    color: var(--bg-4);
+    text-align: right;
+    font-size: 0.8rem;
 }
 
 h1 {
@@ -41,17 +62,6 @@ h2, h3, h4 {
 p {
     text-indent: 3rem;
     text-align: justify;
-}
-
-.doc-content {
-    padding: 6rem;
-    line-height: 1.5;
-}
-
-.update-info {
-    color: var(--bg-4);
-    text-align: right;
-    font-size: 0.8rem;
 }
 
 .text-link {
@@ -74,4 +84,54 @@ p {
 li {
     margin-left:3rem;    
     font-size: 0.9rem;
+}
+
+aside {
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+.aside-content {
+    grid-area: 1 / 2 / span 1 / span 1;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--bg-5);
+    line-height: 1.7;
+}
+
+.content {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0 0 0.5rem 1rem;
+}
+
+.aside-list {
+    text-align: left;
+    padding-left: 1rem;
+    border-left: 1px solid var(--bg-5);
+    list-style: none;
+    width: 20ch;
+}
+
+.aside-list > li {
+    margin-left: 0;
+}
+
+nav > p {
+    text-indent: 0;
+}
+
+.aside-item-1, 
+.aside-item-2, 
+.aside-item-3 {
+    color: var(--bg-5);
+}
+
+.aside-subitem {
+    border-left: 0px;
+}
+
+.aside-list a:hover {
+	color: var(--bg-3);
 }
