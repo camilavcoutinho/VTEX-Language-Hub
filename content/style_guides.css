@@ -8,7 +8,7 @@ header {
     margin-top: 5rem;
 }
 
-.sidebar > ul > li > a > p > .material-symbols-outlined {
+.sidebar nav > ul > li > a > p > .material-symbols-outlined {
     color: black;
 }
 
@@ -33,4 +33,28 @@ h1::after {
     width: 22.5%;
     height: 5px;
     background-color: #e31c58;
+  }
+
+  .menuOptions {
+    margin-top: -1.5rem;
+  }
+
+  .menu {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .upper {
+    height: 55px;
+  }
+
+  .toggleMenu {
+    color: black;
+    margin: 0.5rem;
+    scale: 1.3;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 1;
   }
