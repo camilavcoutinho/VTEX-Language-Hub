@@ -9,6 +9,14 @@ function handleInternal() {
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
+	else if (currentUrl.includes("localization")) {
+		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("marketing")) {
+		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
+		expandItem("styleGuides");
+	}
 	else if (currentUrl.includes("glossaries")) {
 		document.getElementById("main-frame").src = ""; //temporary link
 		// expandItem("glossaries");
@@ -42,37 +50,35 @@ function expandItem(id) {
 function expandStyleGuides() {
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
-	let button = document.querySelector("#collapseStyleGuides");
+	let icon = document.querySelector("#collapseStyleGuides");
+  
 	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
+	  item.removeChild(list);
+	  icon.textContent = "expand_more";
+	} else {
+	  icon.textContent = "expand_less";
+	  list = document.createElement("ul");
+  
+	  let items = [
+		"EN Localization",
+		"ES Localization",
+		"PT Localization",
+		"EN Marketing",
+		"ES Marketing",
+		"PT Marketing",
+	  ];
+  
+	  items.forEach((text) => {
+		let listItem = document.createElement("li");
+		listItem.innerText = text;
+		list.appendChild(listItem);
+	  });
+  
+	  list.style.fontWeight = "normal"; // Set font weight for the entire list
+	  item.appendChild(list);
 	}
-	else {
-		button.textContent = "expand_less";
-		list = document.createElement("ul");
-		let listItem1 = document.createElement("li");
-		listItem1.innerText = "EN Localization";
-		let listItem2 = document.createElement("li");
-		listItem2.innerText = "ES Localization";
-		let listItem3 = document.createElement("li");
-		listItem3.innerText = "PT Localization";
-		let listItem4 = document.createElement("li");
-		listItem4.innerText = "EN Marketing";
-		let listItem5 = document.createElement("li");
-		listItem5.innerText = "ES Marketing";
-		let listItem6 = document.createElement("li");
-		listItem6.innerText = "PT Marketing";
-
-		let items = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6]
-
-		items.forEach(item => {
-			item.style.fontWeight = "regular";
-			list.appendChild(item);
-		})
-
-		item.appendChild(list);
-	}
-}
+  }
+  
 
 function expandReviewLogs() {
 	let item = document.getElementById("reviewLogs");

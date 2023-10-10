@@ -10,3 +10,4 @@ function toggleMenu() {
         menuIcon.title = "Click to collapse the menu panel"
     }
 }
+expandStyleGuides();
