@@ -118,6 +118,11 @@ body.active .wrapper .main-doc {
 	transition: all 0.5s ease;
 }
 
+.menu {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
 .main-doc {
 	/* margin-left: 15%; */
 	margin-left: 33ch;
@@ -149,10 +154,8 @@ p {
 	color: var(--bg-5);
 }
 
-/* Tentando fazer com que somente as linhas principais do menu tenham hover, sem afetar seus submenus:
-#styleGuides:not(:has(*)):hover,
-#reviewLogs:not(:has(*)):hover,
-#glossaries:not(:has(*)):hover,
-#translationMemories:not(:has(*)):hover {
-  color: var(--bg-5);
-} */
+.toggleMenu {
+    color: black;
+    margin: 0.5rem;
+    scale: 1.3;
+}

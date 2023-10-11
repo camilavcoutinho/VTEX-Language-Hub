@@ -62,3 +62,7 @@ h1::after {
 .links {
     display: none !important;
 }
+
+/* li:hover {
+    background-color: #f8f7fc;
+} */
