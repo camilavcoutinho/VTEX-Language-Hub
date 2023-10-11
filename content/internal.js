@@ -38,7 +38,7 @@ function handleInternal() {
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("glossaries")) {
-		document.getElementById("main-frame").src = ""; //temporary link
+		document.getElementById("main-frame").src = ""; //Insert link once this file is available.
 		expandItem("glossaries");
 	}
 	else if (currentUrl.includes("reviewLogs")) {
@@ -58,13 +58,13 @@ function handleInternal() {
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("translationMemories")) {
-		document.getElementById("main-frame").src = ""; //temporary link
+		document.getElementById("main-frame").src = ""; //Insert link once this file is available.
 		expandItem("translationMemories");
 	}
 }
 handleInternal(); //Calling function as soon as the internal page is loaded so it is populated with the correspondent card content.
 
-function expandItem(id) {
+function expandItem(id) { //Determines which menu subsection should be open on load depending on the selected card.
 	if (id == "styleGuides") {
 		expandStyleGuides();
 	}
@@ -79,173 +79,162 @@ function expandItem(id) {
 	}
 }
 
-function expandStyleGuides() {
+function expandStyleGuides() { //Generates the submenus for Style Guides.
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
-  
+
 	if (list) {
-	  item.removeChild(list);
-	  icon.textContent = "expand_more";
+		item.removeChild(list);
+		icon.textContent = "expand_more";
 	} else {
-	  icon.textContent = "expand_less";
-	  list = document.createElement("ul");
-  
-	  let items = [
-		{ id: "englishSG", text: "EN Localization", link: "./internal.html?id=englishSG" },
-		{ id: "spanishSG", text: "ES Localization", link: "./internal.html?id=spanishSG" },
-		{ id: "portugueseSG", text: "PT Localization", link: "./internal.html?id=portugueseSG" },
-		{ id: "EnMktSG", text: "EN Marketing", link: "./internal.html?id=EnMktSG" },
-		{ id: "EsMktSG", text: "ES Marketing", link: "./internal.html?id=EsMktSG" },
-		{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
-	  ];
-  
-	  items.forEach((itemData) => {
-		let listItem = document.createElement("li");
-		let link = document.createElement("a");
-		link.innerText = itemData.text;
-		link.href = itemData.link;
-		listItem.id = itemData.id;
-  
-		// Remove margin and padding for list items
-		listItem.style.margin = "0.5";
-		listItem.style.padding = "0.3";
-  
-		// You can also reduce the margin or padding for the anchor elements if needed
-		link.style.margin = "0";
-		link.style.padding = "0";
-  
-		listItem.appendChild(link);
-		list.appendChild(listItem);
-	  });
-  
-	  list.style.fontWeight = "normal"; // Set font weight for the entire list
-	  item.appendChild(list);
+		icon.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "englishSG", text: "EN Localization", link: "./internal.html?id=englishSG" },
+			{ id: "spanishSG", text: "ES Localization", link: "./internal.html?id=spanishSG" },
+			{ id: "portugueseSG", text: "PT Localization", link: "./internal.html?id=portugueseSG" },
+			{ id: "EnMktSG", text: "EN Marketing", link: "./internal.html?id=EnMktSG" },
+			{ id: "EsMktSG", text: "ES Marketing", link: "./internal.html?id=EsMktSG" },
+			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
 	}
-  }
-  
-  function expandReviewLogs() {
+}
+
+function expandReviewLogs() { //Generates the submenus for Review Logs.
 	let item = document.getElementById("reviewLogs");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseReviewLogs");
-  
+
 	if (list) {
-	  item.removeChild(list);
-	  button.textContent = "expand_more";
+		item.removeChild(list);
+		button.textContent = "expand_more";
 	} else {
-	  button.textContent = "expand_less";
-	  list = document.createElement("ul");
-  
-	  let items = [
-		{ id: "enAdminStd", text: "EN Admin Standardization", link: "./internal.html?id=enAdminStd" },
-		{ id: "esAdminStd", text: "ES Admin Standardization", link: "./internal.html?id=esAdminStd" },
-		{ id: "ptAdminStd", text: "PT Admin Standardization", link: "./internal.html?id=ptAdminStd" },
-	  ];
-  
-	  items.forEach((itemData) => {
-		let listItem = document.createElement("li");
-		let link = document.createElement("a");
-		link.innerText = itemData.text;
-		link.href = itemData.link;
-		listItem.id = itemData.id;
-  
-		// Remove margin and padding for list items
-		listItem.style.margin = "0.5";
-		listItem.style.padding = "0.3";
-  
-		// You can also reduce the margin or padding for the anchor elements if needed
-		link.style.margin = "0";
-		link.style.padding = "0";
-  
-		listItem.appendChild(link);
-		list.appendChild(listItem);
-	  });
-  
-	  list.style.fontWeight = "normal"; // Set font weight for the entire list
-	  item.appendChild(list);
+		button.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "enAdminStd", text: "EN Admin Standardization", link: "./internal.html?id=enAdminStd" },
+			{ id: "esAdminStd", text: "ES Admin Standardization", link: "./internal.html?id=esAdminStd" },
+			{ id: "ptAdminStd", text: "PT Admin Standardization", link: "./internal.html?id=ptAdminStd" },
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
 	}
-  }
-  
-  function expandGlossaries() {
+}
+
+function expandGlossaries() { //Generates the submenus for Glossaries.
 	let item = document.getElementById("glossaries");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseGlossaries");
-  
+
 	if (list) {
-	  item.removeChild(list);
-	  button.textContent = "expand_more";
+		item.removeChild(list);
+		button.textContent = "expand_more";
 	} else {
-	  button.textContent = "expand_less";
-	  list = document.createElement("ul");
-  
-	  let items = [
-		{ id: "item1", text: "Item 1", link: "#" },
-		{ id: "item2", text: "Item 2", link: "#" },
-		{ id: "item3", text: "Item 3", link: "#" },
-	  ];
-  
-	  items.forEach((itemData) => {
-		let listItem = document.createElement("li");
-		let link = document.createElement("a");
-		link.innerText = itemData.text;
-		link.href = itemData.link;
-		listItem.id = itemData.id;
-  
-		// Remove margin and padding for list items
-		listItem.style.margin = "0.5";
-		listItem.style.padding = "0.3";
-  
-		// You can also reduce the margin or padding for the anchor elements if needed
-		link.style.margin = "0";
-		link.style.padding = "0";
-  
-		listItem.appendChild(link);
-		list.appendChild(listItem);
-	  });
-  
-	  list.style.fontWeight = "normal"; // Set font weight for the entire list
-	  item.appendChild(list);
+		button.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "item1", text: "Item 1", link: "#" },
+			{ id: "item2", text: "Item 2", link: "#" },
+			{ id: "item3", text: "Item 3", link: "#" },
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
 	}
-  }
-  
-  function expandTranslationMemories() {
+}
+
+function expandTranslationMemories() { //Generates the submenus for Translation Memories.
 	let item = document.getElementById("translationMemories");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseTranslationMemories");
-  
+
 	if (list) {
-	  item.removeChild(list);
-	  button.textContent = "expand_more";
+		item.removeChild(list);
+		button.textContent = "expand_more";
 	} else {
-	  button.textContent = "expand_less";
-	  list = document.createElement("ul");
-  
-	  let items = [
-		{ id: "item1", text: "Item 1", link: "#" },
-		{ id: "item2", text: "Item 2", link: "#" },
-		{ id: "item3", text: "Item 3", link: "#" },
-	  ];
-  
-	  items.forEach((itemData) => {
-		let listItem = document.createElement("li");
-		let link = document.createElement("a");
-		link.innerText = itemData.text;
-		link.href = itemData.link;
-		listItem.id = itemData.id;
-  
-		// Remove margin and padding for list items
-		listItem.style.margin = "0.5";
-		listItem.style.padding = "0.3";
-  
-		// You can also reduce the margin or padding for the anchor elements if needed
-		link.style.margin = "0";
-		link.style.padding = "0";
-  
-		listItem.appendChild(link);
-		list.appendChild(listItem);
-	  });
-  
-	  list.style.fontWeight = "normal"; // Set font weight for the entire list
-	  item.appendChild(list);
+		button.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "item1", text: "Item 1", link: "#" },
+			{ id: "item2", text: "Item 2", link: "#" },
+			{ id: "item3", text: "Item 3", link: "#" },
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
 	}
-  }  
+}  
