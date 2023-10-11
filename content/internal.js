@@ -13,6 +13,30 @@ function handleInternal() {
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
+	else if (currentUrl.includes("englishSG")) {
+		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("spanishSG")) {
+		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - ES/VTEXLocalizationStyleGuideES.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("portugueseSG")) {
+		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - PT/VTEXPortugueseStyleGuidePT.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("EnMktSG")) {
+		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("EsMktSG")) {
+		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - ES/WritingStyleGuideES.html";
+		expandItem("styleGuides");
+	}
+	else if (currentUrl.includes("PtMktSG")) {
+		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - PT/VTEXWritingStyleGuidePT.html";
+		expandItem("styleGuides");
+	}
 	else if (currentUrl.includes("marketing")) {
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
 		expandItem("styleGuides");
@@ -60,17 +84,30 @@ function expandStyleGuides() {
 	  list = document.createElement("ul");
   
 	  let items = [
-		"EN Localization",
-		"ES Localization",
-		"PT Localization",
-		"EN Marketing",
-		"ES Marketing",
-		"PT Marketing",
+		{ id: "englishSG", text: "EN Localization", link: "./internal.html?id=englishSG" },
+		{ id: "spanishSG", text: "ES Localization", link: "./internal.html?id=spanishSG" },
+		{ id: "portugueseSG", text: "PT Localization", link: "./internal.html?id=portugueseSG" },
+		{ id: "EnMktSG", text: "EN Marketing", link: "./internal.html?id=EnMktSG" },
+		{ id: "EsMktSG", text: "ES Marketing", link: "./internal.html?id=EsMktSG" },
+		{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
 	  ];
   
-	  items.forEach((text) => {
+	  items.forEach((itemData) => {
 		let listItem = document.createElement("li");
-		listItem.innerText = text;
+		let link = document.createElement("a");
+		link.innerText = itemData.text;
+		link.href = itemData.link;
+		listItem.id = itemData.id;
+  
+		// Remove margin and padding for list items
+		listItem.style.margin = "0.5";
+		listItem.style.padding = "0.3";
+  
+		// You can also reduce the margin or padding for the anchor elements if needed
+		link.style.margin = "0";
+		link.style.padding = "0";
+  
+		listItem.appendChild(link);
 		list.appendChild(listItem);
 	  });
   

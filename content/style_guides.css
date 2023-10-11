@@ -58,4 +58,7 @@ h1::after {
     padding: 0;
     margin: 1;
   }
-  
+
+  .links {
+    display: none !important;
+  }
