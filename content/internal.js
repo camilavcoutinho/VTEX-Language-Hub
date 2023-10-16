@@ -4,7 +4,7 @@ hamburger.addEventListener("click", function () {
 })
 
 function handleInternal() {
-	var currentUrl = window.location.href;
+	let currentUrl = window.location.href;
 	if (currentUrl.includes("localization")) {
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
@@ -279,7 +279,7 @@ function toggleMenu() {
         menuIcon.innerHTML = "left_panel_open";
         menuIcon.title = "Click to expand the menu panel"
     }
-    else if (menuIcon.innerHTML == "left_panel_open") {
+    else {
         menuIcon.innerHTML = "left_panel_close";
         menuIcon.title = "Click to collapse the menu panel"
     }
