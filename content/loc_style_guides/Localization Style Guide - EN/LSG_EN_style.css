@@ -1,3 +1,30 @@
+/* Scrolling  */
+
+::-webkit-scrollbar {
+    width: .5em;
+    scrollbar-gutter: stable;
+}
+  
+::-webkit-scrollbar-track {
+    background:  #F8F7FC;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #F71963;
+    border: 0.25em solid #F71963;
+    border-radius: 100vw;
+}
+
+/* Firefox scrolling */
+@supports (scrollbar-color: #F71963 #F8F7FC) {
+    * {
+        scrollbar-color: #F71963 #F8F7FC;
+        scrollbar-gutter: stable;
+    }
+}
+
 @font-face {
     font-family: "VTEXTrust Regular";
     src: url(./fonts/VTEXTrust-Regular.otf);
