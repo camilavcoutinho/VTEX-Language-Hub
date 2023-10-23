@@ -1,8 +1,7 @@
 /* Scrolling  */
 
 ::-webkit-scrollbar {
-    width: .5em;
-    scrollbar-gutter: stable;
+    width: .3em;
 }
   
 ::-webkit-scrollbar-track {
@@ -21,7 +20,6 @@
 @supports (scrollbar-color: #F71963 #F8F7FC) {
     * {
         scrollbar-color: #F71963 #F8F7FC;
-        scrollbar-gutter: stable;
     }
 }
 
@@ -64,7 +62,7 @@ body {
 .doc-content {
     padding: 0 1rem 3rem;
     grid-area: 1 / 1 / span 5 / span 1;
-    margin: 60px 15% 0 0;
+    margin: 60px 17% 0 0;
     overflow-y: scroll;
     position: fixed;
     left: 0;
@@ -151,7 +149,7 @@ table {
     line-height: 1.7;
     position: fixed;
     height: calc(100% - 60px);
-    left: 85%;
+    left: 83%;
     right: 0;
     overflow-y: scroll;
     top: 60px;
