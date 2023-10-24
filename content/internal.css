@@ -196,6 +196,20 @@ header {
     background-color: #e31c58;
 }
 
+header a {
+	display: none;
+	margin-left: 20rem;
+	margin-top: 2.5rem;
+	color: black;
+	font-size: 0.9rem;
+	border: 1px solid black;
+	border-radius: 40px;
+	padding: 0.5rem;
+}
+
+header a:hover {
+	border: 1px solid #e31c58;
+}
 .header-subtext {
 	margin-left: 20rem;
 	padding-top: 2rem;

@@ -6,34 +6,42 @@ hamburger.addEventListener("click", function () {
 function handleInternal() {
 	let currentUrl = window.location.href;
 	if (currentUrl.includes("localization")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("englishSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("spanishSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - ES/VTEXLocalizationStyleGuideES.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("portugueseSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - PT/VTEXPortugueseStyleGuidePT.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("EnMktSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("EsMktSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - ES/WritingStyleGuideES.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("PtMktSG")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - PT/VTEXWritingStyleGuidePT.html";
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("marketing")) {
+		showBackButton()
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
@@ -73,6 +81,11 @@ function handleInternal() {
 	}
 }
 handleInternal(); //Calling function as soon as the internal page is loaded so it is populated with the correspondent card content.
+
+function showBackButton() {//Is only shown if the current page derives from the "Style Guides" page.
+	button = document.getElementById("backButton");
+	button.style.display = "inline-block";
+}
 
 function expandItem(id) { //Determines which menu subsection should be open on load depending on the selected card.
 	if (id == "styleGuides") {
