@@ -8,6 +8,13 @@ header {
     margin-top: 5rem;
 }
 
+.card {
+    height: 350px;
+}
+
+.card:hover>a>.upper {
+    height: 20%;
+}
 .sidebar nav>ul>li>a>p>.material-symbols-outlined {
     color: black;
 }
@@ -26,17 +33,6 @@ h6 {
     padding-left: 3rem;
     font-size: 1.3rem;
 }
-
-/* .underline {
-    /* content: ''; 
-    display: block;
-    position: absolute;
-    bottom: 1;
-    left: 3;
-    width: 22.5%;
-    height: 5px;
-    background-color: #e31c58;
-} */
 
 .menuOptions {
     margin-top: -1.5rem;
