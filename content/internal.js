@@ -38,10 +38,17 @@ function handleInternal() {
 		expandItem("styleGuides");
 	}
 	else if (currentUrl.includes("glossaries")) {
+		let headerText = document.getElementById("header-text");
+		headerText.innerText = "Glossaries";
+		let headerSubtext = document.getElementById("header-subtext"); //Insert proper text here later.
+		headerSubtext.innerText = "Short description about the subject."
 		document.getElementById("main-frame").src = ""; //Insert link once this file is available.
 		expandItem("glossaries");
 	}
 	else if (currentUrl.includes("reviewLogs")) {
+		let headerText = document.getElementById("header-text");
+		headerText.innerText = "Admin Review Logs";
+		let headerSubtext = document.getElementById("header-subtext"); //Insert proper text here later.
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
 		expandItem("reviewLogs");
 	}
@@ -58,6 +65,9 @@ function handleInternal() {
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("translationMemories")) {
+		let headerText = document.getElementById("header-text");
+		headerText.innerText = "Translation Memories";
+		let headerSubtext = document.getElementById("header-subtext"); //Insert proper text here later.
 		document.getElementById("main-frame").src = ""; //Insert link once this file is available.
 		expandItem("translationMemories");
 	}

@@ -90,7 +90,7 @@ body {
 }
 
 .wrapper .section .top_navbar {
-	background: var(--bg-3);
+	background: var(--bg-1);
 	height: 3.75rem;
 	display: flex;
 	align-items: center;
@@ -168,4 +168,36 @@ p {
 
 .sidebar{
     font-family: var(--ff-regular);
+}
+
+header {
+    height: 33vh;
+    background-color: #E7E9EE;
+}
+
+.header-text {
+	display: inline-block;
+    position: relative;
+    border-bottom: 5px solid #e31c58;
+	text-align: left;
+	font-size: 4rem;
+	margin-left: 20rem;
+	padding-top: 4.5rem;
+}
+
+.header-text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 1;
+    left: 3;
+    width: 22.5%;
+    height: 5px;
+    background-color: #e31c58;
+}
+
+.header-subtext {
+	margin-left: 20rem;
+	padding-top: 2rem;
+	font-size: 1.3rem;
 }
