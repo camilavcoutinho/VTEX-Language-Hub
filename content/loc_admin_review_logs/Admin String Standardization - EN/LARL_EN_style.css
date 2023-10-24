@@ -1,3 +1,28 @@
+/* Scrolling  */
+
+::-webkit-scrollbar {
+    width: .3em;
+}
+  
+::-webkit-scrollbar-track {
+    background:  #F8F7FC;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #F71963;
+    border: 0.25em solid #F71963;
+    border-radius: 100vw;
+}
+
+/* Firefox scrolling */
+@supports (scrollbar-color: #F71963 #F8F7FC) {
+    * {
+        scrollbar-color: #F71963 #F8F7FC;
+    }
+}
+
 @font-face {
    font-family: "VTEXTrust Regular";
    src: url(./fonts/VTEXTrust-Regular.otf);
@@ -13,17 +38,35 @@
 }
 
 * {
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: var(--ff-regular), sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-regular), sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-	background: var(--bg-1);
+    background: var(--bg-1);
     padding: 2rem;
     line-height: 1.6;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0.2rem;
+}
+
+.doc-content {
+    padding: 0 1rem 3rem;
+    grid-area: 1 / 1 / span 5 / span 1;
+    margin: 60px 17% 0 0;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: calc(100% - 60px);
 }
 
 h1 {
@@ -45,27 +88,23 @@ h3 {
     text-decoration: underline;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 0.2rem;
-}
-
-.doc-content {
-    padding: 0 1rem;
-    grid-area: 1 / 1 / span 5 / span 1;
-}
-
 .intro-content {
     padding: 1rem 0rem;
 }
 
-.italic-font {
+.bold-text {
+    font-weight: bolder;
+}
+.italic-text {
     font-style: italic;
 }
 
-.bold-text {
-    font-weight: bolder;
+li {
+    font-size: 0.9rem;
+}
+
+.bullet {
+    margin-left: 3rem;
 }
 
 table {
@@ -84,26 +123,18 @@ table {
     font-size: 0.85rem;
 }
 
-li {
-    font-size: 0.9rem;
-}
-
-.bullet {
-    margin-left: 3rem;
-}
-
-aside {
-    position: sticky;
-    right: 0;
-    top: 0;
-}
-
 .aside-content {
     grid-area: 1 / 2 / span 1 / span 1;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 3rem;
     font-size: 0.8rem;
     color: var(--bg-5);
     line-height: 1.7;
+    position: fixed;
+    height: calc(100% - 60px);
+    left: 83%;
+    right: 0;
+    overflow-y: scroll;
+    top: 60px;
 }
 
 .content {
