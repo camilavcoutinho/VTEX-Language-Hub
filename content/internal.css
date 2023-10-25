@@ -65,23 +65,16 @@ body {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 3rem;
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 }
 
 .wrapper .sidebar ul li a {
 	display: block;
 	padding: 1rem 2.5rem;
 	color: black;
-	/* color: var(--bg-4); */
 	font-size: 1rem;
 	position: relative;
 }
-
-/* .wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active {
-	color: var(--bg-5);
-	font-family: var(--ff-bold);
-} */
 
 .wrapper .section {
 	width: calc(100% - 33ch);
@@ -125,8 +118,8 @@ body.active .wrapper .main-doc {
 }
 
 .menu {
-    text-align: center;
-    font-size: 1.3rem;
+	text-align: center;
+	font-size: 1.3rem;
 }
 
 .main-doc {
@@ -161,45 +154,30 @@ p {
 }
 
 .toggleMenu {
-    color: black;
-    margin: 0.5rem;
-    scale: 1.3;
-}
-
-.sidebar{
-    font-family: var(--ff-regular);
+	color: black;
+	margin: 0.5rem;
+	scale: 1.3;
 }
 
 header {
-    height: 33vh;
-    background-color: #E7E9EE;
+	height: 30vh;
+	background-color: #E7E9EE;
 }
 
 .header-text {
 	display: inline-block;
-    position: relative;
-    border-bottom: 5px solid #e31c58;
+	position: relative;
+	border-bottom: 5px solid #e31c58;
 	text-align: left;
 	font-size: 4rem;
 	margin-left: 20rem;
-	padding-top: 4.5rem;
-}
-
-.header-text::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 1;
-    left: 3;
-    width: 22.5%;
-    height: 5px;
-    background-color: #e31c58;
+	padding-top: 3rem;
 }
 
 header a {
 	display: none;
 	margin-left: 20rem;
-	margin-top: 2.5rem;
+	margin-top: 2rem;
 	color: black;
 	font-size: 0.9rem;
 	border: 1px solid black;
@@ -210,8 +188,18 @@ header a {
 header a:hover {
 	border: 1px solid #e31c58;
 }
+
 .header-subtext {
 	margin-left: 20rem;
 	padding-top: 2rem;
 	font-size: 1.3rem;
+	width: 40%;
+}
+
+.material-symbols-outlined {
+	color: black;
+}
+
+.whiteIcon {
+    color: white;
 }
