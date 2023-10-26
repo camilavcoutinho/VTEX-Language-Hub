@@ -204,3 +204,7 @@ header a:hover {
 .whiteIcon {
     color: white;
 }
+
+.internalLogo {
+	margin-top: -1rem;
+}
