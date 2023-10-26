@@ -143,6 +143,10 @@ p {
     transition: all 0.3s ease;
 }
 
+.SGupper {
+    color: white;
+}
+
 .card:hover>a>.upper {
     width: 100%;
     height: 32%;
