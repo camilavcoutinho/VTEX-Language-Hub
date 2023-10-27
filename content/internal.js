@@ -78,7 +78,7 @@ function handleInternal() {
 		headerText.innerText = "Translation Memories";
 		let headerSubtext = document.getElementById("header-subtext");
 		headerSubtext.innerText = "Seen that phrase before? Dig through our translation memory to recover it, or to simply get inspiration if you’re writing in another language.";
-		document.getElementById("main-frame").src = "./translation_memory/translation_memory.html"; //Insert link once this file is available.
+		document.getElementById("main-frame").src = "./translation_memory/translation_memory.html";
 		expandItem("translationMemories");
 	}
 }
@@ -104,7 +104,7 @@ function expandItem(id) { //Determines which menu subsection should be open on l
 	}
 }
 
-function expandStyleGuides() {
+function expandStyleGuides() { //Generates the submenus for Style Guides.
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
@@ -117,12 +117,61 @@ function expandStyleGuides() {
 		list = document.createElement("ul");
 
 		let items = [
+			{ id: "Documentation", text: "Documentation", link: "https://www.notion.so/vtexhandbook/E-D-Style-Guide-80cf41f627574419bde54e64aa04d1df" },
 			{ id: "englishSG", text: "EN Localization", link: "./internal.html?id=englishSG" },
 			{ id: "spanishSG", text: "ES Localization", link: "./internal.html?id=spanishSG" },
 			{ id: "portugueseSG", text: "PT Localization", link: "./internal.html?id=portugueseSG" },
 			{ id: "EnMktSG", text: "EN Marketing", link: "./internal.html?id=EnMktSG" },
 			{ id: "EsMktSG", text: "ES Marketing", link: "./internal.html?id=EsMktSG" },
 			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+			if (itemData.id === "Documentation") {
+				link.setAttribute('target', '_blank');
+			}
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.addEventListener("mouseover", function () {
+				listItem.style.fontWeight = "bold";
+			});
+
+			listItem.addEventListener("mouseout", function () {
+				listItem.style.fontWeight = "normal";
+			});
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
+	}
+}
+
+function expandGlossaries() { //Generates the submenus for Glossaries.
+	let item = document.getElementById("glossaries");
+	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseGlossaries");
+
+	if (list) {
+		item.removeChild(list);
+		button.textContent = "expand_more";
+	} else {
+		button.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "item1", text: "Localization", link: "./internal.html?id=glossaries" }
 		];
 
 		items.forEach((itemData) => {
@@ -154,6 +203,50 @@ function expandStyleGuides() {
 	}
 }
 
+function expandTranslationMemories() { //Generates the submenus for Translation Memories.
+	let item = document.getElementById("translationMemories");
+	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseTranslationMemories");
+
+	if (list) {
+		item.removeChild(list);
+		button.textContent = "expand_more";
+	} else {
+		button.textContent = "expand_less";
+		list = document.createElement("ul");
+
+		let items = [
+			{ id: "item1", text: "Localization", link: "./internal.html?id=translationMemories" }
+		];
+
+		items.forEach((itemData) => {
+			let listItem = document.createElement("li");
+			let link = document.createElement("a");
+			link.innerText = itemData.text;
+			link.href = itemData.link;
+			listItem.id = itemData.id;
+
+			listItem.style.margin = "0.5";
+			listItem.style.padding = "0.3";
+			link.style.margin = "0";
+			link.style.padding = "0";
+
+			listItem.addEventListener("mouseover", function () {
+				listItem.style.fontWeight = "bold";
+			});
+
+			listItem.addEventListener("mouseout", function () {
+				listItem.style.fontWeight = "normal";
+			});
+
+			listItem.appendChild(link);
+			list.appendChild(listItem);
+		});
+
+		list.style.fontWeight = "normal";
+		item.appendChild(list);
+	}
+}
 
 function expandReviewLogs() { //Generates the submenus for Review Logs.
 	let item = document.getElementById("reviewLogs");
@@ -202,102 +295,7 @@ function expandReviewLogs() { //Generates the submenus for Review Logs.
 	}
 }
 
-function expandGlossaries() { //Generates the submenus for Glossaries.
-	let item = document.getElementById("glossaries");
-	let list = item.querySelector("ul");
-	let button = document.querySelector("#collapseGlossaries");
-
-	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
-	} else {
-		button.textContent = "expand_less";
-		list = document.createElement("ul");
-
-		let items = [
-			{ id: "item1", text: "Item 1", link: "#" },
-			{ id: "item2", text: "Item 2", link: "#" },
-			{ id: "item3", text: "Item 3", link: "#" },
-		];
-
-		items.forEach((itemData) => {
-			let listItem = document.createElement("li");
-			let link = document.createElement("a");
-			link.innerText = itemData.text;
-			link.href = itemData.link;
-			listItem.id = itemData.id;
-
-			listItem.style.margin = "0.5";
-			listItem.style.padding = "0.3";
-			link.style.margin = "0";
-			link.style.padding = "0";
-
-			listItem.addEventListener("mouseover", function () {
-				listItem.style.fontWeight = "bold";
-			});
-
-			listItem.addEventListener("mouseout", function () {
-				listItem.style.fontWeight = "normal";
-			});
-
-			listItem.appendChild(link);
-			list.appendChild(listItem);
-		});
-
-		list.style.fontWeight = "normal";
-		item.appendChild(list);
-	}
-}
-
-function expandTranslationMemories() { //Generates the submenus for Translation Memories.
-	let item = document.getElementById("translationMemories");
-	let list = item.querySelector("ul");
-	let button = document.querySelector("#collapseTranslationMemories");
-
-	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
-	} else {
-		button.textContent = "expand_less";
-		list = document.createElement("ul");
-
-		let items = [
-			{ id: "item1", text: "Item 1", link: "#" },
-			{ id: "item2", text: "Item 2", link: "#" },
-			{ id: "item3", text: "Item 3", link: "#" },
-		];
-
-		items.forEach((itemData) => {
-			let listItem = document.createElement("li");
-			let link = document.createElement("a");
-			link.innerText = itemData.text;
-			link.href = itemData.link;
-			listItem.id = itemData.id;
-
-
-			listItem.style.margin = "0.5";
-			listItem.style.padding = "0.3";
-			link.style.margin = "0";
-			link.style.padding = "0";
-
-			listItem.addEventListener("mouseover", function () {
-				listItem.style.fontWeight = "bold";
-			});
-
-			listItem.addEventListener("mouseout", function () {
-				listItem.style.fontWeight = "normal";
-			});
-
-			listItem.appendChild(link);
-			list.appendChild(listItem);
-		});
-
-		list.style.fontWeight = "normal";
-		item.appendChild(list);
-	}
-}
-
-function toggleMenu() {
+function toggleMenu() { //Changes the menu icon and title text as it opens or closes the menu.
 	let menuIcon = document.querySelector(".toggleMenu");
 	if (menuIcon.innerHTML == "left_panel_close") {
 		menuIcon.innerHTML = "left_panel_open";
