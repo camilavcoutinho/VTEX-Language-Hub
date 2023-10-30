@@ -116,7 +116,6 @@ h4 {
 }
 
 p {
-    text-indent: 3rem;
     text-align: justify;
 }
 
@@ -142,7 +141,7 @@ p {
 }
 
 li {
-    margin-left:4rem;
+    margin-left: 3rem;
 }
 
 .no-bullet {
@@ -152,11 +151,7 @@ li {
 table {
     border-spacing: 0;
     border-collapse: collapse;
-    margin: 1rem auto 1rem 3rem;
-}
-
-table p {
-    text-indent: 0;
+    margin: 0.5rem 0 1rem;
 }
 
 .table-intro {
@@ -164,7 +159,7 @@ table p {
 }
 
 .table-internal {
-    padding: 0.25rem 0.4rem;
+    padding: 0.25rem 0.8rem;
     border: 1px solid var(--bg-4);
     font-size: var(--fs-1);
 }
@@ -203,10 +198,6 @@ table p {
 
 .aside-list > li {
     margin-left: 0;
-}
-
-nav > p {
-    text-indent: 0;
 }
 
 .aside-item-1, 
