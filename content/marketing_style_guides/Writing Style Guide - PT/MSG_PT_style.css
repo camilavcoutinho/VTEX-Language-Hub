@@ -62,7 +62,7 @@ body {
 .doc-content {
     padding: 0 1rem 3rem;
     grid-area: 1 / 1 / span 5 / span 1;
-    margin: 60px 17% 0 0;
+    margin: 60px 20% 0 0;
     overflow-y: scroll;
     position: fixed;
     left: 0;
@@ -144,7 +144,7 @@ table {
     line-height: 1.7;
     position: fixed;
     height: calc(100% - 60px);
-    left: 83%;
+    left: 80%;
     right: 0;
     overflow-y: scroll;
     top: 60px;

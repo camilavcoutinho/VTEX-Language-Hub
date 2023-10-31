@@ -35,6 +35,13 @@
     --bg-4: #5E6E84;
     --bg-5: #A1AAB7;
     --ff-regular: "VTEXTrust Regular";
+    --fs-1: clamp(0.9375rem, 0.925rem + 0.0625vw, 1rem);
+    --fs-2: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
+    --fs-3: clamp(1.35rem, 1.3075rem + 0.2125vw, 1.5625rem);
+    --fs-4: clamp(1.62rem, 1.5534rem + 0.3331vw, 1.9531rem);
+    --fs-5: clamp(1.9438rem, 1.8443rem + 0.4975vw, 2.4413rem);
+    --fs-6: clamp(2.3325rem, 2.1886rem + 0.7194vw, 3.0519rem);
+    --fs-7: clamp(2.7994rem, 2.5963rem + 1.0156vw, 3.815rem);
 }
 
 * {
@@ -48,6 +55,7 @@
 
 body {
     background: var(--bg-1);
+    font-size: var(--fs-2);
     padding: 2rem;
     text-align: justify;
     line-height: 1.6;
@@ -59,10 +67,14 @@ body {
     grid-gap: 0.2rem;
 }
 
+.flow > * + * {
+    margin-top: 1.5em;
+}
+
 .doc-content {
     padding: 0 1rem 3rem;
     grid-area: 1 / 1 / span 5 / span 1;
-    margin: 60px 17% 0 0;
+    margin: 60px 20% 0 0;
     overflow-y: scroll;
     position: fixed;
     left: 0;
@@ -73,25 +85,33 @@ body {
 .update-info {
     color: var(--bg-4);
     text-align: right;
-    font-size: 0.8rem;
+    font-size: var(--fs-1);
+}
+
+.example {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    color: var(--bg-3);
+    line-height: 1.3;
+    page-break-after: avoid;
 }
 
 h1 {
-    color: var(--bg-3);
-    font-size: 2.4rem;
+    font-size: var(--fs-7);
     text-align: center;
-    padding: 1rem 0 0.5rem;
-    page-break-after: avoid;
 }
 
-h2, h3 {
-    color: var(--bg-3);
-    page-break-after: avoid;
-    padding: 1rem 0 0.5rem;
+h2 {
+    font-size: var(--fs-6);
+}
+
+h3 {
+    font-size: var(--fs-5);
 }
 
 p {
-    text-indent: 3rem;
     text-align: justify;
 }
 
@@ -109,14 +129,17 @@ p {
 }
 
 li {
-    margin-left:3rem;    
-    font-size: 0.9rem;
+    margin-left: 3rem;
+}
+
+.no-bullet {
+    list-style: none;
 }
 
 table {
     border-spacing: 0;
     border-collapse: collapse;
-    margin-right: auto;
+    margin: 0.5rem 0 1rem;
 }
 
 .table-intro {
@@ -124,27 +147,31 @@ table {
 }
 
 .table-internal {
-    padding: 0.25rem 0.4rem;
+    padding: 0.25rem 0.8rem;
     border: 1px solid var(--bg-4);
-    font-size: 0.85rem;
+    font-size: var(--fs-1);
+}
+
+.clear-table {
+    border: none;
 }
 
 .aside-content {
     grid-area: 1 / 2 / span 1 / span 1;
     padding: 0.5rem 1rem 3rem;
-    font-size: 0.8rem;
+    font-size: var(--fs-1);
     color: var(--bg-5);
     line-height: 1.7;
     position: fixed;
     height: calc(100% - 60px);
-    left: 83%;
+    left: 80%;
     right: 0;
     overflow-y: scroll;
     top: 60px;
 }
 
 .content {
-    font-size: 0.9rem;
+    font-size: var(--fs-1);
     font-weight: bold;
     padding: 0 0 0.5rem 1rem;
 }
@@ -159,10 +186,6 @@ table {
 
 .aside-list > li {
     margin-left: 0;
-}
-
-nav > p {
-    text-indent: 0;
 }
 
 .aside-item-1, 
