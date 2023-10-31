@@ -269,7 +269,7 @@ footer {
     .cards {
         width: 100%;
         margin: auto;
-        margin-top: -8rem;
+        margin-top: -0.5rem;
         gap: 2rem;
     }
 
@@ -283,16 +283,16 @@ footer {
         height: 13.5%;
     }
 
+    .card:hover>a>.upper {
+        height: 20%;
+    }
+
     .others {
         padding-top: 1.2rem;
     }
 
     .backTop {
         display: none;
-    }
-
-    .other-cards {
-        padding-top: 9rem;
     }
 }
 

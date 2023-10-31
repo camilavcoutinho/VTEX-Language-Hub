@@ -205,3 +205,37 @@ header a:hover {
 .internalLogo {
 	margin-top: -1rem;
 }
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+	.header-text {
+		display: inline-block;
+		position: relative;
+		border-bottom: 5px solid #e31c58;
+		text-align: left;
+		font-size: 3rem;
+		margin-left: 18rem;
+		padding-top: 1.5rem;
+	}
+
+	.header-subtext {
+		margin-left: 18rem;
+		padding-top: 1.5rem;
+	}
+
+	.toggleMenu {
+        margin-left: -1.5rem;
+    }
+
+	iframe {
+		/* margin: 0 1%; */
+		width: 90%;
+	}
+
+	.wrapper .sidebar {
+		width: 31ch;
+	}
+
+	.main-doc {
+		margin-left: 20ch;
+	}
+}
