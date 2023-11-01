@@ -91,19 +91,22 @@ function expandItem(id) { //Determines which menu subsection should be open on l
 	}
 }
 
-function expandStyleGuides() { //Generates the submenus for Style Guides.
+function expandStyleGuides() {
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
 
 	if (list) {
-		item.removeChild(list);
-		icon.textContent = "expand_more";
+		collapseStyleGuides(); // Call the new collapseStyleGuides function
 	} else {
+		collapseGlossaries();
+		collapseTranslationMemories();
+		collapseReviewLogs();
 		icon.textContent = "expand_less";
 		list = document.createElement("ul");
 
 		let items = [
+			{ id: "StyleGuides", text: "Back to Style Guides", link: "./style_guides.html" },
 			{ id: "Documentation", text: "Documentation", link: "https://www.notion.so/vtexhandbook/E-D-Style-Guide-80cf41f627574419bde54e64aa04d1df" },
 			{ id: "englishSG", text: "EN Localization", link: "./internal.html?id=englishSG" },
 			{ id: "spanishSG", text: "ES Localization", link: "./internal.html?id=spanishSG" },
@@ -113,7 +116,11 @@ function expandStyleGuides() { //Generates the submenus for Style Guides.
 			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
 		];
 
-		items.forEach((itemData) => {
+		// Check the current page's href for the "style_guides" string
+		const currentHref = window.location.href;
+		const containsStyleGuides = currentHref.includes("style_guides");
+
+		items.forEach((itemData, index) => {
 			let listItem = document.createElement("li");
 			let link = document.createElement("a");
 			link.innerText = itemData.text;
@@ -136,6 +143,10 @@ function expandStyleGuides() { //Generates the submenus for Style Guides.
 				listItem.style.fontWeight = "normal";
 			});
 
+			if (index === 0 && containsStyleGuides) {
+				listItem.style.display = "none"; // Hide the first item if the href contains "style_guides"
+			}
+
 			listItem.appendChild(link);
 			list.appendChild(listItem);
 		});
@@ -145,15 +156,29 @@ function expandStyleGuides() { //Generates the submenus for Style Guides.
 	}
 }
 
-function expandGlossaries() { //Generates the submenus for Glossaries.
+
+function collapseStyleGuides() {
+	let item = document.getElementById("styleGuides");
+	let list = item.querySelector("ul");
+	let icon = document.querySelector("#collapseStyleGuides");
+
+	if (list) {
+		item.removeChild(list);
+		icon.textContent = "expand_more";
+	}
+}
+
+function expandGlossaries() {
 	let item = document.getElementById("glossaries");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseGlossaries");
 
 	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
+		collapseGlossaries(); // Call the new collapseGlossaries function
 	} else {
+		collapseStyleGuides();
+		collapseTranslationMemories();
+		collapseReviewLogs();
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 
@@ -190,15 +215,28 @@ function expandGlossaries() { //Generates the submenus for Glossaries.
 	}
 }
 
-function expandTranslationMemories() { //Generates the submenus for Translation Memories.
+function collapseGlossaries() {
+	let item = document.getElementById("glossaries");
+	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseGlossaries");
+
+	if (list) {
+		item.removeChild(list);
+		button.textContent = "expand_more";
+	}
+}
+
+function expandTranslationMemories() {
 	let item = document.getElementById("translationMemories");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseTranslationMemories");
 
 	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
+		collapseTranslationMemories(); // Call the new collapseTranslationMemories function
 	} else {
+		collapseStyleGuides();
+		collapseGlossaries();
+		collapseReviewLogs();
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 
@@ -235,15 +273,28 @@ function expandTranslationMemories() { //Generates the submenus for Translation 
 	}
 }
 
-function expandReviewLogs() { //Generates the submenus for Review Logs.
+function collapseTranslationMemories() {
+	let item = document.getElementById("translationMemories");
+	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseTranslationMemories");
+
+	if (list) {
+		item.removeChild(list);
+		button.textContent = "expand_more";
+	}
+}
+
+function expandReviewLogs() {
 	let item = document.getElementById("reviewLogs");
 	let list = item.querySelector("ul");
 	let button = document.querySelector("#collapseReviewLogs");
 
 	if (list) {
-		item.removeChild(list);
-		button.textContent = "expand_more";
+		collapseReviewLogs(); // Call the new collapseReviewLogs function
 	} else {
+		collapseStyleGuides();
+		collapseGlossaries();
+		collapseTranslationMemories();
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 
@@ -279,6 +330,17 @@ function expandReviewLogs() { //Generates the submenus for Review Logs.
 
 		list.style.fontWeight = "normal";
 		item.appendChild(list);
+	}
+}
+
+function collapseReviewLogs() {
+	let item = document.getElementById("reviewLogs");
+	let list = item.querySelector("ul");
+	let button = document.querySelector("#collapseReviewLogs");
+
+	if (list) {
+		item.removeChild(list);
+		button.textContent = "expand_more";
 	}
 }
 

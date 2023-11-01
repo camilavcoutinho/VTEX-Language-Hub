@@ -195,7 +195,7 @@ header a:hover {
 	margin-left: 20rem;
 	padding-top: 2rem;
 	font-size: 1.3rem;
-	width: 40%;
+	width: 55%;
 }
 
 .material-symbols-outlined {
@@ -218,24 +218,24 @@ header a:hover {
 	}
 
 	.header-subtext {
-		margin-left: 18rem;
-		padding-top: 1.5rem;
+		margin-left: 17.5rem;
+		padding-top: 1rem;
 	}
 
 	.toggleMenu {
-        margin-left: -1.5rem;
-    }
+		margin-left: -1.5rem;
+	}
 
 	iframe {
 		/* margin: 0 1%; */
-		width: 90%;
+		width: 80%;
 	}
 
 	.wrapper .sidebar {
-		width: 31ch;
+		width: 30.5ch;
 	}
 
 	.main-doc {
-		margin-left: 20ch;
+		margin-left: 17ch;
 	}
 }
