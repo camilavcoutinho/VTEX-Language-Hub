@@ -3,7 +3,7 @@ hamburger.addEventListener("click", function () {
 	document.querySelector("body").classList.toggle("active");
 })
 
-function handleInternal() {
+function handleInternal() { //Determines which content should be displayed in the internal page according to the id passed from the clicked element.
 	let currentUrl = window.location.href;
 	if (currentUrl.includes("localization")) {
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
@@ -37,44 +37,61 @@ function handleInternal() {
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
-	else if (currentUrl.includes("glossaries")) {
-		let headerText = document.getElementById("header-text");
-		headerText.innerText = "Glossaries";
-		let headerSubtext = document.getElementById("header-subtext");
-		headerSubtext.innerText = "Enhance the user experience by using the most updated and researched VTEX terms in English, Portuguese, and Spanish.";
+	else if (currentUrl.includes("glossaries")) { 
+		displayGlossariesHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./glossaries/glossaries.html";
 		expandItem("glossaries");
 	}
 	else if (currentUrl.includes("reviewLogs")) {
-		let headerText = document.getElementById("header-text");
-		headerText.innerText = "Admin Review Logs";
-		let headerSubtext = document.getElementById("header-subtext");
-		headerSubtext.innerText = "Check out the linguistic evolution of UI strings towards a native and consistent experience.";
+		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("enAdminStd")) {
+		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("esAdminStd")) {
+		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - ES/VTEXAdminstringstandardizationinSpanish.html";
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("ptAdminStd")) {
+		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - PT/VTEXAdminstringstandardizationinPortuguese.html";
 		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("translationMemories")) {
-		let headerText = document.getElementById("header-text");
-		headerText.innerText = "Translation Memories";
-		let headerSubtext = document.getElementById("header-subtext");
-		headerSubtext.innerText = "Seen that phrase before? Dig through our translation memory to recover it, or to simply get inspiration if you’re writing in another language.";
+		displayTranslationMemoriesHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./translation_memory/translation_memory.html";
 		expandItem("translationMemories");
 	}
 }
-handleInternal(); //Calling function as soon as the internal page is loaded so it is populated with the correspondent card content.
+
+handleInternal(); //Calling the function as soon as the internal page is loaded so it is populated with the correspondent card content.
+
+//Style Guides header and subheader are displayed by default as static html.
+function displayGlossariesHeader() { //Changes the header and subheader to match the selected card/section.
+	let headerText = document.getElementById("header-text");
+	headerText.innerText = "Glossaries";
+	let headerSubtext = document.getElementById("header-subtext");
+	headerSubtext.innerText = "Enhance the user experience by using the most updated and researched VTEX terms in English, Portuguese, and Spanish."
+}
+
+function displayReviewLogsHeader() { //Changes the header and subheader to match the selected card/section.
+	let headerText = document.getElementById("header-text");
+	headerText.innerText = "Admin Review Logs";
+	let headerSubtext = document.getElementById("header-subtext");
+	headerSubtext.innerText = "Check out the linguistic evolution of UI strings towards a native and consistent experience.";
+}
+
+function displayTranslationMemoriesHeader() { //Changes the header and subheader to match the selected card/section.
+	let headerText = document.getElementById("header-text");
+	headerText.innerText = "Translation Memories";
+	let headerSubtext = document.getElementById("header-subtext");
+	headerSubtext.innerText = "Seen that phrase before? Dig through our translation memory to recover it, or to simply get inspiration if you’re writing in another language.";
+}
 
 function expandItem(id) { //Determines which menu subsection should be open on load depending on the selected card.
 	if (id == "styleGuides") {
@@ -96,12 +113,14 @@ function expandStyleGuides() {
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
 
-	if (list) {
-		collapseStyleGuides(); // Call the new collapseStyleGuides function
+	if (list) { //In case the list already exists, it means that the section is already expanded.
+		collapseStyleGuides();
 	} else {
+		//Starts by collapsing any other open section.
 		collapseGlossaries();
 		collapseTranslationMemories();
 		collapseReviewLogs();
+		//Proceeds to generate the elements of the section.
 		icon.textContent = "expand_less";
 		list = document.createElement("ul");
 
@@ -116,9 +135,8 @@ function expandStyleGuides() {
 			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
 		];
 
-		// Check the current page's href for the "style_guides" string
-		const currentHref = window.location.href;
-		const containsStyleGuides = currentHref.includes("style_guides");
+		// Check the current page's href for the "style_guides" id.
+		const containsStyleGuides = window.location.href.includes("style_guides");
 
 		items.forEach((itemData, index) => {
 			let listItem = document.createElement("li");
@@ -144,7 +162,7 @@ function expandStyleGuides() {
 			});
 
 			if (index === 0 && containsStyleGuides) {
-				listItem.style.display = "none"; // Hide the first item if the href contains "style_guides"
+				listItem.style.display = "none"; //Hide the"Back to Style Guides" item if the href contains "style_guides". Meaning it is the Style_guides page, so it is not needed.
 			}
 
 			listItem.appendChild(link);
@@ -157,7 +175,7 @@ function expandStyleGuides() {
 }
 
 
-function collapseStyleGuides() {
+function collapseStyleGuides() { //Removes the generated elements of the section from the DOM, collapsing the card.
 	let item = document.getElementById("styleGuides");
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
@@ -174,7 +192,7 @@ function expandGlossaries() {
 	let button = document.querySelector("#collapseGlossaries");
 
 	if (list) {
-		collapseGlossaries(); // Call the new collapseGlossaries function
+		collapseGlossaries();
 	} else {
 		collapseStyleGuides();
 		collapseTranslationMemories();
