@@ -34,13 +34,13 @@
     --bg-3: #F71963;
     --bg-4: #A1AAB7;
     --ff-regular: "VTEXTrust Regular";
-    --fs-1: clamp(0.9375rem, 0.925rem + 0.0625vw, 1rem);
-    --fs-2: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
-    --fs-3: clamp(1.35rem, 1.3075rem + 0.2125vw, 1.5625rem);
-    --fs-4: clamp(1.62rem, 1.5534rem + 0.3331vw, 1.9531rem);
-    --fs-5: clamp(1.9438rem, 1.8443rem + 0.4975vw, 2.4413rem);
-    --fs-6: clamp(2.3325rem, 2.1886rem + 0.7194vw, 3.0519rem);
-    --fs-7: clamp(2.7994rem, 2.5963rem + 1.0156vw, 3.815rem);
+    --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
+    --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
+    --fs-3: clamp(1.125rem, 1.0662rem + 0.1531vw, 1.25rem);
+    --fs-4: clamp(1.35rem, 1.2501rem + 0.2603vw, 1.5625rem);
+    --fs-5: clamp(1.62rem, 1.4634rem + 0.4081vw, 1.9531rem);
+    --fs-6: clamp(1.9438rem, 1.7099rem + 0.6095vw, 2.4413rem);
+    --fs-7: clamp(2.3325rem, 1.9943rem + 0.8813vw, 3.0519rem);
 }
 
 * {
