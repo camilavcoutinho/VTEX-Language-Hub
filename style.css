@@ -147,7 +147,7 @@ p {
     color: white;
 }
 
-.card:hover>a>.upper {
+a>.card:hover>.upper {
     width: 100%;
     height: 32%;
     margin: 0;
@@ -283,7 +283,7 @@ footer {
         height: 13.5%;
     }
 
-    .card:hover>a>.upper {
+    a>.card:hover>.upper {
         height: 20%;
     }
 
@@ -322,7 +322,7 @@ footer {
         justify-content: center;
     }
 
-    .card:hover>a>.upper {
+    a>.card:hover>.upper {
         width: 100%;
         height: 23.5%;
         margin: 0;

@@ -113,14 +113,13 @@ function expandStyleGuides() {
 	let list = item.querySelector("ul");
 	let icon = document.querySelector("#collapseStyleGuides");
 
-	if (list) { //In case the list already exists, it means that the section is already expanded.
+	if (list) {
 		collapseStyleGuides();
 	} else {
-		//Starts by collapsing any other open section.
 		collapseGlossaries();
 		collapseTranslationMemories();
 		collapseReviewLogs();
-		//Proceeds to generate the elements of the section.
+
 		icon.textContent = "expand_less";
 		list = document.createElement("ul");
 
@@ -135,8 +134,7 @@ function expandStyleGuides() {
 			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
 		];
 
-		// Check the current page's href for the "style_guides" id.
-		const containsStyleGuides = window.location.href.includes("style_guides");
+		const currentPageHref = window.location.href;
 
 		items.forEach((itemData, index) => {
 			let listItem = document.createElement("li");
@@ -161,8 +159,14 @@ function expandStyleGuides() {
 				listItem.style.fontWeight = "normal";
 			});
 
-			if (index === 0 && containsStyleGuides) {
-				listItem.style.display = "none"; //Hide the"Back to Style Guides" item if the href contains "style_guides". Meaning it is the Style_guides page, so it is not needed.
+			if (index === 0 && currentPageHref.includes("style_guides")) {
+				listItem.style.display = "none";
+			}
+
+			// Check if the link matches the current page's href
+			if (currentPageHref.includes(itemData.id)) {
+				link.style.color = "#f71963";
+				link.style.fontWeight = "bold";
 			}
 
 			listItem.appendChild(link);
@@ -173,6 +177,7 @@ function expandStyleGuides() {
 		item.appendChild(list);
 	}
 }
+
 
 
 function collapseStyleGuides() { //Removes the generated elements of the section from the DOM, collapsing the card.
@@ -201,8 +206,10 @@ function expandGlossaries() {
 		list = document.createElement("ul");
 
 		let items = [
-			{ id: "item1", text: "Localization", link: "./internal.html?id=glossaries" }
+			{ id: "glossaries", text: "Localization", link: "./internal.html?id=glossaries" }
 		];
+
+		const currentPageHref = window.location.href;
 
 		items.forEach((itemData) => {
 			let listItem = document.createElement("li");
@@ -223,6 +230,11 @@ function expandGlossaries() {
 			listItem.addEventListener("mouseout", function () {
 				listItem.style.fontWeight = "normal";
 			});
+
+			if (currentPageHref.includes(itemData.id)) {
+				link.style.color = "#f71963";
+				link.style.fontWeight = "bold";
+			}
 
 			listItem.appendChild(link);
 			list.appendChild(listItem);
@@ -259,8 +271,10 @@ function expandTranslationMemories() {
 		list = document.createElement("ul");
 
 		let items = [
-			{ id: "item1", text: "Localization", link: "./internal.html?id=translationMemories" }
+			{ id: "translationMemories", text: "Localization", link: "./internal.html?id=translationMemories" }
 		];
+
+		const currentPageHref = window.location.href;
 
 		items.forEach((itemData) => {
 			let listItem = document.createElement("li");
@@ -281,6 +295,11 @@ function expandTranslationMemories() {
 			listItem.addEventListener("mouseout", function () {
 				listItem.style.fontWeight = "normal";
 			});
+
+			if (currentPageHref.includes(itemData.id)) {
+				link.style.color = "#f71963";
+				link.style.fontWeight = "bold";
+			}
 
 			listItem.appendChild(link);
 			list.appendChild(listItem);
@@ -322,6 +341,8 @@ function expandReviewLogs() {
 			{ id: "ptAdminStd", text: "PT Admin Standardization", link: "./internal.html?id=ptAdminStd" },
 		];
 
+		const currentPageHref = window.location.href;
+
 		items.forEach((itemData) => {
 			let listItem = document.createElement("li");
 			let link = document.createElement("a");
@@ -341,6 +362,11 @@ function expandReviewLogs() {
 			listItem.addEventListener("mouseout", function () {
 				listItem.style.fontWeight = "normal";
 			});
+
+			if (currentPageHref.includes(itemData.id)) {
+				link.style.color = "#f71963";
+				link.style.fontWeight = "bold";
+			}
 
 			listItem.appendChild(link);
 			list.appendChild(listItem);
