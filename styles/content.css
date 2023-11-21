@@ -30,13 +30,14 @@
 
 :root {
     --bg-1: #F8F7FC;
-    --bg-2: #F71963;
-    --bg-3: #5E6E84;
-    --bg-4: #A1AAB7;
-    /* --bg-2: #1155CC;
+    --bg-2: #1155CC;
     --bg-3: #F71963;
-    --bg-4: #5E6E84; */
-    --bg-5: #A1AAB7; 
+    --bg-4: #5E6E84;
+    /* --bg-2: #F71963;
+    --bg-3: #5E6E84;
+    --bg-4: #A1AAB7;*/
+    --bg-5: #A1AAB7;
+    --bg-6: #000000; 
     --ff-regular: "VTEXTrust Regular";
     --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
     --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
@@ -58,17 +59,16 @@
 
 body {
     background: var(--bg-1);
-    /* font-size: var(--fs-2);
+    font-size: var(--fs-2);
     padding: 2rem;
     text-align: justify;
-    line-height: 1.6; */
+    line-height: 1.6;
 }
 
 .wrapper {
-    padding: 1rem;
-    /* display: grid;
+    display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 0.2rem; */
+    grid-gap: 0.2rem;
 }
 
 .spreadsheet {
@@ -87,7 +87,6 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: var(--fs-7);
     text-align: center;
-    /* margin: 1rem 0 2rem; */
 }
 
 h2 {
@@ -106,6 +105,13 @@ h5 {
     font-size: var(--fs-3);
 }
 
+#title-color {
+    color: var(--bg-6);
+}
+
+.spacing {
+    margin: 1rem 0 2rem;
+}
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -209,6 +215,7 @@ table {
     /* border-left: 1px solid var(--bg-4); */
     list-style: none;
     width: 20ch;
+    text-align: left;
 }
 
 .aside-item {
@@ -226,11 +233,6 @@ table {
 
 .aside-subitem {
     border-left: 0px;
-}
-
-p {
-    text-indent: 3rem;
-    text-align: justify;
 }
 
 .underline-text {
