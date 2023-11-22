@@ -5,11 +5,7 @@ hamburger.addEventListener("click", function () {
 
 function handleInternal() { //Determines which content should be displayed in the internal page according to the id passed from the clicked element.
 	let currentUrl = window.location.href;
-	if (currentUrl.includes("localization")) {
-		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
-		expandItem("styleGuides");
-	}
-	else if (currentUrl.includes("englishSG")) {
+	if (currentUrl.includes("englishSG")) {
 		document.getElementById("main-frame").src = "./loc_style_guides/Localization Style Guide - EN/VTEXLocalizationStyleGuideEN.html";
 		expandItem("styleGuides");
 	}
@@ -41,11 +37,6 @@ function handleInternal() { //Determines which content should be displayed in th
 		displayGlossariesHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./glossaries/glossaries.html";
 		expandItem("glossaries");
-	}
-	else if (currentUrl.includes("reviewLogs")) {
-		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
-		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - EN/VTEXAdminstringstandardizationinEnglish.html";
-		expandItem("reviewLogs");
 	}
 	else if (currentUrl.includes("enAdminStd")) {
 		displayReviewLogsHeader(); //Changes the header to match the selected section/card.
