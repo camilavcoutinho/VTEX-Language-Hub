@@ -29,10 +29,6 @@ function handleInternal() { //Determines which content should be displayed in th
 		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - PT/VTEXWritingStyleGuidePT.html";
 		expandItem("styleGuides");
 	}
-	else if (currentUrl.includes("marketing")) {
-		document.getElementById("main-frame").src = "./marketing_style_guides/Writing Style Guide - EN/VTEXWritingStyleGuideEN.html";
-		expandItem("styleGuides");
-	}
 	else if (currentUrl.includes("glossaries")) { 
 		displayGlossariesHeader(); //Changes the header to match the selected section/card.
 		document.getElementById("main-frame").src = "./glossaries/glossaries.html";
