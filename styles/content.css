@@ -33,12 +33,10 @@
     --bg-2: #1155CC;
     --bg-3: #F71963;
     --bg-4: #5E6E84;
-    /* --bg-2: #F71963;
-    --bg-3: #5E6E84;
-    --bg-4: #A1AAB7;*/
     --bg-5: #A1AAB7;
     --bg-6: #000000; 
     --ff-regular: "VTEXTrust Regular";
+    /* Values obtained with https://utopia.fyi/type/calculator/ */
     --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
     --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
     --fs-3: clamp(1.125rem, 1.0662rem + 0.1531vw, 1.25rem);
@@ -156,7 +154,6 @@ h5 {
 }
 
 li {
-    /* margin-left: 3rem; */
     font-size: var(--fs-1);
 }
 
@@ -166,7 +163,6 @@ li {
 
 table {
     margin-bottom: 2rem;
-    /* margin: 0.5rem 0 1rem; */
     border-spacing: 0;
     border-collapse: collapse;
 }
@@ -178,7 +174,6 @@ table {
 
 .table-internal {
     padding: 0.25rem 0.4rem;
-    /* padding: 0.25rem 0.8rem; */
     border: 1px solid var(--bg-4);
     font-size: var(--fs-1);
 }
@@ -192,7 +187,6 @@ table {
     padding: 0.5rem 1rem 3rem;
     font-size: var(--fs-1);
     color: var(--bg-5);
-    /* color: var(--bg-4); */
     line-height: 1.7;
     position: fixed;
     height: calc(100% - 60px);
@@ -211,7 +205,6 @@ table {
 .aside-list {
     padding-left: 1rem;
     border-left: 1px solid var(--bg-5);
-    /* border-left: 1px solid var(--bg-4); */
     list-style: none;
     width: 20ch;
     text-align: left;
@@ -219,7 +212,6 @@ table {
 
 .aside-item {
     color: var(--bg-5);
-    /* color: var(--bg-4); */
 }
 
 .aside-list a:hover {
