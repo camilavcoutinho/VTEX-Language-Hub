@@ -209,7 +209,6 @@ table {
 }
 
 .aside-list {
-    /* text-align: left; */
     padding-left: 1rem;
     border-left: 1px solid var(--bg-5);
     /* border-left: 1px solid var(--bg-4); */

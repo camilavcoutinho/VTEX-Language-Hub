@@ -1,16 +1,16 @@
 @font-face {
 	font-family: "VTEXTrust Bold";
-	src: url(./fonts/VTEXTrust-Bold.otf);
+	src: url(../fonts/VTEXTrust-Bold.otf);
 }
 
 @font-face {
 	font-family: "VTEXTrust Italic";
-	src: url(./fonts/VTEXTrust-Italic.otf);
+	src: url(../fonts/VTEXTrust-Italic.otf);
 }
 
 @font-face {
 	font-family: "VTEXTrust Regular";
-	src: url(./fonts/VTEXTrust-Regular.otf);
+	src: url(../fonts/VTEXTrust-Regular.otf);
 }
 
 :root {
