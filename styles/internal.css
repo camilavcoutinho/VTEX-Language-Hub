@@ -14,7 +14,7 @@
 }
 
 :root {
-	--bg-1: #F8F7FC;
+	--bg-1: #FFFFFF;
 	--bg-2: #142032;
 	/*#FFE0EF; */
 	--bg-3: #E7E9EE;
@@ -22,6 +22,7 @@
 	--bg-4: #5E6E84;
 	/*#FFC4DD;*/
 	--bg-5: #F71963;
+	--bg-6: #F8F7FC;
 	--ff-regular: "VTEXTrust Regular";
 	--ff-italic: "VTEXTrust Italic";
 	--ff-bold: "VTEXTrust Bold";
@@ -51,7 +52,7 @@ body {
 }
 
 .wrapper .sidebar {
-	background: var(--bg-3);
+	/* background: var(--bg-3); */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -83,7 +84,7 @@ body {
 }
 
 .wrapper .section .top_navbar {
-	background: var(--bg-1);
+	/* background: var(--bg-1); */
 	height: 3.75rem;
 	display: flex;
 	align-items: center;
@@ -163,13 +164,14 @@ p {
 
 header {
 	height: 30vh;
-	background-color: #E7E9EE;
+	/* background-color: #E7E9EE; */
 }
 
 .header-text {
 	display: inline-block;
 	position: relative;
-	border-bottom: 5px solid #e31c58;
+	border-bottom: 5px solid var(--bg-5);
+	/* #e31c58; */
 	text-align: left;
 	font-size: 4rem;
 	margin-left: 20rem;
@@ -188,7 +190,8 @@ header a {
 }
 
 header a:hover {
-	border: 1px solid #e31c58;
+	border: 1px solid var(--bg-5);
+	/* #e31c58; */
 }
 
 .header-subtext {
@@ -210,7 +213,8 @@ header a:hover {
 	.header-text {
 		display: inline-block;
 		position: relative;
-		border-bottom: 5px solid #e31c58;
+		border-bottom: 5px solid var(--bg-5);
+		/* #e31c58; */
 		text-align: left;
 		font-size: 3rem;
 		margin-left: 18rem;

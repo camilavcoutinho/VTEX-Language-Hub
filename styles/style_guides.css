@@ -9,16 +9,17 @@
 
 header {
     height: 25vh;
-    background-color: #E7E9EE;
+    background-color: var(--bg-1);
 }
 
 .cards {
-    background-color: #F8F7FC;
+    background-color: var(--bg-1);
     margin-top: 5rem;
 }
 
 .card {
     height: 350px;
+    background-color: var(--bg-6);
 }
 
 .card:hover>a>.upper {
@@ -35,7 +36,7 @@ h1 {
     padding-top: 3rem;
     margin-left: 3rem;
     position: relative;
-    border-bottom: 5px solid #e31c58;
+    border-bottom: 5px solid var(--bg-5);
 }
 
 h6 {
