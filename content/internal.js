@@ -377,12 +377,10 @@ function collapseReviewLogs() {
 
 function toggleMenu() { //Changes the menu icon and title text as it opens or closes the menu.
 	let menuIcon = document.querySelector(".toggleMenu");
-	if (menuIcon.innerHTML == "left_panel_close") {
-		menuIcon.innerHTML = "left_panel_open";
+	if (menuIcon.title == "Click to collapse the menu panel") {
 		menuIcon.title = "Click to expand the menu panel"
 	}
 	else {
-		menuIcon.innerHTML = "left_panel_close";
 		menuIcon.title = "Click to collapse the menu panel"
 	}
 }
