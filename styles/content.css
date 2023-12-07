@@ -198,9 +198,15 @@ nav > p {
     width: 50%;
 }
 
+aside {
+    display: none;
+}
+
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) {
-
+    aside {
+        display: none;
+    }
     
 }
 
