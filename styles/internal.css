@@ -121,7 +121,7 @@ body.active .wrapper .main-doc {
 }
 
 .main-doc {
-	margin-top: 15%;
+	/* margin-top: 15%; */
 	margin-left: 33ch; 
 	transition: all 0.5s ease;
 }
