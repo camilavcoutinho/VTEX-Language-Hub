@@ -119,6 +119,7 @@ function expandStyleGuides() {
 			{ id: "EnMktSG", text: "EN Marketing", link: "./internal.html?id=EnMktSG" },
 			{ id: "EsMktSG", text: "ES Marketing", link: "./internal.html?id=EsMktSG" },
 			{ id: "PtMktSG", text: "PT Marketing", link: "./internal.html?id=PtMktSG" },
+			{ id: "UXWriSG", text: "UX Writing", link: "https://uxwriting.vtex.com/" },
 		];
 
 		const currentPageHref = window.location.href;
@@ -132,7 +133,9 @@ function expandStyleGuides() {
 			if (itemData.id === "Documentation") {
 				link.setAttribute('target', '_blank');
 			}
-
+			if (itemData.id === "UXWriSG") {
+				link.setAttribute('target', '_blank');
+			}
 			listItem.style.margin = "0.5";
 			listItem.style.padding = "0.3";
 			link.style.margin = "0";
