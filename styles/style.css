@@ -33,9 +33,14 @@
     --ff-italic: "VTEXTrust Italic";
     --ff-bold: "VTEXTrust Bold";
     --col-regular: #000;
-    --fs-1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
-    --fs-2: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-    --fs-3: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
+    --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
+    --fs-3: clamp(1.125rem, 1.0662rem + 0.1531vw, 1.25rem);
+    --fs-4: clamp(1.35rem, 1.2501rem + 0.2603vw, 1.5625rem);
+    --fs-5: clamp(1.62rem, 1.4634rem + 0.4081vw, 1.9531rem);
+    --fs-6: clamp(1.9438rem, 1.7099rem + 0.6095vw, 2.4413rem);
+    --fs-7: clamp(2.3325rem, 1.9943rem + 0.8813vw, 3.0519rem);
+    --fs-8: clamp(2.7994rem, 2.3377rem + 1.2311vw, 3.815rem);
 }
 
 html {
@@ -57,19 +62,18 @@ a:visited {
 }
 
 #header {
-    background-image: url(../assets/herobg.svg);
-    height: 100%;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -1rem;
 }
 
 .logo {
     padding: 2rem 0;
-    margin-top: 1rem;
-    margin-left: -1rem;
-    height: 100px;
+}
+
+.hero {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
@@ -82,26 +86,24 @@ p {
     color: var(--col-regular);
 }
 
-.lower>h6 {
+.lower > h6 {
     padding: 0.7rem;
     color: #e31c58;
-    font-size: var(--fs-2);
+    font-size: var(--fs-4);
 }
 
-h4 {
-    font-size: var(--fs-3);
-    text-align: center;
-    margin-top: 4.5rem;
+h1 {
+    font-size: var(--fs-6);
 }
 
 h5 {
-    font-size: var(--fs-2);
+    font-size: var(--fs-4);
     text-align: center;
     padding: 1rem;
 }
 
 h6 {
-    font-size: var(--fs-1);
+    font-size: var(--fs-3);
     padding: 0.25rem;
 }
 
@@ -155,7 +157,7 @@ p {
     color: white;
 }
 
-.card:hover>.upper {
+.card:hover > .upper {
     width: 100%;
     height: 32%;
     margin: 0;
@@ -167,13 +169,13 @@ p {
     color: white;
 }
 
-.lower>h6 {
+.lower > h6 {
     text-align: left;
     margin-left: 1rem;
     margin-top: -0.5rem;
 }
 
-.lower>p {
+.lower > p {
     padding: 1rem;
     margin-left: 0.7rem;
     text-wrap: balance;
@@ -188,7 +190,7 @@ p {
     text-align: center;
 }
 
-.others>p {
+.others > p {
     margin-bottom: 1rem;
 }
 
@@ -205,9 +207,9 @@ p {
     background-color: #E7E9EE;
 }
 
-.others-upper>span,
-.lower>h6,
-.backTop>a {
+.others-upper > span,
+.lower > h6,
+.backTop > a {
     color: #000;
 }
 
@@ -230,12 +232,8 @@ footer {
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) {
 
-    h4 {
-        font-size: 2.5rem;
-        text-align: left;
-        margin-left: 2rem;
-        margin-top: 0;
-        padding-bottom: 6rem;
+    h1 {
+        font-size: var(--fs-7);
     }
 
     .cards {
@@ -246,7 +244,7 @@ footer {
         width: 100%;
     }
 
-    .other-cards>.card {
+    .other-cards > .card {
         width: 30%;
     }
 
@@ -257,15 +255,8 @@ footer {
 
 /* HD monitors*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
-    body {
-        height: 100vh;
-    }
-
-    h4 {
-        font-size: 4.5rem;
-        text-align: left;
-        margin-top: 3rem;
-        margin-left: 2rem;
+    h1 {
+        font-size: var(--fs-8);
     }
 
     .cards {
@@ -285,7 +276,7 @@ footer {
         height: 13.5%;
     }
 
-    .card:hover>.upper {
+    .card:hover > .upper {
         width: 100%;
         height: 20%;
         margin: 0;
@@ -304,17 +295,9 @@ footer {
 
 /* Full HD monitors and above */
 @media only screen and (min-width: 1920px) {
-
-    body {
-        height: 100vh;
-    }
-
-    h4 {
-        font-size: 5rem;
-        text-align: left;
-        margin-top: 10rem;
-        margin-left: 5rem;
-    }
+    h1 {
+        font-size: var(--fs-8);
+    } 
 
     .cards {
         width: 100%;
@@ -328,7 +311,7 @@ footer {
         justify-content: center;
     }
 
-    .card:hover>.upper {
+    .card:hover > .upper {
         width: 100%;
         height: 23.5%;
         margin: 0;
