@@ -27,12 +27,11 @@
 
 @font-face {
     font-family: "VTEXTrust Regular";
-    src: url(./fonts/VTEXTrust-Regular.otf);
+    src: url(../fonts/VTEXTrust-Regular.otf);
 }
 
 :root {
     --bg-1: #FFFFFF
-    /* #F8F7FC; */
     --bg-2: #1155CC;
     --bg-3: #F71963;
     --bg-4: #5E6E84;
@@ -203,16 +202,14 @@ aside {
 }
 
 /* Tablet and medium size screens */
-@media only screen and (min-width: 615px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
     aside {
         display: none;
     }
-    
 }
 
 /* HD monitors*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
-    
     body {
         height: 100vh;
     }
@@ -232,6 +229,10 @@ aside {
         left: 0;
         top: 0;
         height: calc(100% - 60px);
+    }
+    
+    aside {
+        display: block;
     }
     
     .aside-content {
@@ -291,7 +292,6 @@ aside {
 
 /* Full HD monitors and above */
 @media only screen and (min-width: 1920px) {
-
     body {
         height: 100vh;
     }
@@ -319,6 +319,10 @@ aside {
     
     .high-res {
         text-align: center;    
+    }
+    
+    aside {
+        display: block;
     }
     
     .aside-content {

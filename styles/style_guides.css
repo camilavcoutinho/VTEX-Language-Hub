@@ -33,7 +33,6 @@ header {
 h1 {
     display: inline-block;
     font-size: var(--fs-6);
-    /* 4rem; */
     padding-top: 3rem;
     margin-left: 3rem;
     position: relative;
@@ -101,9 +100,6 @@ h6 {
 
 /* Tablet and medium size screens */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    /* Tem alguma coisa no internal.css que está forçando a página inteira pra baixo, deixando um espaço no topo... */
-    /* Alguma coisa também está deixando o logo fora da tela... */
-
     body .wrapper .sidebar {
         left: -33ch;
     }

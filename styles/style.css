@@ -119,7 +119,7 @@ p {
     align-items: center;
     width: 100%;
     background-color: #FFF3F6;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .card {
@@ -221,12 +221,16 @@ footer {
     text-align: center;
 }
 
+footer:last-child {
+    padding-bottom: 2rem;
+}
+
 .line {
     opacity: 0.1;
 }
 
 .credits {
-    font-size: 0.8rem;
+    font-size: var(--fs-1);
 }
 
 /* Tablet and medium size screens */
