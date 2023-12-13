@@ -1,2 +1,2 @@
-# VTEX Writing
-### Ongoing project to create a landing page to the VTEX Writing initiative.
+# VTEX Language Hub
+### Ongoing project to create a landing page to the VTEX Language Hub initiative.
