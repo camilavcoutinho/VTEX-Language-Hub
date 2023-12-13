@@ -69,32 +69,39 @@ h6 {
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
     h1 {
         font-size: var(--fs-5);
-        /* 2.5rem; */
         padding-top: 1rem;
-        margin-left: 8rem;
     }
 
     h6 {
         padding-top: 2rem;
-        margin-left: 5rem;
         font-size: var(--fs-2);
     }
 
     .cards {
         margin-left: 0;
         margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 3rem;
+        grid-area: 1 / 1 / span 1 / span 1;
     }
 
     .card {
         flex-basis: calc(24% - 10px);
+        height: 400px;
+        line-height: 1.3rem;
     }
 
     .toggleMenu {
-        margin-left: 8rem;
-    }
+        margin-left: 3rem;
+    } 
 
     .menuOptions {
-        margin-top: -3rem;
+        margin-top: -2rem;
+    }
+    
+    body.active .wrapper .main-doc {
+        margin-left: 33ch;
     }
 }
 
