@@ -266,6 +266,41 @@ header a:hover {
 	/* .main-doc {
 		margin-left: 17ch;
 	} */
+
+	body .wrapper .sidebar {
+		left: 0;
+	}
+	
+	body .wrapper .section {
+		margin-left: 33ch;
+		width: 100%;
+	}
+	
+	body .wrapper .main-doc {
+		margin-left: 33ch;
+		transition: all 0.5s ease;
+	}
+	
+	body.active .wrapper .sidebar {
+		left: -33ch;
+	}
+	
+	body.active .wrapper .section {
+		margin-left: 33ch;
+		width: calc(100% - 33ch);
+	}
+	
+	body.active .wrapper .main-doc {
+		margin-left: 33ch;
+	}
+
+	header {
+		margin-left: 33ch;
+	}
+
+	.item.menu {
+        margin-top: -3rem;
+    }
 }
 
 /* Full HD monitors and above */
@@ -329,9 +364,14 @@ header a:hover {
 		left: 0;
 	}
 
+	h1 {
+		margin-top: -1rem;
+	}
+
 	.menu {
 		text-align: center;
 		font-size: var(--fs-2);
+		margin-top: -3rem;
 	}
 
 	.main-doc {
@@ -407,5 +447,32 @@ header a:hover {
 
 	.internalLogo {
 		margin-top: -1rem;
+	}
+
+	body .wrapper .sidebar {
+		left: 0;
+	}
+	
+	body .wrapper .section {
+		margin-left: 33ch;
+		width: 100%;
+	}
+	
+	body .wrapper .main-doc {
+		margin-left: 33ch;
+		transition: all 0.5s ease;
+	}
+	
+	body.active .wrapper .sidebar {
+		left: -33ch;
+	}
+	
+	body.active .wrapper .section {
+		margin-left: 33ch;
+		width: calc(100% - 33ch);
+	}
+	
+	body.active .wrapper .main-doc {
+		margin-left: 33ch;
 	}
 }

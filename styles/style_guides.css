@@ -10,6 +10,7 @@
 header {
     height: 25vh;
     background-color: var(--bg-1);
+    margin-top: 2rem;
 }
 
 .cards {
@@ -93,6 +94,15 @@ body.active .wrapper .main-doc {
     margin-left: 33ch;
 }
 
+.item.menu {
+    margin-top: 0;
+}
+
+.toggleMenu {
+    margin-bottom: 1rem;
+    margin-top: -30rem;
+}
+
 /* HD monitors*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
     h1 {
@@ -104,6 +114,11 @@ body.active .wrapper .main-doc {
     h6 {
         padding-top: 2rem;
         font-size: var(--fs-2);
+    }
+
+    header {
+        margin-left: -0.8rem;
+        margin-top: 2rem;
     }
 
     .cards {
@@ -122,8 +137,8 @@ body.active .wrapper .main-doc {
     }
 
     .toggleMenu {
-        margin-left: 3rem;
-        margin-top: -16.5rem;
+        margin-left: 2rem;
+        margin-top: -18.5rem;
     } 
 
     .menuOptions {
@@ -132,6 +147,10 @@ body.active .wrapper .main-doc {
     
     body.active .wrapper .main-doc {
         margin-left: 33ch;
+    }
+
+    .item.menu {
+        margin-top: 0;
     }
 }
 
