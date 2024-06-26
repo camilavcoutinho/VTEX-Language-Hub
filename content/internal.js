@@ -49,10 +49,10 @@ function handleInternal() { //Determines which content should be displayed in th
 		document.getElementById("main-frame").src = "./loc_admin_review_logs/Admin String Standardization - PT/VTEXAdminstringstandardizationinPortuguese.html";
 		expandItem("reviewLogs");
 	}
-	else if (currentUrl.includes("translationMemories")) {
-		displayTranslationMemoriesHeader(); //Changes the header to match the selected section/card.
-		document.getElementById("main-frame").src = "./translation_memory/translation_memory.html";
-		expandItem("translationMemories");
+	else if (currentUrl.includes("namingGuidelines")) {
+		displayL10nAndI18nHeader(); //Changes the header to match the selected section/card.
+		document.getElementById("main-frame").src = "./localization_and_internationalization/naming_guidelines.html";
+		expandItem("namingGuidelines");
 	}
 }
 
@@ -73,11 +73,11 @@ function displayReviewLogsHeader() { //Changes the header and subheader to match
 	headerSubtext.innerText = "Check out the linguistic evolution of UI strings towards a native and consistent experience.";
 }
 
-function displayTranslationMemoriesHeader() { //Changes the header and subheader to match the selected card/section.
+function displayL10nAndI18nHeader() { //Changes the header and subheader to match the selected card/section.
 	let headerText = document.getElementById("header-text");
-	headerText.innerText = "Translation Memories";
+	headerText.innerText = "Localization & Internationalization";
 	let headerSubtext = document.getElementById("header-subtext");
-	headerSubtext.innerText = "Seen that phrase before? Dig through our translation memory to recover it, or to simply get inspiration if you’re writing in another language.";
+	headerSubtext.innerText = "Create a product that is ready for a global audience by following localization and internationalization best practices.";
 }
 
 function expandItem(id) { //Determines which menu subsection should be open on load depending on the selected card.
@@ -90,8 +90,8 @@ function expandItem(id) { //Determines which menu subsection should be open on l
 	else if (id == "glossaries") {
 		expandGlossaries();
 	}
-	else if (id == "translationMemories") {
-		expandTranslationMemories()
+	else if (id == "namingGuidelines") {
+		expandL10nAndI18nMemories()
 	}
 }
 
@@ -104,7 +104,7 @@ function expandStyleGuides() {
 		collapseStyleGuides();
 	} else {
 		collapseGlossaries();
-		collapseTranslationMemories();
+		collapseL10nAndI18n();
 		collapseReviewLogs();
 
 		icon.textContent = "expand_less";
@@ -190,7 +190,7 @@ function expandGlossaries() {
 		collapseGlossaries();
 	} else {
 		collapseStyleGuides();
-		collapseTranslationMemories();
+		collapseL10nAndI18n();
 		collapseReviewLogs();
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
@@ -246,13 +246,13 @@ function collapseGlossaries() {
 	}
 }
 
-function expandTranslationMemories() {
-	let item = document.getElementById("translationMemories");
+function expandL10nAndI18nMemories() {
+	let item = document.getElementById("namingGuidelines");
 	let list = item.querySelector("ul");
-	let button = document.querySelector("#collapseTranslationMemories");
+	let button = document.querySelector("#collapseL10nAndI18n");
 
 	if (list) {
-		collapseTranslationMemories(); // Call the new collapseTranslationMemories function
+		collapseL10nAndI18n(); // Call the new collapseTranslationMemories function
 	} else {
 		collapseStyleGuides();
 		collapseGlossaries();
@@ -261,7 +261,7 @@ function expandTranslationMemories() {
 		list = document.createElement("ul");
 
 		let items = [
-			{ id: "translationMemories", text: "Localization", link: "./internal.html?id=translationMemories" }
+			{ id: "namingGuidelines", text: "Naming Guidelines", link: "./internal.html?id=namingGuidelines" }
 		];
 
 		const currentPageHref = window.location.href;
@@ -300,10 +300,10 @@ function expandTranslationMemories() {
 	}
 }
 
-function collapseTranslationMemories() {
-	let item = document.getElementById("translationMemories");
+function collapseL10nAndI18n() {
+	let item = document.getElementById("namingGuidelines");
 	let list = item.querySelector("ul");
-	let button = document.querySelector("#collapseTranslationMemories");
+	let button = document.querySelector("#collapseL10nAndI18n");
 
 	if (list) {
 		item.removeChild(list);
@@ -321,7 +321,7 @@ function expandReviewLogs() {
 	} else {
 		collapseStyleGuides();
 		collapseGlossaries();
-		collapseTranslationMemories();
+		collapseL10nAndI18n();
 		button.textContent = "expand_less";
 		list = document.createElement("ul");
 
