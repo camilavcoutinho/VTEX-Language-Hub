@@ -97,6 +97,10 @@ h5 {
     font-size: var(--fs-3);
 }
 
+.half-spacing {
+    padding-top: 1.5rem;    
+}
+
 .spacing {
     padding-top: 3rem;
 }
