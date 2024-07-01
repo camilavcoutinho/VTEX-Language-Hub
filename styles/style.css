@@ -2,78 +2,78 @@
    Fonts: https://brand.vtex.com/brand-guidelines/##Typography*/
 
 @font-face {
-    font-family: "VTEXTrust Bold";
-    src: url(../fonts/VTEXTrust-Bold.otf);
+  font-family: "VTEXTrust Bold";
+  src: url(../fonts/VTEXTrust-Bold.otf);
 }
 
 @font-face {
-    font-family: "VTEXTrust Italic";
-    src: url(../fonts/VTEXTrust-Italic.otf);
+  font-family: "VTEXTrust Italic";
+  src: url(../fonts/VTEXTrust-Italic.otf);
 }
 
 @font-face {
-    font-family: "VTEXTrust Regular";
-    src: url(../fonts/VTEXTrust-Regular.otf);
+  font-family: "VTEXTrust Regular";
+  src: url(../fonts/VTEXTrust-Regular.otf);
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --bg-1: #F8F7FC;
-    --bg-2: #FFE0EF;
-    --bg-3: #F71963;
-    --bg-4: #FFC4DD;
-    --ff-regular: "VTEXTrust Regular";
-    --ff-italic: "VTEXTrust Italic";
-    --ff-bold: "VTEXTrust Bold";
-    --col-regular: #000;
-    --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
-    --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
-    --fs-3: clamp(1.125rem, 1.0662rem + 0.1531vw, 1.25rem);
-    --fs-4: clamp(1.35rem, 1.2501rem + 0.2603vw, 1.5625rem);
-    --fs-5: clamp(1.62rem, 1.4634rem + 0.4081vw, 1.9531rem);
-    --fs-6: clamp(1.9438rem, 1.7099rem + 0.6095vw, 2.4413rem);
-    --fs-7: clamp(2.3325rem, 1.9943rem + 0.8813vw, 3.0519rem);
-    --fs-8: clamp(2.7994rem, 2.3377rem + 1.2311vw, 3.815rem);
+  --bg-1: #f8f7fc;
+  --bg-2: #ffe0ef;
+  --bg-3: #f71963;
+  --bg-4: #ffc4dd;
+  --ff-regular: "VTEXTrust Regular";
+  --ff-italic: "VTEXTrust Italic";
+  --ff-bold: "VTEXTrust Bold";
+  --col-regular: #000;
+  --fs-1: clamp(0.7813rem, 0.7724rem + 0.023vw, 0.8rem);
+  --fs-2: clamp(0.9375rem, 0.9081rem + 0.0766vw, 1rem);
+  --fs-3: clamp(1.125rem, 1.0662rem + 0.1531vw, 1.25rem);
+  --fs-4: clamp(1.35rem, 1.2501rem + 0.2603vw, 1.5625rem);
+  --fs-5: clamp(1.62rem, 1.4634rem + 0.4081vw, 1.9531rem);
+  --fs-6: clamp(1.9438rem, 1.7099rem + 0.6095vw, 2.4413rem);
+  --fs-7: clamp(2.3325rem, 1.9943rem + 0.8813vw, 3.0519rem);
+  --fs-8: clamp(2.7994rem, 2.3377rem + 1.2311vw, 3.815rem);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--ff-regular);
-    height: 100%;
-    background: #FFF;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  font-family: var(--ff-regular);
+  height: 100%;
+  background: #fff;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 a,
 a:visited {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #header {
-    width: 100%;
+  width: 100%;
 }
 
 .logo {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .hero {
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -83,255 +83,254 @@ h4,
 h5,
 h6,
 p {
-    color: var(--col-regular);
+  color: var(--col-regular);
 }
 
 .lower > h6 {
-    padding: 0.7rem;
-    color: #e31c58;
-    font-size: var(--fs-4);
+  padding: 0.7rem;
+  color: #e31c58;
+  font-size: var(--fs-4);
 }
 
 h1 {
-    font-size: var(--fs-6);
+  font-size: var(--fs-6);
 }
 
 h5 {
-    font-size: var(--fs-4);
-    text-align: center;
-    padding: 1rem;
+  font-size: var(--fs-4);
+  text-align: center;
+  padding: 1rem;
 }
 
 h6 {
-    font-size: var(--fs-3);
-    padding: 0.25rem;
+  font-size: var(--fs-3);
+  padding: 0.25rem;
 }
 
 p {
-    padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.7rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #FFF3F6;
-    padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff3f6;
+  padding: 3rem 0;
 }
 
 .card {
-    background-color: #FFF;
-    width: 300px;
-    height: 300px;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    outline: 1px solid #E7E9EE;
-    position: relative;
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  outline: 1px solid #e7e9ee;
+  position: relative;
 }
 
 .card-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .upper {
-    margin: 1.5rem;
-    height: 20%;
-    width: 17.5%;
-    background-color: #e31c58;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+  margin: 1.5rem;
+  height: 20%;
+  width: 17.5%;
+  background-color: #e31c58;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .SGupper {
-    color: white;
+  color: white;
 }
 
 .card:hover > .upper {
-    width: 100%;
-    height: 32%;
-    margin: 0;
-    margin-bottom: 0.5rem;
-    border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 32%;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .material-symbols-outlined {
-    color: white;
+  color: white;
 }
 
 .lower > h6 {
-    text-align: left;
-    margin-left: 1rem;
-    margin-top: -0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: -0.5rem;
 }
 
 .lower > p {
-    padding: 1rem;
-    margin-left: 0.7rem;
-    text-wrap: balance;
-    color: #5B6E84;
-    text-align: left;
+  padding: 1rem;
+  margin-left: 0.7rem;
+  text-wrap: balance;
+  color: #5b6e84;
+  text-align: left;
 }
 
 .others {
-    background-color: #F8F7FC;
-    align-items: center;
-    margin-bottom: -1rem;
-    text-align: center;
+  background-color: #f8f7fc;
+  align-items: center;
+  margin-bottom: -1rem;
+  text-align: center;
 }
 
 .others > p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .other-titles {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .other-cards {
-    background-color: #F8F7FC;
-    padding-bottom: 1rem;
+  background-color: #f8f7fc;
+  padding-bottom: 1rem;
 }
 
 .others-upper {
-    background-color: #E7E9EE;
+  background-color: #e7e9ee;
 }
 
 .others-upper > span,
 .lower > h6,
 .backTop > a {
-    color: #000;
+  color: #000;
 }
 
 .backTop {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 footer:last-child {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .line {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 
 .credits {
-    font-size: var(--fs-1);
+  font-size: var(--fs-1);
 }
 
 /* Tablet and medium size screens */
 @media only screen and (min-width: 615px) and (max-width: 1279px) {
+  h1 {
+    font-size: var(--fs-7);
+  }
 
-    h1 {
-        font-size: var(--fs-7);
-    }
+  .cards {
+    padding-top: 1rem;
+  }
 
-    .cards {
-        padding-top: 1rem;
-    }
+  .other-cards {
+    width: 100%;
+  }
 
-    .other-cards {
-        width: 100%;
-    }
+  .other-cards > .card {
+    width: 30%;
+  }
 
-    .other-cards > .card {
-        width: 30%;
-    }
-
-    .longer-text {
-        margin-top: -1rem;
-    }
+  .longer-text {
+    margin-top: -1rem;
+  }
 }
 
 /* HD monitors*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
-    h1 {
-        font-size: var(--fs-8);
-    }
+  h1 {
+    font-size: var(--fs-8);
+  }
 
-    .cards {
-        width: 100%;
-        margin: auto;
-        margin-top: -0.5rem;
-        gap: 2rem;
-    }
+  .cards {
+    width: 100%;
+    margin: auto;
+    margin-top: -0.5rem;
+    gap: 2rem;
+  }
 
-    .card {
-        flex-basis: calc(18% - 10px);
-        justify-content: center;
-        height: 330px;
-    }
+  .card {
+    flex-basis: calc(18% - 10px);
+    justify-content: center;
+    height: 330px;
+  }
 
-    .upper {
-        height: 13.5%;
-    }
+  .upper {
+    height: 13.5%;
+  }
 
-    .card:hover > .upper {
-        width: 100%;
-        height: 20%;
-        margin: 0;
-        margin-bottom: 1rem;
-        border-radius: 10px 10px 0 0;
-    }
+  .card:hover > .upper {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
 
-    .others {
-        padding-top: 1.2rem;
-    }
+  .others {
+    padding-top: 1.2rem;
+  }
 
-    .backTop {
-        display: none;
-    }
+  .backTop {
+    display: none;
+  }
 }
 
 /* Full HD monitors and above */
 @media only screen and (min-width: 1920px) {
-    h1 {
-        font-size: var(--fs-8);
-    } 
+  h1 {
+    font-size: var(--fs-8);
+  }
 
-    .cards {
-        width: 100%;
-        margin: auto;
-        margin-top: -5rem;
-        gap: 2rem;
-    }
+  .cards {
+    width: 100%;
+    margin: auto;
+    margin-top: -5rem;
+    gap: 2rem;
+  }
 
-    .card {
-        flex-basis: calc(18% - 10px);
-        justify-content: center;
-    }
+  .card {
+    flex-basis: calc(18% - 10px);
+    justify-content: center;
+  }
 
-    .card:hover > .upper {
-        width: 100%;
-        height: 23.5%;
-        margin: 0;
-        margin-bottom: 1rem;
-        border-radius: 10px 10px 0 0;
-    }
+  .card:hover > .upper {
+    width: 100%;
+    height: 23.5%;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
 
-    .others {
-        padding-top: 1.2rem;
-    }
+  .others {
+    padding-top: 1.2rem;
+  }
 
-    .backTop {
-        display: none;
-    }
+  .backTop {
+    display: none;
+  }
 
-    .other-cards {
-        padding-top: 6rem;
-    }
+  .other-cards {
+    padding-top: 6rem;
+  }
 }
