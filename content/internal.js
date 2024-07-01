@@ -96,7 +96,7 @@ function expandItem(id) {
   } else if (id == "glossaries") {
     expandGlossaries();
   } else if (id == "namingGuidelines") {
-    expandL10nAndI18nMemories();
+    expandL10nAndI18n();
   }
 }
 
@@ -290,13 +290,13 @@ function collapseGlossaries() {
   }
 }
 
-function expandL10nAndI18nMemories() {
+function expandL10nAndI18n() {
   let item = document.getElementById("namingGuidelines");
   let list = item.querySelector("ul");
   let button = document.querySelector("#collapseL10nAndI18n");
 
   if (list) {
-    collapseL10nAndI18n(); // Call the new collapseTranslationMemories function
+    collapseL10nAndI18n(); // Call the new collapseL10nAndI18n function
   } else {
     collapseStyleGuides();
     collapseGlossaries();

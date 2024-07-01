@@ -103,7 +103,7 @@ body.active .wrapper .main-doc {
   margin-top: -30rem;
 }
 
-/* HD monitors*/
+/* HD screens*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
   h1 {
     font-size: var(--fs-5);
@@ -204,11 +204,11 @@ body.active .wrapper .main-doc {
     color: var(--fc-1);
     margin: 0.5rem;
     margin-top: -17rem;
-    /* margin-left: 1.5rem; */
     scale: 1.3;
   }
 }
 
+/* Mobile screens */
 @media only screen and (max-width: 767px) {
   body .wrapper .sidebar {
     left: -33ch;
@@ -238,10 +238,7 @@ body.active .wrapper .main-doc {
     color: var(--fc-1);
     margin: 0.5rem;
     margin-top: -26rem;
-    /* margin-left: 1.5rem; */
     scale: 1.3;
-    /* position: absolute; */
-    /* right: 1.5rem; */
   }
 
   h1 {
@@ -251,8 +248,4 @@ body.active .wrapper .main-doc {
   .cards {
     margin-top: 0rem;
   }
-}
-
-/* Full HD monitors and above */
-@media only screen and (min-width: 1920px) {
 }

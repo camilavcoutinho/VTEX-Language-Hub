@@ -249,23 +249,15 @@ header a:hover {
   }
 }
 
-/* HD monitors*/
+/* HD screens*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
   .header-text {
     padding-top: 1.5rem;
   }
 
-  /* iframe {
-		width: 80%;
-	} */
-
   .wrapper .sidebar {
     width: 30.5ch;
   }
-
-  /* .main-doc {
-		margin-left: 17ch;
-	} */
 
   body .wrapper .sidebar {
     left: 0;
@@ -303,7 +295,7 @@ header a:hover {
   }
 }
 
-/* Full HD monitors and above */
+/* Full HD screens and above */
 @media only screen and (min-width: 1920px) {
   .item,
   .material-symbols-outlined {

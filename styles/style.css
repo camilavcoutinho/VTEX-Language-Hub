@@ -256,7 +256,7 @@ footer:last-child {
   }
 }
 
-/* HD monitors*/
+/* HD screens*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
   h1 {
     font-size: var(--fs-8);
@@ -296,7 +296,7 @@ footer:last-child {
   }
 }
 
-/* Full HD monitors and above */
+/* Full HD screens and above */
 @media only screen and (min-width: 1920px) {
   h1 {
     font-size: var(--fs-8);

@@ -6,7 +6,6 @@
   
 ::-webkit-scrollbar-track {
     background:  #FFFFFF;
-    /* #F8F7FC; */
     border-radius: 100vw;
     margin-block: 0.5em;
 }
@@ -19,7 +18,6 @@
 
 /* Firefox scrolling */
 @supports (scrollbar-color: #F71963 #FFFFFF) {
-    /* #F8F7FC */
     * {
         scrollbar-color: #F71963 #FFFFFF;
     }
@@ -212,7 +210,7 @@ aside {
     }
 }
 
-/* HD monitors*/
+/* HD screens*/
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
     body {
         height: 100vh;
@@ -298,7 +296,7 @@ aside {
     }
 }
 
-/* Full HD monitors and above */
+/* Full HD screens and above */
 @media only screen and (min-width: 1920px) {
     body {
         height: 100vh;
