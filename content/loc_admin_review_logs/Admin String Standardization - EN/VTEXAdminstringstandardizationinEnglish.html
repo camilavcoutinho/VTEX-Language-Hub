@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../../styles/content.css">
   <title>VTEX Admin string standardization for English</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="doc-content flow">
       <h1 id="introduction">VTEX Admin string standardization for English</h1>
-      <p class="intro-content">The VTEX Admin strings were fully reviewed as proposed in the <a class="text-link" href="https://docs.google.com/document/d/1Lnk7BKdQkfrol0EwmSOYWvV2C99Bk-iu_00p6sIMYHI/edit#heading=h.lezk5phgz6d0">2022 third-quarter OKR</a> of the Localization team. During this process, we applied grammar, tone, and voice corrections to offer a consistent experience for our users throughout platform strings. The review implemented patterns specified in our <a class="text-link" href="https://www.notion.so/vtexhandbook/Style-Guides-a05a5cd05987404aab544032292d6bd2">Localization style guides</a>, the CAT tool integrated Localization glossary, VTEX <a class="text-link" href="https://uxwriting.vtex.com/docs/">UX Writing Guidelines</a>, as well as naming and standardization discussions with PMs. In this document, we have included the main reference and standardization points that were applied during the review and that should be maintained in Admin strings.</p>
-      <h3 class="intro-content" id="capitalization">Capitalization</h3>  
-      <p class="table-intro">These patterns were adopted from the <a class="text-link" href="https://uxwriting.vtex.com/docs/principles/voice-chart">Voice Chart</a>&nbsp;available in the UX Writing Guidelines.</p>
-      
+      <p class="intro-content">The VTEX Admin strings were fully reviewed as proposed in the <a class="text-link"
+          href="https://docs.google.com/document/d/1Lnk7BKdQkfrol0EwmSOYWvV2C99Bk-iu_00p6sIMYHI/edit#heading=h.lezk5phgz6d0">2022
+          third-quarter OKR</a> of the Localization team. During this process, we applied grammar, tone, and voice
+        corrections to offer a consistent experience for our users throughout platform strings. The review implemented
+        patterns specified in our <a class="text-link"
+          href="https://www.notion.so/vtexhandbook/Style-Guides-a05a5cd05987404aab544032292d6bd2">Localization style
+          guides</a>, the CAT tool integrated Localization glossary, VTEX <a class="text-link"
+          href="https://uxwriting.vtex.com/docs/">UX Writing Guidelines</a>, as well as naming and standardization
+        discussions with PMs. In this document, we have included the main reference and standardization points that were
+        applied during the review and that should be maintained in Admin strings.</p>
+      <h3 class="intro-content" id="capitalization">Capitalization</h3>
+      <p class="table-intro">These patterns were adopted from the <a class="text-link"
+          href="https://uxwriting.vtex.com/docs/principles/voice-chart">Voice Chart</a>&nbsp;available in the UX Writing
+        Guidelines.</p>
+
       <table>
         <tr>
           <td class="table-internal" colspan="1" rowspan="1">
@@ -54,7 +67,8 @@
             <p>Title</p>
           </td>
           <td class="table-internal" colspan="1" rowspan="1">
-            <p>Unless it's a sentence. Many buttons in the UI display as all caps as recommended in the UX Writing guidelines, but many do not, so it is important to standardize them at the string level.</p>
+            <p>Unless it's a sentence. Many buttons in the UI display as all caps as recommended in the UX Writing
+              guidelines, but many do not, so it is important to standardize them at the string level.</p>
           </td>
         </tr>
         <tr>
@@ -171,40 +185,102 @@
       </table>
       <h3 class="intro-content" id="grammar-forms">Grammar forms</h3>
       <ul>
-        <li class="bullet">When naming menu items, remember that in EN, <a class="text-link" href="https://www.englishclub.com/grammar/nouns-adjective.htm">nouns acting as adjectives</a>&nbsp;are used in the singular form. This especially applies to pages with “management” in their name: <span class="bold-text">Offer Management</span>, <span class="bold-text">Affiliate Management</span>, <span class="bold-text">Order Management</span>. Other examples are <span class="bold-text">Custom Order Attributes</span>, <span class="bold-text">Order Authorization</span>, and <span class="bold-text">SKU Bindings</span>.</li>
+        <li class="bullet">When naming menu items, remember that in EN, <a class="text-link"
+            href="https://www.englishclub.com/grammar/nouns-adjective.htm">nouns acting as adjectives</a>&nbsp;are used
+          in the singular form. This especially applies to pages with “management” in their name: <span
+            class="bold-text">Offer Management</span>, <span class="bold-text">Affiliate Management</span>, <span
+            class="bold-text">Order Management</span>. Other examples are <span class="bold-text">Custom Order
+            Attributes</span>, <span class="bold-text">Order Authorization</span>, and <span class="bold-text">SKU
+            Bindings</span>.</li>
       </ul>
       <h3 class="intro-content" id="lexical-preferences">Lexical preferences</h3>
       <ul>
-        <li class="bullet"><span class="bold-text">Email</span>, not <span class="italic-text">e-mail</span>. Do not hyphenate.</li>
-        <li class="bullet"><span class="bold-text">Ecommerce</span>, not <span class="italic-text">e-commerce</span>. Do not hyphenate.</li>
-        <li class="bullet">“Register”, often used to render the PT <span class="italic-text">cadastrar</span>, was replaced by <span class="bold-text">add</span><span class="italic-text bold-text">&nbsp;</span>in most instances. When referring to elements that are already in the system, <span class="bold-text">existing</span><span class="italic-text bold-text">&nbsp;</span>is an alternative or simply referring to the element (omitting <span class="italic-text">cadastrados</span>). “This will delete all [existing] users” is an example. <span class="bold-text">Register a domain</span>&nbsp;and <span class="bold-text">registration form</span>&nbsp;are valid, however, in this latter case, the concept should be paired with adding/creating/signing up, in other words, you complete a registration form to add a user or create an account.</li>
-        <li class="bullet">EN makes a distinction between “data” and “information”/”details”. In a registration forms, always use <span class="bold-text">information</span>, like “User information”. <span class="bold-text">Data</span>&nbsp;applies to data sets like “sales performance data.”</li>
-        <li class="bullet"><span class="bold-text">Boleto</span>&nbsp;is a payment method that is specific to Brazil. It has no equivalent in the US. It had often been translated as “bank slip,” but this concept does not exist and may be confused with a “deposit slip,” which is a paper you fill out to make a deposit, which is the majority of the results you get if you search “bank slip.” For this reason, we decided to change all instances to <span class="bold-text">boleto</span>. That way, if a user sees this option and is unfamiliar with this payment method, they will easily get an explanation if they search “What is boleto?,” which indeed, yields many informative articles in EN. “Boleto bancário” is also standardized to <span class="bold-text">boleto</span>.</li>
-        <li class="bullet">“Listing” was changed to <span class="bold-text">list</span>. In general, a “listing” is an entry in a marketplace that the end customer sees. It is not wrong to use it to mean “list,” but to be consistent, it was changed to <span class="bold-text">list</span> throughout the Admin.</li>
-        <li class="bullet">“Value” when referring to money, especially in the context of orders and invoices, has been standardized to <span class="bold-text">amount</span>. For other numbers and fields, <span class="bold-text">value</span>&nbsp;is valid (example: “specification value: green”, “maximum value for number of rows”).</li>
-        <li class="bullet">Use <span class="bold-text">enter</span> and <span class="bold-text">complete</span> for user input of “type”, “fill in,” or “insert”. <span class="bold-text">Enter</span> applies when adding something to a field, like “enter the ID”. <span class="bold-text">Complete</span> is often used for more than one or general input, like “completing a form” or “complete the fields”.</li>
-        <li class="bullet">As a button taking you to another view, <span class="bold-text">view</span> is the preferred verb instead of “see”.</li>
+        <li class="bullet"><span class="bold-text">Email</span>, not <span class="italic-text">e-mail</span>. Do not
+          hyphenate.</li>
+        <li class="bullet"><span class="bold-text">Ecommerce</span>, not <span class="italic-text">e-commerce</span>. Do
+          not hyphenate.</li>
+        <li class="bullet">“Register”, often used to render the PT <span class="italic-text">cadastrar</span>, was
+          replaced by <span class="bold-text">add</span><span class="italic-text bold-text">&nbsp;</span>in most
+          instances. When referring to elements that are already in the system, <span
+            class="bold-text">existing</span><span class="italic-text bold-text">&nbsp;</span>is an alternative or
+          simply referring to the element (omitting <span class="italic-text">cadastrados</span>). “This will delete all
+          [existing] users” is an example. <span class="bold-text">Register a domain</span>&nbsp;and <span
+            class="bold-text">registration form</span>&nbsp;are valid, however, in this latter case, the concept should
+          be paired with adding/creating/signing up, in other words, you complete a registration form to add a user or
+          create an account.</li>
+        <li class="bullet">EN makes a distinction between “data” and “information”/”details”. In a registration forms,
+          always use <span class="bold-text">information</span>, like “User information”. <span
+            class="bold-text">Data</span>&nbsp;applies to data sets like “sales performance data.”</li>
+        <li class="bullet"><span class="bold-text">Boleto</span>&nbsp;is a payment method that is specific to Brazil. It
+          has no equivalent in the US. It had often been translated as “bank slip,” but this concept does not exist and
+          may be confused with a “deposit slip,” which is a paper you fill out to make a deposit, which is the majority
+          of the results you get if you search “bank slip.” For this reason, we decided to change all instances to <span
+            class="bold-text">boleto</span>. That way, if a user sees this option and is unfamiliar with this payment
+          method, they will easily get an explanation if they search “What is boleto?,” which indeed, yields many
+          informative articles in EN. “Boleto bancário” is also standardized to <span class="bold-text">boleto</span>.
+        </li>
+        <li class="bullet">“Listing” was changed to <span class="bold-text">list</span>. In general, a “listing” is an
+          entry in a marketplace that the end customer sees. It is not wrong to use it to mean “list,” but to be
+          consistent, it was changed to <span class="bold-text">list</span> throughout the Admin.</li>
+        <li class="bullet">“Value” when referring to money, especially in the context of orders and invoices, has been
+          standardized to <span class="bold-text">amount</span>. For other numbers and fields, <span
+            class="bold-text">value</span>&nbsp;is valid (example: “specification value: green”, “maximum value for
+          number of rows”).</li>
+        <li class="bullet">Use <span class="bold-text">enter</span> and <span class="bold-text">complete</span> for user
+          input of “type”, “fill in,” or “insert”. <span class="bold-text">Enter</span> applies when adding something to
+          a field, like “enter the ID”. <span class="bold-text">Complete</span> is often used for more than one or
+          general input, like “completing a form” or “complete the fields”.</li>
+        <li class="bullet">As a button taking you to another view, <span class="bold-text">view</span> is the preferred
+          verb instead of “see”.</li>
         <li class="bullet">“Freight” and “shipping” were standardized to <span class="bold-text">shipping</span>.</li>
-        <li class="bullet">The phrase “Do you really want to…” was updated to the more generally used <span class="bold-text">Are you sure you want to…</span></li>
-        <li class="bullet">The term “profile” was updated to “role” for user permissions as per the official change in terminology described in this <span class="text-link"><a href="https://help.vtex.com/en/announcements/el-termino-access-profile-ha-sido-sustituido-por-role-en-la-interfaz-del--jSmEYL6oN5QFLA20a8Aj9?&utm_source=autocomplete">announcement</a></span>.</li>
-        <li class="bullet">The sentence placement of “here” was corrected. “Click here to” is a standard phrase, but in longer sentences, “here” is preferred at the end of the sentences: “Drop your file <span class="bold-text">here</span>” not “Drop here your file” or “Enter your message <span class="bold-text">here</span>” not “Enter here your message.”</li>
-        <li class="bullet">“Search for” in the sense of “search using an attribute” to get a result set was corrected to <span class="bold-text">Search by</span> [ID, name, etc.]. If it is a placeholder, it can be shortened to simply <span class="bold-text">search</span>.</li>
-        <li class="bullet">“Created at” was corrected to <span class="bold-text">Created on</span>. “On” is the right preposition to indicate a date (month and day or day). “At” is used to indicate time (hour).</li>
-        <li class="bullet">“Inform” is a false cognate from PT when prompting the user to provide information. This term was replaced by <span class="bold-text">indicate</span>&nbsp;or <span class="bold-text">enter</span>&nbsp;as a appropriate.</li>
-        <li class="bullet"><span class="bold-text">Trade policy</span> was confirmed was the current official name for this module and agreed with the PM (Matheus Furtado). Any instances of “commercial policy”, “sales policy,” and “sales channel” were updated to reflect this decision. This module presents a scope challenge that has made it difficult to define a name that encompasses all that the module does. This guided our decision to keep the current term. Keep in mind that “sales channels” may be a valid term in other contexts.</li>
-        <li class="bullet"><span class="bold-text">Edit</span>&nbsp;is the preferred term for indicating the action of making changes, “modify” and “change” were changed to <span class="bold-text">edit</span>.</li>
-        <li class="bullet">Following the UX writing guideline to “not alarm the user,” “warning” was replaced by <span class="bold-text">attention</span>&nbsp;in warning messages.</li>
-        <li class="bullet">The false cognate “emission” (especially when referring to invoices) was corrected to <span class="bold-text">issue</span>.</li>
-        <li class="bullet"><span class="bold-text">Postal code</span>&nbsp;is preferred to “zip code,” which is US specific. Both are accepted terms in EN.</li>
-        <li class="bullet">“Responsible,” a PT cognate, is not a natural construction in EN. Correcting it often requires the use of a concrete role. “Contact” or “admin” are some examples.</li>
-        <li class="bullet">“Voucher” was confirmed to be <span class="bold-text">gift card</span>&nbsp;in all cases, and it was updated accordingly.</li>
-        <li class="bullet">In the context of software, <span class="bold-text">provider</span>&nbsp;is preferred instead of “supplier,” which applies more to physical goods.</li>
-        <li class="bullet">The spelling of <span class="bold-text">occurred</span> (double c and double r) was corrected throughout many instances of this term.</li>
-        <li class="bullet">In a list of options, <span class="bold-text">other</span>&nbsp;should be used in the singular to mean options not captured in the list. “Others” is a false cognate from PT.</li>
-        <li class="bullet"><span class="bold-text">Units</span>&nbsp;doesn’t have an abbreviation (due to it being a very short words). That mean “un.” is not valid, so it was substituted with <span class="bold-text">unit</span>&nbsp;or <span class="bold-text">unit(s)</span> as appropriate.</li>
+        <li class="bullet">The phrase “Do you really want to…” was updated to the more generally used <span
+            class="bold-text">Are you sure you want to…</span></li>
+        <li class="bullet">The term “profile” was updated to “role” for user permissions as per the official change in
+          terminology described in this <span class="text-link"><a
+              href="https://help.vtex.com/en/announcements/el-termino-access-profile-ha-sido-sustituido-por-role-en-la-interfaz-del--jSmEYL6oN5QFLA20a8Aj9?&utm_source=autocomplete">announcement</a></span>.
+        </li>
+        <li class="bullet">The sentence placement of “here” was corrected. “Click here to” is a standard phrase, but in
+          longer sentences, “here” is preferred at the end of the sentences: “Drop your file <span
+            class="bold-text">here</span>” not “Drop here your file” or “Enter your message <span
+            class="bold-text">here</span>” not “Enter here your message.”</li>
+        <li class="bullet">“Search for” in the sense of “search using an attribute” to get a result set was corrected to
+          <span class="bold-text">Search by</span> [ID, name, etc.]. If it is a placeholder, it can be shortened to
+          simply <span class="bold-text">search</span>.</li>
+        <li class="bullet">“Created at” was corrected to <span class="bold-text">Created on</span>. “On” is the right
+          preposition to indicate a date (month and day or day). “At” is used to indicate time (hour).</li>
+        <li class="bullet">“Inform” is a false cognate from PT when prompting the user to provide information. This term
+          was replaced by <span class="bold-text">indicate</span>&nbsp;or <span class="bold-text">enter</span>&nbsp;as a
+          appropriate.</li>
+        <li class="bullet"><span class="bold-text">Trade policy</span> was confirmed was the current official name for
+          this module and agreed with the PM (Matheus Furtado). Any instances of “commercial policy”, “sales policy,”
+          and “sales channel” were updated to reflect this decision. This module presents a scope challenge that has
+          made it difficult to define a name that encompasses all that the module does. This guided our decision to keep
+          the current term. Keep in mind that “sales channels” may be a valid term in other contexts.</li>
+        <li class="bullet"><span class="bold-text">Edit</span>&nbsp;is the preferred term for indicating the action of
+          making changes, “modify” and “change” were changed to <span class="bold-text">edit</span>.</li>
+        <li class="bullet">Following the UX writing guideline to “not alarm the user,” “warning” was replaced by <span
+            class="bold-text">attention</span>&nbsp;in warning messages.</li>
+        <li class="bullet">The false cognate “emission” (especially when referring to invoices) was corrected to <span
+            class="bold-text">issue</span>.</li>
+        <li class="bullet"><span class="bold-text">Postal code</span>&nbsp;is preferred to “zip code,” which is US
+          specific. Both are accepted terms in EN.</li>
+        <li class="bullet">“Responsible,” a PT cognate, is not a natural construction in EN. Correcting it often
+          requires the use of a concrete role. “Contact” or “admin” are some examples.</li>
+        <li class="bullet">“Voucher” was confirmed to be <span class="bold-text">gift card</span>&nbsp;in all cases, and
+          it was updated accordingly.</li>
+        <li class="bullet">In the context of software, <span class="bold-text">provider</span>&nbsp;is preferred instead
+          of “supplier,” which applies more to physical goods.</li>
+        <li class="bullet">The spelling of <span class="bold-text">occurred</span> (double c and double r) was corrected
+          throughout many instances of this term.</li>
+        <li class="bullet">In a list of options, <span class="bold-text">other</span>&nbsp;should be used in the
+          singular to mean options not captured in the list. “Others” is a false cognate from PT.</li>
+        <li class="bullet"><span class="bold-text">Units</span>&nbsp;doesn’t have an abbreviation (due to it being a
+          very short words). That mean “un.” is not valid, so it was substituted with <span
+            class="bold-text">unit</span>&nbsp;or <span class="bold-text">unit(s)</span> as appropriate.</li>
         <li class="bullet">“Promissory note” was standardized to <span class="bold-text">notes payable</span>.</li>
         <li class="bullet"> “Telephone” was updated to <span class="bold-text">phone</span>, which is more common.</li>
-        <li class="bullet">“Complement” as an address field, which is a false cognate from PT, was changed to <span class="bold-text">additional information</span>.</li>
+        <li class="bullet">“Complement” as an address field, which is a false cognate from PT, was changed to <span
+            class="bold-text">additional information</span>.</li>
       </ul>
     </div>
   </div>
@@ -228,4 +304,5 @@
     </nav>
   </aside>
 </body>
+
 </html>
